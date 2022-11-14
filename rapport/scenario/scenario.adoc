@@ -1,27 +1,54 @@
 === Scénarios d’usage
-
 Mettre ici le scénario d’usage que vous avez construit lors des séances
 encadrées par les experts SES. Vous pouvez mettre un scénario amélioré
 (et non celui noté) si vous jugez votre scénario insuffisant pour faire
 comprendre au jury PACT les différentes étapes d’utilisation de votre
 produit/service ou si vous avez changé d’idées entre-temps.
 
-==== XX
 
-Nulla. Curabitur aliquet leo ac massa. Praesent posuere lectus vitae
-odio. Donec imperdiet urna vel ante. In semper accumsan diam. Vestibulum
-porta justo. Suspendisse egestas commodo eros.
+Jackie est un étudiant, il n’a pas beaucoup d’argent mais aimerait bien pouvoir mieux manger et visualiser l’impact carbone de sa consommation de nourriture. Il installe alors notre super application GF1 sur son téléphone.
 
-Suspendisse tincidunt mi vel metus. Vivamus non urna in nisi gravida
-congue. Aenean semper orci a eros. Praesent dictum. Maecenas pharetra
-odio ut dui. Pellentesque.
+==== Acte 1 : Setup de GF1
+Lorsqu’il arrive sur l’application, on lui demande de créer un compte (afin qu’il puisse utiliser son compte sur différents appareils). Une fois le compte créé, il passe par un petit questionnaire rapide et pas trop ennuyeux qui lui permet de définir son profil alimentaire et matériel :
 
-==== YY
+*item Son régime alimentaire (allergies, choix personnels, goûts)
+*item Le nombre de personnes pour lesquels il faut cuisiner
+*item Les équipements qu’il possède (plaques de cuisson, four etc…)
+*item Un budget mensuel (préréglage de X euros par mois)
 
-Ac mauris.
 
-Duis velit magna, scelerisque vitae, varius ut, aliquam vel, justo.
-Proin ac augue. Nullam auctor lectus vitae arcu. Vestibulum porta justo
-placerat purus. Ut sem nunc, vestibulum nec, sodales vitae, vehicula
-eget, ipsum. Sed nec tortor. Aenean malesuada. Nunc convallis, massa eu
-vestibulum commodo, quam mauris interdum arcu, at pellentesque.
+Ensuite, Jackie arrive sur l'interface de l'application, il peut ajouter les ingrédients qu’il a chez lui, chercher des recettes et les sélectionner pour ajouter les ingrédients à sa liste de course.
+
+==== Acte 2 : Choix d'une recette
+
+Jackie a chez lui du poulet et un oignon qu’il faut vite consommer. Il rentre alors ces données dans l’application. Dans les suggestions de repas, il repère un poulet curry qui lui met l’eau à la bouche, il est plutôt habitué aux pâtes au beurre et au poivre. 
+
+Il voit aussi les aspects nutritifs du plat, un indicateur de l’impact carbone de celui-ci ainsi que la difficulté de réalisation de la recette. Il peut alors calibrer son alimentation par rapport à ses objectifs nutritionnels, carbones et budgétaires.
+Il décide d’ajouter la recette de poulet curry à sa liste et alors, de manière instantanée et automatique, les ingrédients manquants sont ajoutés à sa liste de course.
+
+==== Acte 3 : Les courses
+
+Jackie part alors faire ses courses mais pas au Franprix car c’est trop cher. 
+Une fois dans le magasin, il dégaine son application et suit sa liste de courses. Comme il a activé le mode course, il peut cocher les ingrédients mis dans son cadis ou les décocher si jamais il ne les prend pas. 
+
+Une fois passé à la caisse, il appuie sur le bouton “Courses terminées”, les ingrédients cochés sont alors ajoutés à son garde-manger. Il peut aussi prendre en photo son ticket de caisse pour que son budget soit mis à jour. 
+
+Si jamais les quantités de la liste de course n’ont pas pu être respectées, il y a des curseurs qui lui permettent d’ajuster.
+
+==== Acte 4 : Le repas
+
+Jackie rentre chez lui tout content, car l’application a vraiment facilité ses courses : lui qui avait tendance à acheter un peu n’importe quoi et à perdre de l’argent bêtement. Il se lance alors dans la recette et l’interface intuitive et fonctionnelle lui permet de la suivre avec plaisir et sans se prendre la tête.
+
+Une fois la recette finie, une fenêtre apparaît, il peut alors détailler les ingrédients restants, cela permet d’éviter le gaspillage. Tout est alors déduit automatiquement de son garde-manger. 
+
+==== Acte 5 : Après le repas
+
+Ensuite il est invité à noter la recette, l’application met alors à jour ses préférences. Cela permet aussi aux prochains utilisateurs de voir l’évaluation de la recette.
+
+Jackie voit aussi le bilan carbone de son repas. Cela fonctionne sous forme de jauge de couleur, plus il pollue, plus la jauge est rouge/noire. Il est alors subtilement incité à faire attention. Sur le long terme, il en apprendra plus sur l'impact alimentaire de son alimentation et pourra prendre de meilleures habitudes, par exemple en privilégiant les produits locaux et dont la production pollue peu.
+
+==== Conclusion
+
+Jackie est repu et peut aller dormir tranquille. Il est non seulement soulagé car il a eu un super repas pour pas cher, mais en plus, pour la première fois de sa vie, il a un retour sur l’empreinte carbone de son alimentation. 
+
+Ces informations sont aussi résumées dans l’onglet profil de l’application. Il y voit sa jauge de budget, sa jauge carbone et une note nutritionnelle de son alimentation.

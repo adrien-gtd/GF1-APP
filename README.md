@@ -1,3 +1,7 @@
+# Projet PACT - GF1
+
+Dépôt PACT du projet GF1.
+
 Ceci est votre dépôt pour le projet PACT.
 
 Vous **DEVEZ** modifier ce fichier (`README.md`) et créer tous les
