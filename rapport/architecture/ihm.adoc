@@ -1,34 +1,55 @@
 === Interface utilisateur graphique
 
+===== Notes
+
+les designs présentés ne sont absolument pas définitifs, mais simplement une idée de ce à quoi notre application et notre site pourraient ressembler.
 
 ==== Diagrammes d'utilisation des interfaces utilisateurs
 
 ===== Interface utilisateur sur mobile
 
-image::../images/UI/UI mobile - global.png[Diagramme utilisation interface utilisateur sur mobile]
+image::../images/UI/UI mobile - global.png[Diagramme utilisation interface utilisateur sur mobile,400,400]
 
 ===== Interface utilisateur sur PC
 
-image::../images/UI/UI pc - global.png[Diagramme utilisation interface utilisateur sur PC]
+image::../images/UI/UI pc - global.png[Diagramme utilisation interface utilisateur sur PC,400,400]
 
 
-==== Description des différentes pages
+==== Page d'accueil 
 
-===== Page d'acceuil 
+===== Page d'accueil sur PC
 
-image::../images/UI/UI pc - ecran recherche recettes.png[UI PC : écran d'acceuil] image::../images/UI/UI mobile - ecran acceuil (recherche recettes).png[UI mobile : écran d'acceuil]
+image::../images/UI/UI pc - ecran recherche recettes.png[UI PC : écran d'accueil,400,400] 
 
-Sur la page d'acceuil, l'utilisateur retrouve :
+====== Page d'accueil sur mobile
+
+image::../images/UI/UI mobile - ecran accueil (recherche recettes).png[UI mobile : écran d'accueil,200,200]
+
+====== Description
+
+Sur la page d'accueil, l'utilisateur retrouve :
 
 * Un outils de recherche de recettes
 * Une présentation succinte des recettes résultats de la requette (les recettes recommandées si jamais aucune requette n'as encore été faite)
 * Un accès direct aux autres pages
 
-===== Page de recette
+==== Page de recette
 
-image::../images/UI/UI pc - page recette (1 sur 2).png[UI PC: page recette 1/2] image::../images/UI/UI pc - page recette (2 sur 2).png[UI PC: page recette 2/2]
+===== Page de recette sur PC
 
-image::../images/UI/UI mobile - page recette (1.2 sur 2).png[UI mobile: page recette 1/2] image::../images/UI/UI mobile - page recette (2 sur 2).png[UI mobile: page recette 1/2]
+image::../images/UI/UI pc - page recette (1 sur 2).png[UI PC: page recette 1/2,400,400] 
+image::../images/UI/UI pc - page recette (2 sur 2).png[UI PC: page recette 2/2,400,400]
+
+On passe d'un écran à l'autre par défilement.
+
+===== Page d'accueil sur mobile
+
+image::../images/UI/UI mobile - page recette (1.2 sur 2).png[UI mobile: page recette 1/2,200,200] 
+image::../images/UI/UI mobile - page recette (2 sur 2).png[UI mobile: page recette 1/2,200,200]
+
+On passe d'un écran à l'autre par défilement.
+
+===== Description
 
 Sur la page de recettes, l'utilisateur peut voir toutes les infos qui sont liées à la recette:
 
@@ -41,9 +62,11 @@ Sur la page de recettes, l'utilisateur peut voir toutes les infos qui sont liée
 * Une partie instructions de recette
 * Un bouton finir la recette (il permet de sauvgarder les informations sur le prix et la quantité de carbone émise pour cette recette)
 
-===== Page de courses
+==== Page de courses
 
-image::../images/UI/UI mobile - ecran courses.png[UI mobile : écran courses]
+===== Page des courses sur mobile
+
+image::../images/UI/UI mobile - ecran courses.png[UI mobile : écran courses,200,200]
 
 Sur cette page, l'utilisateur peut consulter sa liste de courses, il y trouve:
 
@@ -53,9 +76,19 @@ Sur cette page, l'utilisateur peut consulter sa liste de courses, il y trouve:
 * Un bouton ajouter 
 * Le prix total de sa liste de courses
 
-===== Page BILAN
+NB: A terme, cette page devrait aussi exister sur PC, mais le design n'est pas encore fait
 
-image::../images/UI/UI pc - ecran Bilan.png[UI PC : écran BILAN,200,200] image::../images/UI/UI mobile - ecran bilan carbone.png[UI mobile : écran BILAN,200,200]
+==== Page BILAN
+
+===== Page de BILAN sur PC
+
+image::../images/UI/UI pc - ecran Bilan.png[UI PC : écran BILAN,,400,400] 
+
+===== Page de recette sur mobile
+
+image::../images/UI/UI mobile - ecran bilan carbone.png[UI mobile : écran BILAN,200,200]
+
+===== Description
 
 C'est la page importante de notre application/ site web, elle permet à l'utilisateur d'accéder au bilan financier et carbone de son alimentation. Il y trouve :
 
@@ -66,3 +99,5 @@ C'est la page importante de notre application/ site web, elle permet à l'utilis
 ** De la différence entre le bilan et la limite
 ** De la diiférence de temps entre le moment présent et la fin de l'intervalle définit par durée (ainsi, si on est proche et en dessous de la barre mais qu'on est en début de mois, la barre sera plus rouge qu'en fin de mois)
 ** Un bouton menant à la page de l'historique, l'utilisateur y trouve l'historique des recettes réalisées et des courses faites
+
+
