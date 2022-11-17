@@ -19,6 +19,7 @@ image::../images/UI/UI pc - global.png[Diagramme utilisation interface utilisate
 image::../images/UI/UI pc - ecran recherche recettes.png[UI PC : écran d'acceuil] image::../images/UI/UI mobile - ecran acceuil (recherche recettes).png[UI mobile : écran d'acceuil]
 
 Sur la page d'acceuil, l'utilisateur retrouve :
+
 * Un outils de recherche de recettes
 * Une présentation succinte des recettes résultats de la requette (les recettes recommandées si jamais aucune requette n'as encore été faite)
 * Un accès direct aux autres pages
@@ -42,7 +43,7 @@ Sur la page de recettes, l'utilisateur peut voir toutes les infos qui sont liée
 
 ===== Page de courses
 
-image::../images/UI/UI mobiles - ecran courses.png[UI mobile : écran courses]
+image::../images/UI/UI mobile - ecran courses.png[UI mobile : écran courses]
 
 Sur cette page, l'utilisateur peut consulter sa liste de courses, il y trouve:
 
@@ -54,7 +55,7 @@ Sur cette page, l'utilisateur peut consulter sa liste de courses, il y trouve:
 
 ===== Page BILAN
 
-image::../images/UI/UI pc - ecran Bilan.png[UI PC : écran BILAN] image::../images/UI/UI mobile - ecran bilan carbone.png[UI mobile : écran BILAN]
+image::../images/UI/UI pc - ecran Bilan.png[UI PC : écran BILAN,200,200] image::../images/UI/UI mobile - ecran bilan carbone.png[UI mobile : écran BILAN,200,200]
 
 C'est la page importante de notre application/ site web, elle permet à l'utilisateur d'accéder au bilan financier et carbone de son alimentation. Il y trouve :
 
@@ -65,18 +66,3 @@ C'est la page importante de notre application/ site web, elle permet à l'utilis
 ** De la différence entre le bilan et la limite
 ** De la diiférence de temps entre le moment présent et la fin de l'intervalle définit par durée (ainsi, si on est proche et en dessous de la barre mais qu'on est en début de mois, la barre sera plus rouge qu'en fin de mois)
 ** Un bouton menant à la page de l'historique, l'utilisateur y trouve l'historique des recettes réalisées et des courses faites
-
-
-
-
-Il peut y avoir une ou plusieurs interfaces utilisateur (UI en anglais),
-ou interface graphique, ou interface homme machine (IHM) : une interface
-sur ordinateur et/ou une interface sur mobile ou tablette (Android),
-selon le nombre d’appareils en jeu.
-
-En lien avec un diagramme de séquence, une description simple de chaque
-écran/page est nécessaire. Il est recommandé de faire des dessins, même
-dessins au crayon, photographiés ou scannés, car ce sont les meilleurs
-supports de discussion : on appelle souvent ces dessins un
-« storyboard ». Une description textuelle fait le lien entre tous les
-éléments de l’IHM (ou des IHMs).
