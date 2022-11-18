@@ -1,13 +1,103 @@
 === Interface utilisateur graphique
 
-Il peut y avoir une ou plusieurs interfaces utilisateur (UI en anglais),
-ou interface graphique, ou interface homme machine (IHM) : une interface
-sur ordinateur et/ou une interface sur mobile ou tablette (Android),
-selon le nombre d’appareils en jeu.
+===== Notes
 
-En lien avec un diagramme de séquence, une description simple de chaque
-écran/page est nécessaire. Il est recommandé de faire des dessins, même
-dessins au crayon, photographiés ou scannés, car ce sont les meilleurs
-supports de discussion : on appelle souvent ces dessins un
-« storyboard ». Une description textuelle fait le lien entre tous les
-éléments de l’IHM (ou des IHMs).
+Les designs présentés ne sont absolument pas définitifs, mais simplement une idée de ce à quoi notre application et notre site pourraient ressembler.
+
+==== Diagrammes d'utilisation des interfaces utilisateur
+
+===== Interface utilisateur sur mobile
+
+image::../images/UI/UI mobile - global.png[Diagramme utilisation interface utilisateur sur mobile,400]
+
+===== Interface utilisateur sur PC
+
+image::../images/UI/UI pc - global.png[Diagramme utilisation interface utilisateur sur PC,400]
+
+
+==== Page d'accueil 
+
+===== Page d'accueil sur PC
+
+image::../images/UI/UI pc - ecran recherche recettes.png[UI PC : écran d'accueil,400] 
+
+====== Page d'accueil sur mobile
+
+image::../images/UI/UI mobile - ecran accueil (recherche recettes).png[UI mobile : écran d'accueil,200]
+
+====== Description
+
+Sur la page d'accueil, l'utilisateur retrouve :
+
+* Un outils de recherche de recettes
+* Une présentation succincte des recettes résultats de la requête (les recettes recommandées si rien n'a été rentrée dans le champ de recherche)
+* Un accès direct aux autres pages
+
+==== Page de recette
+
+===== Page de recette sur PC
+
+image::../images/UI/UI pc - page recette (1 sur 2).png[UI PC: page recette 1/2,400] 
+image::../images/UI/UI pc - page recette (2 sur 2).png[UI PC: page recette 2/2,400]
+
+On passe d'un écran à l'autre par défilement.
+
+===== Page d'accueil sur mobile
+
+image::../images/UI/UI mobile - page recette (1.2 sur 2).png[UI mobile: page recette 1/2,200] 
+image::../images/UI/UI mobile - page recette (2 sur 2).png[UI mobile: page recette 1/2,200]
+
+On passe d'un écran à l'autre par défilement.
+
+===== Description
+
+Sur la page de recettes, l'utilisateur peut voir toutes les infos qui sont liées à la recette :
+
+* Une image illustrant le plat
+* Un brève description
+* Une liste des ingrédients (il est possible de modifier la quantité de personnes utilisée pour calculer la quantité d'ingrédients)
+* Une case permettant à l'utilisateur de définir l'origine de l'ingrédient (cette info servira au calcul du bilan carbone et à l'estimation du prix de la recette)
+* Un bouton liste de courses, il permet à l'utilisateur d'ajouter ces ingrédients à la liste de courses 
+* Une zone BILAN où seront indiqués l'estimation du prix de la recette et des émissions CO2 de la recette (ces estimations seront basées sur une BDD référençant le prix au kilo et le CO2 produit au kilo des ingrédients en fonction de leur origine)
+* Une partie instructions de recette
+* Un bouton finir la recette (il permet de sauvegarder les informations sur le prix et la quantité de carbone émise pour cette recette)
+
+==== Page de courses
+
+===== Page des courses sur mobile
+
+image::../images/UI/UI mobile - ecran courses.png[UI mobile : écran courses,200]
+
+Sur cette page, l'utilisateur peut consulter sa liste de courses, il y trouve :
+
+* Les ingrédients qui y figurent
+* La quantité dans la liste de chaque ingrédient
+* Le prix estimé
+* Un bouton ajouter 
+* Le prix total de sa liste de courses
+
+NB : À terme, cette page devrait aussi exister sur PC, mais le design n'est pas encore fait.
+
+==== Page BILAN
+
+===== Page de BILAN sur PC
+
+image::../images/UI/UI pc - ecran Bilan.png[UI PC : écran BILAN,400] 
+
+===== Page de recette sur mobile
+
+image::../images/UI/UI mobile - ecran bilan carbone.png[UI mobile : écran BILAN,200]
+
+===== Description
+
+C'est la page importante de notre application/ site web, elle permet à l'utilisateur d'accéder au bilan financier et carbone de son alimentation. Il y trouve :
+
+* Un bouton permettant d'indiquer le budget de l'utilisateur (le budget financier et un objectif carbone)
+* Des graphes montrant l'évolution de l'impact de sa consommation depuis une durée définie dans le bouton Durée
+* Une barre horizontale sur les graphes, elle indique à l'utilisateur l'ordonnée de son budget ou de son objectif. La couleur de la barre dépend de :
+** Est ce que la limite a-t-elle été dépassée ?
+** De la différence entre le bilan et la limite
+** De la différence de temps entre le moment présent et la fin de l'intervalle défini par durée (ainsi, si on est proche et en dessous de la barre mais qu'on est en début de mois, la barre sera plus rouge qu'en fin de mois)
+** Un bouton menant à la page de l'historique, l'utilisateur y trouve l'historique des recettes réalisées et des courses faites
+
+
