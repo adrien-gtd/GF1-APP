@@ -24,7 +24,7 @@ On distingue différents sous-blocs:
 ===== Interaction recette:
 L'objectif est de pouvoir permettre au client de rentrer les détails de provenance et d'emballage des différents ingrédients utilisés dans la recette.
 
-==== Gestion Historique:
+===== Gestion Historique:
 Le but est de pouvoir permettre à l'utilisateur de valider les recettes qu'il.elle a faites pour pouvoir les prendre en compte dans le bilan carbone de la personne.
 
 === Appli/Site 
@@ -42,8 +42,11 @@ Et transmettre le tout à l'application.
 
 === Bases de données
 Description des différentes bases de données envisagées pour le projet:
+
 -Base de recettes pour pouvoir suggérer à l'utilisateurs de plats (fonction priemière de l'application)
+
 -Base de prix des aliments: pour pouvoir estimer le budget dépensé par l'utilisateur en fonction du nombre de repas préparés.
+
 -Base Impact carbone: base dans laquelle se trouveraient les infos nécessaires à l'estimation de l'équivalent carbone des repas préparés par l'utilisateur.
 
 === Scrapping
