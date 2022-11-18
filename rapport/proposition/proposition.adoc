@@ -26,7 +26,7 @@ Notre application proposera de faire un suivi de budget en prenant en compte le 
 GF1 connaitra l'empreinte carbone des aliments que l'utilisateur consomme. GF1 sera capable de faire un bilan sur un mois ou par repas de l'impact carbone des habitudes alimentaires de l'utilisateur.
 
 == Facilité d'utilisation
-Enfin, un aspect transversal dans notre projet sera le fait de créer une application simple, ergonomique, facile à utiliser et le moins intrusif possible. Ce sont des caractéristiques très importantes pour n'importe quel application mais en particulier pour nous. En effet, le publique que nous visons (les étudiants) sont très regardant sur la facilité d'utilisation d'une application. Notre diagramme de flot simple et clair illustre ce principe
+Enfin, un aspect transversal dans notre projet sera le fait de créer une application simple, ergonomique, facile à utiliser et le moins intrusif possible. Ce sont des caractéristiques très importantes pour n'importe quel application mais en particulier pour nous. En effet, le publique que nous visons (les étudiants) sont très regardant sur la facilité d'utilisation d'une application. Notre diagramme de flot simple et clair illustre ce principe:
 
 
 image::../images/GF1_flot.png[logo pact, 500, 500,align="center"]
