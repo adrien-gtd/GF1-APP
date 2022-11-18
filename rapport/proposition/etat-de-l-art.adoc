@@ -5,9 +5,8 @@ Nous avons pris connaissance de 2 applications qui ont des fonctionnalitées pro
 
 ==== Jow
 
-
 <<RefJow>> a un sytème de recettes et de gestion des courses et possède une très une bonne interface utilisateur. En revanche Jow ne propose aucun suivi de budget et ne donne aucune information sur l'impact environnemental des aliments consommés. Une dernière remarque et que lors de la première utilisation il y a beaucoup de choses à faire, Jow demande beaucoup de choses. Il faut compter environ 15 minutes avant de pourvoir commencer à utiliser l'application. Avec  GF1 nous voulons ajouter le suivi de budget et l'impact environnemental tout en facilitant la première utilisation de l'application.
 
 ==== Yuka
 
-<<Yuka>> est une application qui permet de scanner le code barre de produits pour en savoir plus dessus. En particulier au niveau nutritif et environnemental. L'onglet nutrition/santé est souvent très complet. Malheureusement, l'onglet environnment est presque tout le temps vide, demandant à l'utilisateur des informations supplémentaires (type de produit, photos...) avant de fournir une réponse. Par contraste, avec GF1, nous voulons que les données d'impact environnemental soient disponibles directement.
+<<RefYuka>> est une application qui permet de scanner le code barre de produits pour en savoir plus dessus. En particulier au niveau nutritif et environnemental. L'onglet nutrition/santé est souvent très complet. Malheureusement, l'onglet environnment est presque tout le temps vide, demandant à l'utilisateur des informations supplémentaires (type de produit, photos...) avant de fournir une réponse. Par contraste, avec GF1, nous voulons que les données d'impact environnemental soient disponibles directement.
