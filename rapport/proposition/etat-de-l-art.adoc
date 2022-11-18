@@ -1,42 +1,13 @@
 === Description de l’état de l’art
-ifdef::env-gitlab,env-browser[:outfilesuffix: .adoc]
 
-*_Note : 1 page max._*
-
-Décrivez, en les citant via la bibliographie, les approches/produits
-ressemblant à votre projet et les différences éventuelles. Illustrez
-avec des images si besoin. Utilisez des renvois vers votre
-bibliographie : « comme démontré dans [2], … »
-
-==== XXX
+Nous avons pris connaissance de 2 applications qui ont des fonctionnalitées proches de celle que l'on envisage pour GF1 qui sont Jow et Yuka.
 
 
-Aenean risus dui, volutpat non, posuere vitae, sollicitudin in, urna.
-Nam eget eros a enim pulvinar rhoncus. Cum sociis natoque penatibus et
-magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisis
-massa ut massa. Sed nisi purus, malesuada eu, porta vulputate, suscipit
-auctor, nunc.
+==== Jow
 
-Bim, bam push. Git gaming
 
-==== ZZZ
+<<RefJow>> a un sytème de recettes et de gestion des courses et possède une très une bonne interface utilisateur. En revanche Jow ne propose aucun suivi de budget et ne donne aucune information sur l'impact environnemental des aliments consommés. Une dernière remarque et que lors de la première utilisation il y a beaucoup de choses à faire, Jow demande beaucoup de choses. Il faut compter environ 15 minutes avant de pourvoir commencer à utiliser l'application. Avec  GF1 nous voulons ajouter le suivi de budget et l'impact environnemental tout en facilitant la première utilisation de l'application.
 
-Et magnis dis parturient montes, nascetur ridiculus mus.
+==== Yuka
 
-Aenean risus dui, volutpat non, posuere vitae, sollicitudin in, urna.
-Nam eget eros a enim pulvinar rhoncus. Cum sociis natoque penatibus et
-magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisis
-massa ut massa. Sed nisi purus, malesuada eu, porta vulputate, suscipit
-auctor, nunc.
-
-==== Exemples de citations
-
-Les références bibliographiques sont regroupées dans le fichier `References.adoc`
-à la racine du répertoire `rapport`.
-On peut y faire référence dans toutes les sous parties du document.
-
-On peut citer comme exemple l'article de Claude E. Shannon sur la
-théorie de la communication <<RefShannon>>
-ou, bien évidement, la vitrine des projets PACT <<VitrinePACT>>.
-
-Voir <<TOTO,la référence>> très intéressante elle aussi.
+<<Yuka>> est une application qui permet de scanner le code barre de produits pour en savoir plus dessus. En particulier au niveau nutritif et environnemental. L'onglet nutrition/santé est souvent très complet. Malheureusement, l'onglet environnment est presque tout le temps vide, demandant à l'utilisateur des informations supplémentaires (type de produit, photos...) avant de fournir une réponse. Par contraste, avec GF1, nous voulons que les données d'impact environnemental soient disponibles directement.
