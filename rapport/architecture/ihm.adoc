@@ -8,22 +8,22 @@ Les designs présentés ne sont absolument pas définitifs, mais simplement une 
 
 ===== Interface utilisateur sur mobile
 
-image::../images/UI/UI mobile - global.png[Diagramme utilisation interface utilisateur sur mobile,400,400]
+image::../images/UI/UI mobile - global.png[Diagramme utilisation interface utilisateur sur mobile,400]
 
 ===== Interface utilisateur sur PC
 
-image::../images/UI/UI pc - global.png[Diagramme utilisation interface utilisateur sur PC,400,400]
+image::../images/UI/UI pc - global.png[Diagramme utilisation interface utilisateur sur PC,400]
 
 
 ==== Page d'accueil 
 
 ===== Page d'accueil sur PC
 
-image::../images/UI/UI pc - ecran recherche recettes.png[UI PC : écran d'accueil,400,400] 
+image::../images/UI/UI pc - ecran recherche recettes.png[UI PC : écran d'accueil,400] 
 
 ====== Page d'accueil sur mobile
 
-image::../images/UI/UI mobile - ecran accueil (recherche recettes).png[UI mobile : écran d'accueil,200,200]
+image::../images/UI/UI mobile - ecran accueil (recherche recettes).png[UI mobile : écran d'accueil,200]
 
 ====== Description
 
@@ -37,15 +37,15 @@ Sur la page d'accueil, l'utilisateur retrouve :
 
 ===== Page de recette sur PC
 
-image::../images/UI/UI pc - page recette (1 sur 2).png[UI PC: page recette 1/2,400,400] 
-image::../images/UI/UI pc - page recette (2 sur 2).png[UI PC: page recette 2/2,400,400]
+image::../images/UI/UI pc - page recette (1 sur 2).png[UI PC: page recette 1/2,400] 
+image::../images/UI/UI pc - page recette (2 sur 2).png[UI PC: page recette 2/2,400]
 
 On passe d'un écran à l'autre par défilement.
 
 ===== Page d'accueil sur mobile
 
-image::../images/UI/UI mobile - page recette (1.2 sur 2).png[UI mobile: page recette 1/2,200,200] 
-image::../images/UI/UI mobile - page recette (2 sur 2).png[UI mobile: page recette 1/2,200,200]
+image::../images/UI/UI mobile - page recette (1.2 sur 2).png[UI mobile: page recette 1/2,200] 
+image::../images/UI/UI mobile - page recette (2 sur 2).png[UI mobile: page recette 1/2,200]
 
 On passe d'un écran à l'autre par défilement.
 
@@ -66,7 +66,7 @@ Sur la page de recettes, l'utilisateur peut voir toutes les infos qui sont liée
 
 ===== Page des courses sur mobile
 
-image::../images/UI/UI mobile - ecran courses.png[UI mobile : écran courses,200,200]
+image::../images/UI/UI mobile - ecran courses.png[UI mobile : écran courses,200]
 
 Sur cette page, l'utilisateur peut consulter sa liste de courses, il y trouve :
 
@@ -82,11 +82,11 @@ NB : À terme, cette page devrait aussi exister sur PC, mais le design n'est pas
 
 ===== Page de BILAN sur PC
 
-image::../images/UI/UI pc - ecran Bilan.png[UI PC : écran BILAN,400,400] 
+image::../images/UI/UI pc - ecran Bilan.png[UI PC : écran BILAN,400] 
 
 ===== Page de recette sur mobile
 
-image::../images/UI/UI mobile - ecran bilan carbone.png[UI mobile : écran BILAN,200,200]
+image::../images/UI/UI mobile - ecran bilan carbone.png[UI mobile : écran BILAN,200]
 
 ===== Description
 
