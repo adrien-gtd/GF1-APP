@@ -1,4 +1,4 @@
-= Rapport d’avancement: groupe “x.y”
+= Rapport d’avancement: groupe “8.3”
 PACT groupe xy (Les plus beaux)
 ifdef::env-gitlab,env-browser[:outfilesuffix: .adoc]
 :doctype: book
@@ -16,41 +16,43 @@ ifdef::env-gitlab,env-browser[:outfilesuffix: .adoc]
 
 === Membres du groupe
 
-* Nom1
-* Nom2
-* Nom3
-* Nom4
-* Nom5
-* Nom6
+* FAUVE Antoine
+* GUITTARD Adrien
+* GELEBART Mael
+* KHODAKOV Ivan
+* LE BLANC Raphaël
+* MARCHETTI Pierre
+* MICOUD Lucas
 
 === Tuteur
 
-* xx yy
+* DUFOURD Jean-Claude
 
 === Encadrant génie logiciel
 
-* xx yy
+* BONNAIL Elise
 
 <<<
 
 == Résumé du sujet choisi en français (PAN1)
 
-*_Note: 15 lignes max_*
-
 Décrire votre projet sans le scénariser : De quoi s’agit-il ? En quoi
 cette idée est compatible avec le thème de PACT ? Qu’est-ce qu’il
 permettrait de faire de façon générale.
+
+Notre projet PACT vise à développer une application et un site web pour simplifier tous les aspects liés l’alimentation d’un étudiant. 
+Le principe de base de l’application est de suivre les aliments que l’utilisateur possède et de proposer des recettes en conséquent. Nous souhaitons également implémenter une fonctionnalité permettant de simplifier au maximum la gestion de listes de courses. Notre objectif est de proposer une solution la plus ergonomique possible. 
+De plus, nous souhaitons nous démarquer en proposant également à l’utilisateur de pouvoir suivre l'évolution de ses dépenses alimentaires et son impact sur l’environnement, l’objectif étant de sensibiliser sur l’aspect écologique de l'alimentation.
+Le projet s'inscrit dans le thème de PACT car il nous permettra développer des compétences dans des domaines importants, qu'ils soient techniques (développemment Android, développemment web...) ou socio-économiques (ergonomie, étude des usages utilisateurs...).
 
 == English Summary (PAN1)
 
 *_Note : 15 lignes max, version anglaise du texte précédent_*
 
-Ligula dapibus egestas. Donec sed velit ac lectus mattis sagittis.
-
-In hac habitasse platea dictumst. Maecenas in ligula. Duis tincidunt
-odio sollicitudin quam. Nullam non mauris. Phasellus lacinia, velit sit
-amet bibendum euismod, leo diam interdum ligula, eu scelerisque sem
-purus in tellus.
+Our PACT project aims to develop an application and a website to simplify all aspects of a student's diet. 
+The basic principle of the application is to follow the food that the user owns and to propose recipes accordingly. We also want to implement a feature to simplify the management of shopping lists. Our goal is to offer the most ergonomic solution possible. 
+Moreover, we want to distinguish ourselves by offering the user the possibility to follow the evolution of his food expenses and his impact on the environment, the objective being to raise awareness on the ecological aspect of food.
+The project is in line with the theme of PACT because it will allow us to develop skills in important areas, whether technical (Android development, web development ...) or socio-economic (ergonomics, study of user uses ...).
 
 <<<
 

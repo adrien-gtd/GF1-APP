@@ -8,6 +8,7 @@
 image::../images/Decoupage_architectural.png[Découpage architectural]
 
 
+===== NomBloc1
 
 
 === Description des blocs
@@ -49,8 +50,24 @@ Description des différentes bases de données envisagées pour le projet:
 
 -Base Impact carbone: base dans laquelle se trouveraient les infos nécessaires à l'estimation de l'équivalent carbone des repas préparés par l'utilisateur.
 
-=== Scrapping
-Méthode pour se procurer les bases de données nécessaires au projet.
+*Exemple utilisant http://blockdiag.com/en/actdiag/index.html[actdiag]*
+**(Vous pouvez, bien sûr, utiliser votre outil de dessin préféré).**
 
+[actdiag, diag_activite, svg]
+....
+actdiag {
+  ecrire -> convertir -> afficher
+
+  lane user {
+     label = "User"
+     ecrire [label = "Décire les matrices"];
+     afficher  [label = "Afficher la courbe"];
+  }
+  lane converter {
+     label = "Convertisseur"
+     convertir [label = "Convertir\n en utilisant\n@@"];
+  }
+}
 ....
 
+Voir la liste des outils supportés par http://asciidoctor.org/docs/asciidoctor-diagram/[asciidoctor-diagram].
