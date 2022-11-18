@@ -53,7 +53,11 @@ Description textuelle du bloc 1.
 
 ===== NomBloc2
 
-Description textuelle du bloc 1.
+=== Bases de données
+Description des différentes bases de données envisagées pour le projet:
+-Base de recettes pour pouvoir suggérer à l'utilisateurs de plats (fonction priemière de l'application)
+-Base de prix des aliments: pour pouvoir estimer le budget dépensé par l'utilisateur en fonction du nombre de repas préparés.
+-Base Impact carbone: base dans laquelle se trouveraient les infos nécessaires à l'estimation de l'équivalent carbone des repas préparés par l'utilisateur.
 
 *Exemple utilisant http://blockdiag.com/en/actdiag/index.html[actdiag]*
 **(Vous pouvez, bien sûr, utiliser votre outil de dessin préféré).**
