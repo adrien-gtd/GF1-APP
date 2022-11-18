@@ -16,24 +16,24 @@ image::../images/Decoupage_architetural.png[Découpage architectural]
 
 
 
-=== Utilisateur
+==== Utilisateur
 
 Dans ce bloc, on décrit toutes les démarches faites de la part de l'utilisateur via l'interface de l'application/du site.
 On distingue différents sous-blocs:
 
  
-===== Interaction recette:
+====== Interaction recette:
 L'objectif est de pouvoir permettre au client de rentrer les détails de provenance et d'emballage des différents ingrédients utilisés dans la recette.
 
-===== Gestion Historique:
+====== Gestion Historique:
 Le but est de pouvoir permettre à l'utilisateur de valider les recettes qu'il.elle a faites pour pouvoir les prendre en compte dans le bilan carbone de la personne.
 
-=== Appli/Site 
+==== Appli/Site 
 L'application ou le site doit permettre de transmettre les requêtes faites par l'utilisateur au serveur.
 Afficher les résultats, nottament les recettes. 
 Gérer une liste de course. (Soit, faite par l'utilisateur qui peut faire la liste des ingrédients manuellement, soit, de façon automatique lorsque l'utilisateur sélectionne une recette qu'il désire faire plus tard.)
 
-=== Serveur
+==== Serveur
 
 Dans ce bloc, on a décrit les fonctionnalités qui devront faire appel aux bases de données:
 La recherche de recettes
@@ -41,7 +41,7 @@ Le calcul de l'équivalent carbonne de l'alimentation de l'utilisateur
 
 Et transmettre le tout à l'application.
 
-=== Bases de données
+==== Bases de données
 Description des différentes bases de données envisagées pour le projet:
 
 -Base de recettes pour pouvoir suggérer à l'utilisateurs de plats (fonction priemière de l'application)
