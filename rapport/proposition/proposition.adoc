@@ -1,122 +1,33 @@
-=== Description de la proposition
-*_Note: 2 page max._*
 
-_Décrire de façon détaillée votre projet : motivations de base/problèmes
-constatés avant élaboration du projet, comment votre projet répond à ces
-besoins. Ajouter une image ou une figure pour montrer à quoi cela
-ressemble si besoin._
+= Description de la proposition
 
-Amet, tellus. Maecenas a dolor. Praesent tempor, felis eget gravida
-blandit, urna lacus faucibus velit, in consectetuer sapien erat nec
-quam. Integer bibendum odio sit amet neque. Integer imperdiet rhoncus
-mi. Pellentesque malesuada purus id purus. Quisque viverra porta lectus.
-Sed lacus leo, feugiat at, consectetuer eu, luctus quis, risus.
-Suspendisse faucibus orci et nunc. Nullam vehicula fermentum risus.
-Fusce felis nibh, dignissim vulputate, ultrices quis, lobortis et, arcu.
-Duis aliquam libero non diam.
-
-Vestibulum placerat tincidunt tortor. Ut vehicula ligula quis lectus. In
-eget velit. Quisque vel risus. Mauris pede. Nullam ornare sapien sit
-amet nisl. Cras tortor. Donec tortor lorem.
+== Motivation pour le projet
+Notre projet PACT est de développer une application pour aider les étudiants avec leur alimentation. Ce qui nous a motivé est le fait que la plupart des étudiants mangent mal et se font rarement à manger. Beaucoup citent le fait que la gestion de budget est plus compliqué lorsque l'on se fait à manger soi-même. La plupart des étudiants ont aussi du mal à faire leurs courses par manque d'organisation et d'habitude. De plus ils sont soit peu sensibilisés à l'impact carbone de leur alimentation ou ne connaissent pas de moyens d'y avoir accès. Les 3 entretiens que nous avons fait nous ont n'ont fait que confirmer ce que l'ont pensait déjà. L'application GF1 répond à un besoin réel et concret. Nous avons également relevé le besoin d'avoir une application ergonomique, peu intrusive et facile à utiliser.
 
 
+== Aspects principaux
+En prenant en compte tout ce qui est détaillé ci-dessus, nous avons décidé que notre projet aurait 3 fonctionnalités principales que nous considérons le coeur de notre projet:
 
-=== Exemples d'utilisation d'AsciiDoc
+* suggestion des plats/création de listes de courses appropriées
 
-_Ici quelques exemples de syntaxe AsciiDoc pour ajouter des équations, des images, des listes..._
+* suivi du budget
 
-_Ces exemples *ne doivent pas* être conservés dans la version finale du rapport._
-
-==== Exemples d'équations
-
-* Inline math: latexmath:[\int_{-\infty}^\infty g(x) dx]
-Pour ajouter une équation ou un symbole mathématique dans le corps du texte.
-
-* Block math pour avoir une équation centrée au milieu de la page:
-
-[latexmath]
-++++
-\int_{-\infty}^\infty g(x) dx
-++++
+* estimation d'empreinte carbone 
 
 
-
-==== Exemples d'images
-
-* Ceci est un exemple d'image:
-
-image::../images/logo_PACT.png[logo pact]
-
-* L'image peut être redimensionnée et avoir un titre:
-
-.Le logo du projet
-image::../images/logo_PACT.png[logo pact, 400, 400]
-
-* Pour le rapport, les images peuvent être aux formats jpeg, png ou même *svg*:
-
-image::../images/pact.svg[un autre logo pact,300,300]
-
-* Les images peuvent aussi être mises dans le corps du texte par exemple image:../images/logo_PACT.png[logo pact, 50,50].
-
-==== Exemples de code
-
-On peut ajouter des blocs de code formatés en précisant le langage utilisé:
-
-[source,python]
-----
-def func(i):
-   x = 3 + i
-   return x
-
-for i in range(10):
-   print "---> ", func(i)
-----
+=== Suggestion des plats/création de listes de courses appropriées 
+Pour la suggestion des plats, notre application proposera des recettes à notre utilisateur qui pourra faire des recherches de recettes et trier selon différents critères. GF1 enregistrera les recettes effectuées/appréciées pour faire des propositions adaptées à l'utilisateur. En outre, lorsqu'une recette est selectionnée, GF1 génèrera une liste de courses à faire pour réaliser cette recette. À l'aide d'un simple système de cochage, GF1 peut être utilisé lors de l'achat des courses pour être sûr de ne rien oublier.
 
 
-[source,java]
-----
-class foo {
-   Integer i;
-   String s;
-}
-----
+=== Suivi du budget 
+Notre application proposera de faire un suivi de budget en prenant en compte le budget de l'utilisateur et le prix des courses effectuées. L'utilisateur pourra aussi ajouter les achats qu'il a fait en dehors du cadre des recettes de l'application afin d'avoir un suivi précis même pour un utilisateur occasionnel.
+
+=== Estimation d'empreinte carbone
+GF1 connaitra l'empreinte carbone des aliments que l'utilisateur consomme. GF1 sera capable de faire un bilan sur un mois ou par repas de l'impact carbone des habitudes alimentaires de l'utilisateur.
+
+== Facilité d'utilisation
+Enfin, un aspect transversal dans notre projet sera le fait de créer une application simple, ergonomique, facile à utiliser et le moins intrusif possible. Ce sont des caractéristiques très importantes pour n'importe quel application mais en particulier pour nous. En effet, le publique que nous visons (les étudiants) sont très regardant sur la facilité d'utilisation d'une application. Notre diagramme de flot simple et clair illustre ce principe
 
 
-==== Exemples de listes
-
-* AAAA
-** aaaaa
-*** axaxax
-** bbbbb
-** ccccc
-* BBBB
-* CCCC
-
-'''''
-
-.  AAAA
-..  aaaa
-..  bbbb
-.  BBBB
-.  CCCC
-
-'''''
-
-.Liste des tâches à faire:
-*  [ ] Pas encore fait
-** [ ] étape X
-** [x] étape Y (a démarré en avance)
-** [ ] étape Z
-*  [x] Complètement finit
-** [x] étape Q
-** [x] étape R
-** [x] étape `finale` E=mc^2^
-
-'''''
-
-.Liste descriptive:
-
-Étape 1::: Faire A, B, C…
-Étape 2::: Faire X, Y, Z…
-Étape 3::: Faire W, et c'est fini…
+image::../images/GF1_flot.png[logo pact, 500, 500,align="center"]
 
