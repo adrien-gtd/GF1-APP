@@ -11,16 +11,38 @@ export default StyleSheet.create({
     container: {
       backgroundColor: COLORS.backgroundColor,
       flex: 1,
-      marginTop: 10,
     },
   },
   topBar: {
     container: {
       alignItems: 'center',
-      backgroundColor: 'blue',
-      justifyContent: 'center',
+      backgroundColor: COLORS.backgroundColor,
+      borderBottomWidth: 1,
+      borderColor: 'gray',
+      flexDirection: 'row',
+      justifyContent: 'space-between',
       paddingHorizontal: 8,
-      height: 100,
+      paddingVertical:6,
+    },
+    accountButton:{
+      height: 50,
+      width: 50,
+    },
+    accountImage:{
+      height: 50,
+      width: 50,
+    },
+    homeImage:{
+      height: 50,
+      width: 50,
+    },
+    settingsButton: {
+      height: 48,
+      width: 48,
+    },
+    settingsImage:{
+      height: 50,
+      width: 50,
     },
   }
 })

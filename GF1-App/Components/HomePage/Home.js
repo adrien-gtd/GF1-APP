@@ -12,7 +12,8 @@ const Home = ({ navigation }) => {
     <View style={styles.home.container}>
       <StatusBar
         animated={true}
-        backgroundColor={COLORS.backgroundColorDarker}
+        backgroundColor={COLORS.backgroundColor}
+        barStyle={'dark-content'}
         hidden={false} />
       <TopBar navigation={navigation} />
       <View>
