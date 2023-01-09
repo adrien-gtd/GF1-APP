@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StatusBar, Button, TextInputChangeEventData } from 'react-native';
+import { View, StatusBar, Button, Text } from 'react-native';
 import { COLORS } from '../../colors';
 
 import styles from '../../styles';

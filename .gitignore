@@ -16,3 +16,62 @@ _book
 
 *.log
 .*.swp
+
+# APP gitignore
+
+## OSX
+##
+GF1-App/.DS_Store
+
+## Xcode
+##
+build/
+GF1-App/*.pbxuser
+GF1-App/!default.pbxuser
+GF1-App/*.mode1v3
+GF1-App/!default.mode1v3
+GF1-App/*.mode2v3
+GF1-App/!default.mode2v3
+GF1-App/*.perspectivev3
+GF1-App/!default.perspectivev3
+GF1-App/xcuserdata
+GF1-App/*.xccheckout
+GF1-App/*.moved-aside
+GF1-App/DerivedData
+GF1-App/*.hmap
+GF1-App/*.ipa
+GF1-App/*.xcuserstate
+GF1-App/project.xcworkspace
+
+## Android/IntelliJ
+##
+GF1-App/GF1-App/build/
+GF1-App/GF1-App/.idea
+GF1-App/GF1-App/.gradle
+GF1-App/GF1-App/local.properties
+GF1-App/GF1-App/*.iml
+GF1-App/GF1-App/*.hprof
+GF1-App/GF1-App/.cxx/
+
+## node.js
+##
+GF1-App/node_modules/
+GF1-App/npm-debug.log
+GF1-App/yarn-error.log
+
+## BUCK
+GF1-App/buck-out/
+GF1-App/\.buckd/
+GF1-App/*.keystore
+GF1-App/!debug.keystore
+
+## Bundle artifacts
+GF1-App/*.jsbundle
+
+## CocoaPods
+GF1-App/ios/Pods/
+
+## Expo
+GF1-App/.expo/
+GF1-App/web-build/
+GF1-App/dist/
