@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "GF1-App",
+    "slug": "GF1-App",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "GF1-App"
+}
