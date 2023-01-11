@@ -6,6 +6,7 @@ import styles from '../../styles';
 
 import TopBar from '../TopBar';
 import Recipe from '../Recipe';
+import SearchBar from './SearchBar'
 
 const ingredients = [
   { key: 'Pommes de terre' },
@@ -26,10 +27,11 @@ const Home = ({ navigation }) => {
         hidden={false} />
       <TopBar navigation={navigation} />
       <View>
-
+        <SearchBar />
         <Text style={styles.home.suggestionText}>Suggestions :</Text>
         <Recipe image={require("../../assets/logo.png")} title={"Lorem ipsum"} ingredients={ingredients} ecoPrice={0} moneyPrice={0} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}/>
         <Recipe image={require("../../assets/logo.png")} title={"Lorem ipsum"} ingredients={ingredients} ecoPrice={1} moneyPrice={1} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}/>
+        <Recipe image={require("../../assets/logo.png")} title={"Lorem ipsum"} ingredients={ingredients} ecoPrice={2} moneyPrice={2} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}/>
         <Recipe image={require("../../assets/logo.png")} title={"Lorem ipsum"} ingredients={ingredients} ecoPrice={2} moneyPrice={2} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}/>
 
       </View>

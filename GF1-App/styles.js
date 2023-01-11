@@ -1,5 +1,3 @@
-import { CurrentRenderContext } from '@react-navigation/native';
-import React from 'react';
 import { StyleSheet } from 'react-native';
 import { COLORS } from './colors';
 
@@ -21,6 +19,14 @@ export default StyleSheet.create({
       marginTop: 10,
       marginLeft: 10,
     },
+    searchBar: {
+      backgroundColor: COLORS.backgroundColorDarker,
+      borderRadius: 4,
+      fontSize: 18,
+      height: 48,
+      margin: 8,
+      padding: 8,
+    },
   },
   topBar: {
     container: {
@@ -34,12 +40,12 @@ export default StyleSheet.create({
       paddingVertical:6,
     },
     accountButton:{
-      height: 50,
-      width: 50,
+      height: 48,
+      width: 48,
     },
     accountImage:{
-      height: 50,
-      width: 50,
+      height: 48,
+      width: 48,
     },
     homeImage:{
       height: 48,
@@ -57,7 +63,7 @@ export default StyleSheet.create({
   recipe:{
     container:{
       alignItems: 'center',
-      backgroundColor: COLORS.backgroundColorDarker,
+      backgroundColor: COLORS.backgroundColor,
       flexDirection: 'column',
       marginVertical:8,
       paddingVertical:4,
@@ -65,7 +71,7 @@ export default StyleSheet.create({
     recipeInfo:{
       container:{
         alignItems: 'center',
-        backgroundColor: COLORS.backgroundColorDarker,
+        backgroundColor: COLORS.backgroundColor,
         flexDirection: 'row',
       },
       image:{
