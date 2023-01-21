@@ -25,5 +25,12 @@ export default StyleSheet.create({
   },
   bold: {fontWeight: 'bold'},
   italic: {fontStyle: 'italic'},
-  underline: {textDecorationLine: 'underline'}
+  underline: {textDecorationLine: 'underline'},
+  dropDown:{
+    backgroundColor: 'rgba(10,30,40,0.2)',
+    padding: 8,
+    borderRadius:6,
+    minHeight:40,
+    justifyContent:'center',
+  }
 })

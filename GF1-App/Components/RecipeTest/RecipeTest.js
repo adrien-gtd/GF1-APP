@@ -1,22 +1,19 @@
 RecipeTest
-import React from 'react';
+import { validatePathConfig } from '@react-navigation/native';
+import React, { useState } from 'react';
 import {FlatList, View, StatusBar, Button, Text, ScrollView, TouchableOpacity } from 'react-native';
 import styles from '../../styles';
 import SvgComponent from './SvgComponent';
-
+import Dropdown from '../Dropdown';
 
 let countries=[{id : 1,name:'France'},{id:2,name:'Europe'},{id:3,name:'Afrique'},{id:4,name:'Amérique'},{id:5,name:'Asie'}];
-const Dropdwon=()=>{
-    return(
-        <View>
-            <TouchableOpacity>
-                <Text>Choisir une origine</Text>
-                
-            </TouchableOpacity>
-        </View>
-    )
-}
+
 const RecipeTest=({ navigation }) => {
+    const [selectedItem,setSelectedItem]=useState(null);
+    const onSelect=(item)=>{
+        setSelectedItem(item);
+
+    }
     return (
         
             <><ScrollView>
@@ -32,6 +29,11 @@ const RecipeTest=({ navigation }) => {
             </Text>
             
             <Text>Provenance des ingrédients</Text>
+            <Dropdown 
+            data={countries}
+            value={selectedItem}
+            onSelect={onSelect}
+            />
             
 
 
