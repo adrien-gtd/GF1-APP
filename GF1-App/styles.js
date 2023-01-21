@@ -22,5 +22,8 @@ export default StyleSheet.create({
       paddingHorizontal: 8,
       height: 100,
     },
-  }
+  },
+  bold: {fontWeight: 'bold'},
+  italic: {fontStyle: 'italic'},
+  underline: {textDecorationLine: 'underline'}
 })
