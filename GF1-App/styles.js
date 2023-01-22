@@ -27,10 +27,13 @@ export default StyleSheet.create({
   italic: {fontStyle: 'italic'},
   underline: {textDecorationLine: 'underline'},
   dropDown:{
-    backgroundColor: 'rgba(10,30,40,0.2)',
-    padding: 8,
-    borderRadius:6,
-    minHeight:40,
+    backgroundColor: 'rgba(100,500,100,1)',
+    padding: 3,
+    borderRadius:10,
+    minHeight:30,
     justifyContent:'center',
+    flexDirection:'row',
+    marginBottom:6,
+    
   }
 })

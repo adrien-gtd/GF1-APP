@@ -11,6 +11,10 @@ const Dropdown=({data=[]
 })=>{
     console.log("selected value",value);
     const [showOption,setShowOption]=useState(false);
+    const onSelectedItem= (val)=>{
+        setShowOption(false);
+        onSelect(val);
+    }
     return(
         <View>
             <TouchableOpacity 
@@ -20,9 +24,19 @@ const Dropdown=({data=[]
                 <Text>{!!value? value.name: 'Choisir une provenance'}</Text>
                 
             </TouchableOpacity>
-            {showOption && (<View>
+            {showOption && (<View style={{backgroundColor:'rgba(100,400,100,0.5)',
+        padding:4,
+        marginBottom:5}}>
                 {data.map((val,i)=>{
-                return(<Text key={String(i)}>{val.name}</Text>)
+                return(
+                <TouchableOpacity
+                 key={String(i)}
+                 onPress={()=>onSelectedItem(val)}
+                 >
+                    
+                   <Text>{val.name}</Text> 
+                   </TouchableOpacity>
+                )
             })}</View>)}
             
         </View>
