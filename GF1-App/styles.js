@@ -28,22 +28,54 @@ export default StyleSheet.create({
     itemContainer: {
       flexDirection: 'row',
       justifyContent: 'space arround', 
+      borderBottomWidth: 1,
+      borderBottomColor: 'grey',
     },
     name: {
+      marginVertical: 20,
+      fontSize: 15,
+      fontWeigth: 'bold', 
       width: '60%',
-      height: 20,
     },
     quantity: {
-      width: '10%',
-      height: 20,
+      marginVertical: 20,
+      fontSize: 15,
+      fontWeigth: 'bold', 
+      width: '20%',
     },
     price: {
-      width: '10%',
-      height: 20,
+      marginVertical: 20,
+      fontSize: 15,
+      fontWeigth: 'bold', 
+      width: '20%',
     },
     remove: {
       weidth: '20%',
       height: 20,
+    },
+    input: {
+      width: '90%',
+      height: 70,
+      borderColor: 'grey',
+      borderWidth: 1,
+      fontSize: 25
+    },
+    modalView: {
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'center'
+    },
+    text: {
+      marginVertical: 20,
+      fontSize: 25,
+      fontWeigth: 'bold'
+    },
+    saveEdits: {
+      backgroundColor: 'grey',
+      alignItems: 'center',
+      paddingHorizontal: 20,
+      paddingVertical: 20,
+      marginTop: 20
     }
 
   }
