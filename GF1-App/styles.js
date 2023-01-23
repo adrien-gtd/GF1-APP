@@ -22,5 +22,30 @@ export default StyleSheet.create({
       paddingHorizontal: 8,
       height: 100,
     },
+  },
+
+  shoppingList: {
+    itemContainer: {
+      flexDirection: 'row',
+      justifyContent: 'space arround', 
+    },
+    name: {
+      width: '60%',
+      height: 20,
+    },
+    quantity: {
+      width: '10%',
+      height: 20,
+    },
+    price: {
+      width: '10%',
+      height: 20,
+    },
+    remove: {
+      weidth: '20%',
+      height: 20,
+    }
+
   }
+  
 })
