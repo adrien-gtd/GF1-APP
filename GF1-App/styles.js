@@ -1,3 +1,4 @@
+import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
 import React from 'react';
 import { StyleSheet } from 'react-native';
 import { COLORS } from './colors';
@@ -25,7 +26,7 @@ export default StyleSheet.create({
   },
   Budget: {
     container: {
-      paddingBottom: 60,
+      paddingBottom: 10,
       paddingTop:5,
     },
     resize: {
@@ -35,6 +36,9 @@ export default StyleSheet.create({
     graph_title: {
       alignItems: 'center',
       fontWeight: 'bold',
-    }
+    },
+    button: {
+      alignItems: 'center',
+  },
   }
 })
