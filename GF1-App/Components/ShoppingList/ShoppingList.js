@@ -8,8 +8,19 @@ const DATA = [
   {id: 3, name: 'tomate', quantity: "0.0001kg", price: 13},
 ];
 
+const saveShoppingList = () => {        //a faire, save la liste current dans le shopping list.json a la fermeture de la page (click sur le back)
 
-function getTotal(array) {
+}
+
+const loadShoppingList = () => {        //a l'arrivé sur la page, load la shopping list de shoppinglist.json   
+  
+}
+
+
+//ajouter une facon d'ajouter manuelement des items a la liste de course
+
+
+const getTotal = (array) => {
   let sum = 0;
   for (let i = 0; i < array.length; i++) {
     sum = sum + array[i].price;
@@ -24,6 +35,14 @@ const ShoppingList = ({ navigation }) => {
   const [inputText, setinputText] = useState();
   const [editItem, seteditItem] = useState();
 
+  const deleteItem = () => {
+    const newData = data.filter(item => item.id != editItem);
+    console.log(newData);
+    setdata(newData);
+    setisRender(!isRender);
+    setisModalVisible(false);
+  }
+
   const handleEditItem = (editItem) => {
     const newData = data.map(item => {
       if (item.id == editItem) {
@@ -33,7 +52,6 @@ const ShoppingList = ({ navigation }) => {
 
       return item;
     })
-    console.log(newData);
     setdata(newData);
     setisRender(!isRender);
   }
@@ -91,6 +109,13 @@ const ShoppingList = ({ navigation }) => {
             style = {styles.shoppingList.saveEdits}
           >
             <Text>Save</Text>
+
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress = {() => deleteItem()} 
+            style = {styles.shoppingList.saveEdits}
+          >
+            <Text>Delete</Text>
 
           </TouchableOpacity>
         </View>
