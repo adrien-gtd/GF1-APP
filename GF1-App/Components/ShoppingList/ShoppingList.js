@@ -1,38 +1,29 @@
-import { View, Text, StyleSheet, Button} from 'react-native';
-import { StatusBar } from 'expo-status-bar';
-
+import { View, Text, StyleSheet, Button, FlatList} from 'react-native';
 import styles from '../../styles';
+import React, { useState } from 'react';
+
+const DATA = [
+  {id: 1, name: 'courgette', quantity: "10kg", price: '10€'},
+  {id: 2, name: 'poivrons', quantity: "2kg", price: '12€'},
+  {id: 3, name: 'tomate', quantity: "0.0001kg", price: '30€'},
+];
 
 const ShoppingList = ({ navigation }) => {
+  const [data, setdata] = useState(DATA);
+  
   return (
-    <View>
-      <Text>Liste des courses</Text>
-      <View style={styles.shoppingList.itemContainer}>
-        <Text style={styles.shoppingList.name}>
-          courgette
-        </Text>
-        <Text style={styles.shoppingList.quantity}>
-          10€
-        </Text>
-        <Text style={styles.shoppingList.price}>
-          20kg
-        </Text>
-        <Button title='remove' style={styles.shoppingList.remove}/>
-      </View>
+    <View style = {styles.shoppingList.itemContainer}>
+      <FlatList
+        data = {data}
+        renderItem= {({item}) => (
+          <View style = {styles.shoppingList.itemContainer}>
+            <Text style = {styles.shoppingList.name}>{item.name}</Text>
+            <Text style = {styles.shoppingList.quantity}>{item.quantity}</Text> 
+            <Text style = {styles.shoppingList.price}>{item.price}</Text>
+          </View>
+        )}
 
-
-      <View style={styles.shoppingList.itemContainer}>
-        <Text style={styles.shoppingList.name}>
-          readnazdol
-        </Text>
-        <Text style={styles.shoppingList.quantity}>
-          139€ 
-        </Text>
-        <Text style={styles.shoppingList.price}>
-          18kg
-        </Text>
-        <Button title='remove' style={styles.shoppingList.remove}/>
-      </View>
+      />
     </View>
   )
 }
