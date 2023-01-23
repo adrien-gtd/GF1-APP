@@ -22,5 +22,19 @@ export default StyleSheet.create({
       paddingHorizontal: 8,
       height: 100,
     },
+  },
+  Budget: {
+    container: {
+      paddingBottom: 60,
+      paddingTop:5,
+    },
+    resize: {
+      width: 300,
+      height: 200,
+    },
+    graph_title: {
+      alignItems: 'center',
+      fontWeight: 'bold',
+    }
   }
 })
