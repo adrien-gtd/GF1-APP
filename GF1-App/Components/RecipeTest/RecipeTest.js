@@ -22,17 +22,23 @@ const RecipeTest=({ navigation }) => {
 
     return (
         
-            <><ScrollView >
+            <>
+            
+            <ScrollView >
+            <View style={styles.home}>
             <Text> Recette Test</Text>
             <SvgComponent />
-            <Text style={styles.bold}>Titre de la Recette</Text>
-            
+            </View >
+            <View style={styles.home}>
+                <Text style={styles.bold}>Titre de la Recette</Text>
+            <Text>Etapes de la Recette</Text>
             <Text>1)</Text>
             <Text>2)</Text>
             <Text >Ah ! non ! c’est un peu court, jeune homme !</Text>
 
             <Text>On pouvait dire, oh bien des choses en somme!
             </Text>
+            </View>
             
             <Text>Provenance des ingrédients</Text>
             <Text style={styles.bold}>Ingrédient 1</Text>
@@ -51,6 +57,7 @@ const RecipeTest=({ navigation }) => {
 
 
             </ScrollView>
+            
             
         </>
             

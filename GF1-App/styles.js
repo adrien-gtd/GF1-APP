@@ -12,6 +12,7 @@ export default StyleSheet.create({
       backgroundColor: COLORS.backgroundColor,
       flex: 1,
       marginTop: 10,
+      padding: 8,
     },
   },
   topBar: {
