@@ -25,16 +25,22 @@ export default StyleSheet.create({
     },
   },
   Budget: {
+    graphContainer: {
+      alignItems: 'center',
+      paddingBottom: 50,
+    },
     container: {
+      alignItems: 'center',
       paddingBottom: 10,
-      paddingTop:5,
+      paddingTop:30,
     },
     resize: {
       width: 300,
       height: 200,
     },
     graph_title: {
-      alignItems: 'center',
+      fontSize: 20,
+      textAlign: 'center',
       fontWeight: 'bold',
     },
     button: {
