@@ -1,18 +1,24 @@
-import React, { useState } from 'react'
 import { View, TouchableHighlight, Image, Text, TextInput } from 'react-native'
 import styles from '../styles'
 
-const setText = () => {
-  return;
-}
+import { COLORS } from '../colors'
 
 const TopBar = ({ navigation }) => {
-  
-  const [text, setText] = useState('Initial state')
-
   return(
     <View style={styles.topBar.container}>
-      <Text>TopBar</Text>
+      <TouchableHighlight 
+        style={styles.topBar.accountButton} 
+        onPress={() => {navigation.navigate('account')}}
+        underlayColor={COLORS.backgroundColorDarker}>
+        
+      </TouchableHighlight>
+      
+      <TouchableHighlight 
+        style={styles.topBar.settingsButton}
+        onPress={() => navigation.navigate('budget')}
+        underlayColor={COLORS.backgroundColorDarker}>
+        
+      </TouchableHighlight>
     </View>
   );
 }

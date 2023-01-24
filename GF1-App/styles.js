@@ -13,6 +13,7 @@ export default StyleSheet.create({
       flex: 1,
       marginTop: 10,
       padding: 8,
+      spacing: 4,
     },
   },
   topBar: {
@@ -22,19 +23,54 @@ export default StyleSheet.create({
       justifyContent: 'center',
       paddingHorizontal: 8,
       height: 100,
+      
     },
   },
-  bold: {fontWeight: 'bold'},
-  italic: {fontStyle: 'italic'},
-  underline: {textDecorationLine: 'underline'},
-  dropDown:{
-    backgroundColor: 'rgba(100,500,100,1)',
-    padding: 3,
-    borderRadius:10,
-    minHeight:30,
-    justifyContent:'center',
-    flexDirection:'row',
-    marginBottom:6,
+  recipe: {
+    text:{
+      fontWeight: 'bold',
+      fontSize:10,
+      marginVertical:5,
+      flex:1,
+      
+      
+    },
+    title:{
+      fontWeight: 'bold',
+      fontSize:20,
+      marginVertical:10,
+      flex:1,
+      textDecorationLine: 'underline'
+
+    },
+    bold: {fontWeight: 'bold'},
+    italic: {fontStyle: 'italic'},
     
+    dropDown:{
+      backgroundColor: 'rgba(100,500,100,1)',
+      padding: 3,
+      flex:1,
+      borderRadius:0,
+      marginVertical:4,
+      marginTop:10,
+      minHeight:30,
+      justifyContent:'center',
+      flexDirection:'row',
+      marginBottom:0,
+      borderWidth:2,
+
+      
+    },
+    itemsDropdown:{
+      backgroundColor:COLORS.dropwdownItemsColor,
+      padding:3,
+      flex:1,
+      borderRadius:10,
+      borderWidth:1,
+      borderColor:'rgba(10,10,10,0.8)',
+      marginBottom:4,
+      marginTop:4,
+
+    }
   }
 })

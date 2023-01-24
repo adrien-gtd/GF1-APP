@@ -14,7 +14,7 @@ const Home = ({ navigation }) => {
         animated={true}
         backgroundColor={COLORS.backgroundColorDarker}
         hidden={false} />
-      <TopBar navigation={navigation} />
+      
       <View>
         <Text>spacer</Text>
         <Text>spacer</Text>

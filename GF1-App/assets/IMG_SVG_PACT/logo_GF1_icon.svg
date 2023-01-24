@@ -8,7 +8,7 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.2.2 (1:1.2.2+202212051552+b0a8486541)"
-   sodipodi:docname="essai_logoPACT.svg.2023_01_09_11_03_02.0.svg"
+   sodipodi:docname="logo_GF1_icon.svg"
    xml:space="preserve"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -24,15 +24,16 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.96459612"
-     inkscape:cx="265.39605"
-     inkscape:cy="373.73155"
+     inkscape:zoom="0.61580177"
+     inkscape:cx="384.05216"
+     inkscape:cy="219.22639"
      inkscape:window-width="1292"
      inkscape:window-height="704"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" /><defs
+     inkscape:current-layer="layer1"
+     inkscape:rotation="90" /><defs
      id="defs2"><inkscape:perspective
        sodipodi:type="inkscape:persp3d"
        inkscape:vp_x="0 : 148.5 : 1"
@@ -62,8 +63,8 @@
      inkscape:groupmode="layer"
      id="layer1"><path
        id="path1748"
-       style="fill:#00b000;fill-opacity:1;fill-rule:evenodd;stroke:#24a207;stroke-width:0.300923;stroke-dasharray:none;stroke-opacity:1"
-       d="m 46.919675,110.98149 c -1.083416,1.95066 -10.943131,4.71672 -12.457357,7.07099 -1.477927,0.9856 -3.390638,8.68249 6.215303,8.33753 7.767402,6.90813 10.884764,-2.26052 10.422759,-4.92131 -0.08764,-3.40071 -4.384992,-8.48913 -4.180705,-10.48721 z"
+       style="fill:#00b000;fill-opacity:1;fill-rule:evenodd;stroke:#24a207;stroke-width:2.77794;stroke-dasharray:none;stroke-opacity:1"
+       d="m 12.644321,146.72448 c 17.827266,9.72288 45.628176,102.49813 67.206675,116.19369 9.289394,13.74305 78.916344,29.69013 72.911604,-61.3701 59.61848,-75.69019 -23.57635,-102.647899 -47.30588,-97.50151 -30.480629,1.80562 -74.826073,44.04437 -92.812399,42.67792 z"
        sodipodi:nodetypes="ccccc" /><path
        sodipodi:type="spiral"
        style="fill:none;fill-rule:evenodd;stroke:#288113;stroke-width:0.155914;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
@@ -76,10 +77,10 @@
        sodipodi:argument="-17.396532"
        sodipodi:t0="0"
        d="m 50.132523,121.81196 c 0.02507,0.21187 -0.273237,0.13832 -0.352153,0.0417 -0.213856,-0.26194 0.0063,-0.62685 0.268819,-0.74598 0.218725,-0.0992 0.476141,-0.0768 0.685924,0.0343"
-       transform="matrix(0.68612661,-1.8018498,1.7548803,1.6286038,-206.56188,20.50769)" /><g
+       transform="matrix(-16.371954,-5.9952201,14.078278,-17.119976,-722.18712,2578.1434)" /><g
        style="fill:#dd5308;fill-opacity:1"
        id="g5066"
-       transform="matrix(0.02261895,0.00870876,-0.01007723,0.02230255,39.955882,114.97815)"><g
+       transform="matrix(0.07127227,-0.21714471,0.20312534,0.08924435,50.607399,211.66546)"><g
          id="g5057"
          style="fill:#dd5308;fill-opacity:1">
 	<path
