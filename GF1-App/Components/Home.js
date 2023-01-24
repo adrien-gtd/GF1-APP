@@ -10,11 +10,10 @@ import styles from '../styles';
 const Home = () => {
   const Tab = createBottomTabNavigator();
   return (
-    
     <Tab.Navigator initialRouteName="HomePage">
       <Tab.Screen 
-        name="Budget" 
-        component={Budget} 
+        name="Budget"
+        component={Budget}
         options={{tabBarIcon: ({ focused, color, size }) => {
           return <Image 
             style={styles.tabNavigator.budget} 
@@ -23,7 +22,7 @@ const Home = () => {
           />
         },}} />
       <Tab.Screen 
-        name="Home" 
+        name="HomePage" 
         component={HomePage} 
         options={{
           tabBarIcon: ({ focused, color, size }) => {
