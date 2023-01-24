@@ -5,7 +5,7 @@ import styles from '../../styles';
 
 const SettingsPage = ({ navigation }) => {
   return (
-    <View style={styles.container}>
+    <View >
       <Text>Settings page placeholder</Text>
       <StatusBar style="auto" />
     </View>

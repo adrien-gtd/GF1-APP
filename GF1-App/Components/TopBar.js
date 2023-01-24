@@ -1,5 +1,7 @@
-import { View, TouchableHighlight, Image, Text, TextInput } from 'react-native'
+import { View, TouchableHighlight, Image} from 'react-native'
 import styles from '../styles'
+
+import { Svg } from 'react-native-svg';
 
 import { COLORS } from '../colors'
 
@@ -19,9 +21,7 @@ const TopBar = ({ navigation }) => {
         style={styles.topBar.settingsButton}
         onPress={() => navigation.navigate('settings')}
         underlayColor={COLORS.backgroundColorDarker}>
-        <Image 
-          style={styles.topBar.settingsImage} 
-          source={require('../assets/settings.png')} />
+        <Image style={styles.topBar.homeImage} source={require('../assets/settings.png')} />
       </TouchableHighlight>
     </View>
   );

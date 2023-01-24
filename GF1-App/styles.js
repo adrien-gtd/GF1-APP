@@ -8,6 +8,20 @@ import { COLORS } from './colors';
 
 export default StyleSheet.create({
   
+  tabNavigator: {
+    budget:{
+      height:30,
+      width:30,
+    },
+    home:{
+      height:30,
+      width:30,
+    },
+    shopping:{
+      height:30,
+      width:30,
+    },
+  },
   home: {
     container: {
       backgroundColor: COLORS.backgroundColor,

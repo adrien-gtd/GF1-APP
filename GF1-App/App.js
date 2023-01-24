@@ -1,10 +1,8 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer, StackActions } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import {SafeAreaProvider} from 'react-native-safe-area-context'
 
-import Home from './Components/HomePage/Home';
-import Budget from './Components/Budget/Budget';
+import Home from './Components/Home';
 import ShoppingList from './Components/ShoppingList/ShoppingList';
 import SettingsPage from './Components/SettingsPage/SettingsPage';
 import Account from './Components/Account/Account';
@@ -12,15 +10,17 @@ import Account from './Components/Account/Account';
 const App = () => {
   const Stack = createNativeStackNavigator ();
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName='home'>
-        <Stack.Screen name = 'home' options={{headerShown:false}} component={ Home } />
-        <Stack.Screen name = 'budget' component={ Budget } />
-        <Stack.Screen name = 'shopping' component={ ShoppingList } />
-        <Stack.Screen name = 'account' component={ Account } />
-        <Stack.Screen name = 'settings' component={ SettingsPage } />
-      </Stack.Navigator>
-    </NavigationContainer>
+    
+    <SafeAreaProvider>
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName='home'>
+          <Stack.Screen name = 'home' options={{headerShown:false}} component={ Home } />
+          <Stack.Screen name = 'shopping' component={ ShoppingList } />
+          <Stack.Screen name = 'account' component={ Account } />
+          <Stack.Screen name = 'settings' component={ SettingsPage } />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </SafeAreaProvider>
   );
 }
 
