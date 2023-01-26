@@ -4,6 +4,7 @@ import { StatusBar } from 'expo-status-bar';
 import styles from '../../styles';
 import BottomBar from '../BottomBar';
 import TopBar from '../TopBar';
+import History from './History';
 import {
   LineChart,
   BarChart,
@@ -16,10 +17,7 @@ import {
 import FlashMessage, { showMessage } from "react-native-flash-message";
 import { COLORS } from '../../colors';
 
-//to Add bottomBar and better topbar. utiliser flex pour tailles graphes et alignement boutton
-//usestate pour money left. PLotly pour les graphs
-//npm install react-plotly.js plotly.js
-//ajouter topbar
+
 
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
