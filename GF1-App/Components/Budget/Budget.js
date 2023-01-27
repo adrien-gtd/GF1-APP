@@ -1,10 +1,8 @@
-import { View, Text, StyleSheet, Button, Image, Dimensions } from 'react-native';
-import React from 'react';
-import { StatusBar } from 'expo-status-bar';
+import { TextInput, Input, View, Text, StyleSheet, Button, Image, Dimensions } from 'react-native';
+import React  from 'react';
+import { useState } from 'react';
 import styles from '../../styles';
-import BottomBar from '../BottomBar';
-import TopBar from '../TopBar';
-import History from './History';
+
 import {
   LineChart,
   BarChart,
@@ -14,8 +12,7 @@ import {
   StackedBarChart
 } from "react-native-chart-kit";
 
-import FlashMessage, { showMessage } from "react-native-flash-message";
-import { COLORS } from '../../colors';
+
 
 
 
@@ -23,15 +20,24 @@ import { COLORS } from '../../colors';
 
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
-const maxBudget = 250;
-const maxCarbon = 120;
+
+
 
 
 
 const Budget = ({ navigation }) => {
+
+
+  const [maxBudget, setText1] = useState('');
+  const [maxCarbon, setText2] = useState('');
+
+
+  
+
   return (
     <View style={styles.Budget.container}>
-      <Text style={styles.Budget.graph_title}>Financial budget graph, maximum budget of</Text>
+      <Text style={styles.Budget.graph_title}> {"Financial budget graph, cap: " + maxBudget + "$"}</Text>
+      
       <View style={styles.Budget.graphContainer}>
         <LineChart
           data={{
@@ -70,8 +76,18 @@ const Budget = ({ navigation }) => {
            }}
     
               />
+        <TextInput
+        ref={input => { this.textInput = input }} 
+        style={{textAlign: 'center'}}
+        maxLength= {4}
+        placeholder="Edit budget cap"
+        onChangeText={newText => setText1(newText)}
+        defaultValue={maxBudget}
+        onSubmitEditing={() => this.textInput.clear()}
+      />
       </View>
-      <Text style={styles.Budget.graph_title}>Carbon footprint graph</Text>
+      
+      <Text style={styles.Budget.graph_title}>{"Carbon footprint graph, cap: " + maxCarbon + " CO2e/kg"}</Text>
       <View style={styles.Budget.graphContainer} >
         <LineChart
           data={{
@@ -115,7 +131,17 @@ const Budget = ({ navigation }) => {
     }}
     
               />
+        <TextInput 
+        ref={input => { this.textInput = input }} 
+        style={{textAlign: 'center'}}
+        maxLength= {8}
+        placeholder="Edit carbon cap"
+        onChangeText={newText => setText2(newText)}
+        defaultValue={maxCarbon}
+        onSubmitEditing={() => this.textInput.clear()}
+      />
       </View >
+      
       <View style={styles.Budget.button}>
         <Button
           title="History"
