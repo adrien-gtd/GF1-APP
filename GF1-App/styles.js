@@ -30,6 +30,7 @@ export default StyleSheet.create({
       paddingBottom: 50,
     },
     container: {
+      backgroundColor: COLORS.backgroundColor,
       alignItems: 'center',
       paddingBottom: 10,
       paddingTop:30,
@@ -39,12 +40,33 @@ export default StyleSheet.create({
       height: 200,
     },
     graph_title: {
-      fontSize: 20,
+      fontSize: 15,
       textAlign: 'center',
       fontWeight: 'bold',
     },
     button: {
       alignItems: 'center',
+    },
   },
-  }
+  History : {
+    container: {
+      flex: 1,
+    },
+    topthird: {
+      flex: 1,
+      flexDirection: 'row',
+      backgroundColor: COLORS.backgroundColor,
+    },
+    middlethird: {
+      flex: 2,
+      flexDirection: 'row',
+      backgroundColor: COLORS.backgroundColorDarker,
+    },
+    bottomthird: {
+      flex: 3,
+      flexDirection: 'row',
+      backgroundColor: COLORS.backgroundColorDarkest,
+    },
+  },
+
 })

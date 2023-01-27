@@ -4,5 +4,6 @@
 export const COLORS = {
   backgroundColor: '#f0f0f0',
   backgroundColorDarker: '#e0e0e0',
+  backgroundColorDarkest: '#d0d0d0',
 }
 
