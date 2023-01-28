@@ -145,6 +145,7 @@ export default StyleSheet.create({
         width:24,
       },
     },
+  },
   Budget: {
     graphContainer: {
       alignItems: 'center',
@@ -188,7 +189,5 @@ export default StyleSheet.create({
       flexDirection: 'row',
       backgroundColor: COLORS.backgroundColorDarkest,
     },
-  },
-
   },
 })
