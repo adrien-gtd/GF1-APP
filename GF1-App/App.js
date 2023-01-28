@@ -6,6 +6,7 @@ import Home from './Components/Home';
 import ShoppingList from './Components/ShoppingList/ShoppingList';
 import SettingsPage from './Components/SettingsPage/SettingsPage';
 import Account from './Components/Account/Account';
+import History from './Components/Budget/History';
 
 const App = () => {
   const Stack = createNativeStackNavigator ();
@@ -16,6 +17,7 @@ const App = () => {
         <Stack.Navigator initialRouteName='home'>
           <Stack.Screen name = 'home' options={{headerShown:false}} component={ Home } />
           <Stack.Screen name = 'shopping' component={ ShoppingList } />
+          <Stack.Screen name = 'history' component={ History } />
           <Stack.Screen name = 'account' component={ Account } />
           <Stack.Screen name = 'settings' component={ SettingsPage } />
         </Stack.Navigator>
