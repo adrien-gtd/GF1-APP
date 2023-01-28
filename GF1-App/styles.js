@@ -71,6 +71,15 @@ export default StyleSheet.create({
       marginBottom:4,
       marginTop:4,
 
+    },
+    addButton:{
+      backgroundColor:COLORS.dropwdownItemsColor,
+      borderRadius:10,
+      borderWidth:1,
+      borderColor:'rgba(10,10,10,0.8)',
+      marginBottom:4,
+      marginTop:4,
+
     }
   }
 })
