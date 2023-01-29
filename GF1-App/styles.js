@@ -37,10 +37,10 @@ export default StyleSheet.create({
     },
     title:{
       fontWeight: 'bold',
-      fontSize:20,
-      marginVertical:10,
+      fontSize:10,
+      marginVertical:2,
       flex:1,
-      textDecorationLine: 'underline'
+      
 
     },
     bold: {fontWeight: 'bold'},
