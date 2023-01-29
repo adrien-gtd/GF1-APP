@@ -196,20 +196,15 @@ export default StyleSheet.create({
       fontSize:10,
       marginVertical:5,
       flex:1,
-      
-      
     },
     title:{
       fontWeight: 'bold',
       fontSize:10,
       marginVertical:2,
-      flex:1,
-      
-
+      flex:1
     },
     bold: {fontWeight: 'bold'},
     italic: {fontStyle: 'italic'},
-    
     dropDown:{
       backgroundColor: 'rgba(100,500,100,1)',
       padding: 3,
@@ -222,8 +217,6 @@ export default StyleSheet.create({
       flexDirection:'row',
       marginBottom:0,
       borderWidth:2,
-
-      
     },
     itemsDropdown:{
       backgroundColor:COLORS.dropwdownItemsColor,
@@ -234,15 +227,61 @@ export default StyleSheet.create({
       borderColor:'rgba(10,10,10,0.8)',
       marginBottom:4,
       marginTop:4,
-
     },
-    addButton:{
-      backgroundColor:COLORS.dropwdownItemsColor,
-      borderRadius:10,
-      borderWidth:1,
-      borderColor:'rgba(10,10,10,0.8)',
-      marginBottom:4,
-      marginTop:4,
+  }
+  shoppingList: {
+    itemContainer: {
+      flexDirection: 'row',
+      justifyContent: 'space arround',
+      borderBottomWidth: 1,
+      borderBottomColor: 'grey',
+    },
+    name: {
+      marginVertical: 20,
+      fontSize: 15,
+      fontWeigth: 'bold', 
+      width: '60%',
+    },
+    quantity: {
+      marginVertical: 20,
+      fontSize: 15,
+      fontWeigth: 'bold', 
+      width: '20%',
+    },
+    price: {
+      marginVertical: 20,
+      fontSize: 15,
+      fontWeigth: 'bold', 
+      width: '20%',
+    },
+    remove: {
+      weidth: '20%',
+      height: 20,
+    },
+    input: {
+      width: '90%',
+      height: 70,
+      borderColor: 'grey',
+      borderWidth: 1,
+      fontSize: 25
+    },
+    modalView: {
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'center'
+    },
+    text: {
+      marginVertical: 20,
+      fontSize: 25,
+      fontWeigth: 'bold'
+    },
+    saveEdits: {
+      backgroundColor: 'grey',
+      alignItems: 'center',
+      paddingHorizontal: 20,
+      paddingVertical: 20,
+      marginTop: 20
     }
+
   }
 })
