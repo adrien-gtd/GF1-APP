@@ -228,11 +228,11 @@ export default StyleSheet.create({
       marginBottom:4,
       marginTop:4,
     },
-  }
+  },
   shoppingList: {
     itemContainer: {
       flexDirection: 'row',
-      justifyContent: 'space arround',
+      justifyContent: 'space-around',
       borderBottomWidth: 1,
       borderBottomColor: 'grey',
     },
