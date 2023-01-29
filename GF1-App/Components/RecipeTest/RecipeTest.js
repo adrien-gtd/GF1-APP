@@ -18,18 +18,15 @@ const RecipeTest=({icon}) => {
     setSelectedItem2(item);
   }
   return (
-
     <View>
       <SvgLogoIcon/>
       <AddToList/>
       <ScrollView >
         <View style={styles.home.container}>
-        
           <Text>Etapes de la Recette</Text>
           <Text style={styles.recipe.text}>1)Couper les Oignons</Text>
           <Text style={styles.recipe.text}>2)Faire revenir les pommes</Text>
           <Text style={styles.recipe.text} >Ah ! non ! c’est un peu court, jeune homme !</Text>
-
           <Text style={styles.recipe.text}>On pouvait dire, oh bien des choses en somme!</Text>
         </View>
         <Text style={styles.recipe.text}>Provenance des ingrédients</Text>
