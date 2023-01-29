@@ -190,4 +190,59 @@ export default StyleSheet.create({
       backgroundColor: COLORS.backgroundColorDarkest,
     },
   },
+  recipeFull: {
+    text:{
+      fontWeight: 'bold',
+      fontSize:10,
+      marginVertical:5,
+      flex:1,
+      
+      
+    },
+    title:{
+      fontWeight: 'bold',
+      fontSize:10,
+      marginVertical:2,
+      flex:1,
+      
+
+    },
+    bold: {fontWeight: 'bold'},
+    italic: {fontStyle: 'italic'},
+    
+    dropDown:{
+      backgroundColor: 'rgba(100,500,100,1)',
+      padding: 3,
+      flex:1,
+      borderRadius:0,
+      marginVertical:4,
+      marginTop:10,
+      minHeight:30,
+      justifyContent:'center',
+      flexDirection:'row',
+      marginBottom:0,
+      borderWidth:2,
+
+      
+    },
+    itemsDropdown:{
+      backgroundColor:COLORS.dropwdownItemsColor,
+      padding:3,
+      flex:1,
+      borderRadius:10,
+      borderWidth:1,
+      borderColor:'rgba(10,10,10,0.8)',
+      marginBottom:4,
+      marginTop:4,
+
+    },
+    addButton:{
+      backgroundColor:COLORS.dropwdownItemsColor,
+      borderRadius:10,
+      borderWidth:1,
+      borderColor:'rgba(10,10,10,0.8)',
+      marginBottom:4,
+      marginTop:4,
+    }
+  }
 })

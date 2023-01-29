@@ -3,6 +3,7 @@ import { StatusBar } from 'expo-status-bar';
 import { COLORS } from '../../colors';
 
 import styles from '../../styles';
+ 
 
 const ShoppingList = ({ navigation }) => {
   return (

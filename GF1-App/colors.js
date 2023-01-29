@@ -7,5 +7,7 @@ export const COLORS = {
   backgroundColorDarkest: '#d0d0d0',
   
   indicatorColors:['green', 'orange', 'red'],
+  dropwdownBackgroundColor: 'rgba(300,400,100,0.5)',
+  dropwdownItemsColor:'rgba(100,500,100,0.7)',
 }
 
