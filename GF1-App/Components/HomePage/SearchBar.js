@@ -9,7 +9,7 @@ const SearchBar = () => {
 
   return (
     <TextInput
-      style={styles.home.searchBar}
+      style={styles.homePage.searchBar}
       onChangeText={onChangeText}
       placeholder={'\uD83D\uDD0E Search for your favorite recipe !'}
       placeholderText={{fontWeight: 'bold'}}

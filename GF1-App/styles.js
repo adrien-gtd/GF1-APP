@@ -24,7 +24,7 @@ export default StyleSheet.create({
       width:30,
     },
   },
-  home: {
+  homePage: {
     container: {
       backgroundColor: COLORS.backgroundColor,
       flex: 1,
@@ -87,7 +87,6 @@ export default StyleSheet.create({
     recipeInfo:{
       container:{
         alignItems: 'center',
-        backgroundColor: COLORS.backgroundColor,
         flexDirection: 'row',
       },
       image:{
@@ -116,18 +115,18 @@ export default StyleSheet.create({
       },
       ingredientsList:{
         container:{
-          flex: 1,
+          flex:1,
+          width:"100%",
           flexDirection: 'row',
           marginHorizontal: 8,
         },
         subcontainer:{
-          flex: 1,
-          alignItems: 'center',
+          width:'50%',
+          alignText: 'center',
           flexDirection: 'row',
         },
         item:{
           fontSize: 11,
-          flex: 1,
         },
       },
     },

@@ -22,21 +22,21 @@ const RecipeTest=({icon}) => {
       <SvgLogoIcon/>
       <AddToList/>
       <ScrollView >
-        <View style={styles.home.container}>
+        <View >
           <Text>Etapes de la Recette</Text>
-          <Text style={styles.recipe.text}>1)Couper les Oignons</Text>
-          <Text style={styles.recipe.text}>2)Faire revenir les pommes</Text>
-          <Text style={styles.recipe.text} >Ah ! non ! c’est un peu court, jeune homme !</Text>
-          <Text style={styles.recipe.text}>On pouvait dire, oh bien des choses en somme!</Text>
+          <Text style={styles.recipeFull.text}>1)Couper les Oignons</Text>
+          <Text style={styles.recipeFull.text}>2)Faire revenir les pommes</Text>
+          <Text style={styles.recipeFull.text} >Ah ! non ! c’est un peu court, jeune homme !</Text>
+          <Text style={styles.recipeFull.text}>On pouvait dire, oh bien des choses en somme!</Text>
         </View>
-        <Text style={styles.recipe.text}>Provenance des ingrédients</Text>
-        <Text style={styles.recipe.text}>Ingrédient 1</Text>
+        <Text style={styles.recipeFull.text}>Provenance des ingrédients</Text>
+        <Text style={styles.recipeFull.text}>Ingrédient 1</Text>
         <Dropdown 
           data={countries}
           value={selectedItem}
           onSelect={onSelect}
           />
-        <Text style={styles.recipe.text}>Ingrédient 2</Text>
+        <Text style={styles.recipeFull.text}>Ingrédient 2</Text>
         <Dropdown 
           data={countries}
           value={selectedItem2}

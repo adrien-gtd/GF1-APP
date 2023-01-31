@@ -3,16 +3,17 @@ import { View, Image, Text, FlatList} from 'react-native'
 import { COLORS } from '../colors';
 import styles from '../styles'
 
-
-
 const ingredientsColumns = 2;
 const ingredientsLines = 2;
 
-const Recipe = ({image, title, ingredients, moneyPrice, ecoPrice}) => {
+const Recipe = ({id, title, image, ingredients, moneyPrice, ecoPrice}) => {
+
+  // Limits the number of ingredients that are to be displayed
 
   if (ingredients.length > ingredientsLines * ingredientsColumns) {
     ingredients = ingredients.slice(0, ingredientsLines * ingredientsColumns);
   }
+  // Sets the leaf and euro images to the right color and number
 
   let ecoImages = [];
   let moneyImages = [];
@@ -35,6 +36,7 @@ const Recipe = ({image, title, ingredients, moneyPrice, ecoPrice}) => {
       />
     )    
   }
+  
   return (
     <View style={styles.recipe.container}>
       <View style={styles.recipe.recipeInfo.container}>
@@ -52,7 +54,7 @@ const Recipe = ({image, title, ingredients, moneyPrice, ecoPrice}) => {
                   <Text 
                     style={styles.recipe.recipeInfo.ingredientsList.item}
                     numberOfLines={1}>
-                    - {item.key}
+                    - {item}
                   </Text>
                 </View>
               )}
