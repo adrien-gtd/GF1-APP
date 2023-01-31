@@ -148,7 +148,7 @@ export default StyleSheet.create({
   Budget: {
     graphContainer: {
       alignItems: 'center',
-      paddingBottom: 50,
+      paddingBottom: 35,
     },
     container: {
       backgroundColor: COLORS.backgroundColor,
