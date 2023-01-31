@@ -59,6 +59,8 @@ const Budget = ({ navigation }) => {
           style={{textAlign: 'center'}}
           maxLength= {4}
           placeholder="Edit budget cap"
+          inputMode='numeric'
+          keyboardType='numeric'
           onChangeText={newText => setText1(newText)}
           defaultValue={maxBudget}
           onSubmitEditing={() => this.textInput.clear()}
@@ -110,9 +112,11 @@ const Budget = ({ navigation }) => {
           style={{textAlign: 'center'}}
           maxLength= {8}
           placeholder="Edit carbon cap"
+          keyboardType='numeric'
+          inputMode='numeric'
           onChangeText={newText => setText2(newText)}
           defaultValue={maxCarbon}
-          onSubmitEditing={() => this.textInput.clear()}
+          onSubmitEditing={() =>  this.textInput.clear()}
         />
       </View>
       <View style={styles.Budget.button}>
