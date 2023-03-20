@@ -7,20 +7,8 @@ import styles from '../styles'
 const ingredientsColumns = 2;
 const ingredientsLines = 2;
 
-const getRecipeFromApi = async ({id}) => {
-  try {
-    const response = await fetch(
-      'http://137.194.210.185:80/recipe/test',
-    );
-    const jsonRecipe = await response.json();
-    console.log(jsonRecipe)
-    return jsonRecipe;
-  } catch (error) {
-    console.error(error);
-  }
-};
 
-const Recipe = ({id}) => {
+const RecipePreview = ({id}) => {
 
   // Retrives the recipe from the API
 
@@ -107,4 +95,4 @@ const Recipe = ({id}) => {
   );
 }
 
-export default Recipe;
+export default RecipePreview;

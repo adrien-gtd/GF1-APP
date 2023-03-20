@@ -5,7 +5,7 @@ import { COLORS } from '../../colors';
 import styles from '../../styles';
 
 import TopBar from '../TopBar';
-import Recipe from '../Recipe';
+import RecipePreview from '../RecipePreview';
 import SearchBar from './SearchBar'
 
 import tartiflette from "../../data/tartiflette"
@@ -31,7 +31,7 @@ const HomePage = ({ navigation: stackNavigation }) => {
       <FlatList
         data={recipes}
         renderItem={({ item }) => (
-          <Recipe id={recipes.indexOf(item)}/>
+          <RecipePreview id={recipes.indexOf(item)}/>
         )}
         numColumns={1}
       />
