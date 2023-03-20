@@ -14,7 +14,8 @@ import soupe from "../../data/soupe"
 import quicheChevreEpinards from "../../data/quicheChevreEpinards"
 import saladeQuinoaLegumesGrilles from "../../data/saladeQuinoaLegumesGrilles"
 
-const recipes = [tartiflette, saladeQuinoaLegumesGrilles, blanquette, quicheChevreEpinards, soupe];
+//const recipes = [tartiflette, saladeQuinoaLegumesGrilles, blanquette, quicheChevreEpinards, soupe];
+const recipes = [tartiflette, tartiflette, tartiflette, tartiflette, tartiflette, tartiflette, tartiflette, tartiflette, tartiflette];
 
 const HomePage = ({ navigation: stackNavigation }) => {
   return (
@@ -30,7 +31,7 @@ const HomePage = ({ navigation: stackNavigation }) => {
       <FlatList
         data={recipes}
         renderItem={({ item }) => (
-          <Recipe id={recipes.indexOf(item)} image={item.image} title={item.name} ingredients={item.ingredients} ecoPrice={item.ecoPrice} moneyPrice={item.moneyPrice} description={item.description}/>
+          <Recipe id={recipes.indexOf(item)}/>
         )}
         numColumns={1}
       />

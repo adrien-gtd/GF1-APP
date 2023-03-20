@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import { useLinkProps } from '@react-navigation/native';
 import { View, Image, Text, FlatList} from 'react-native'
 import { COLORS } from '../colors';
@@ -6,15 +7,47 @@ import styles from '../styles'
 const ingredientsColumns = 2;
 const ingredientsLines = 2;
 
-const Recipe = ({id, title, image, ingredients, moneyPrice, ecoPrice}) => {
+const getRecipeFromApi = async ({id}) => {
+  try {
+    const response = await fetch(
+      'http://localhost:3000/recipe/' + id,
+    );
+    const jsonRecipe = await response.json();
+    console.log(jsonRecipe)
+    return jsonRecipe;
+  } catch (error) {
+    console.error(error);
+  }
+};
 
+const Recipe = ({id}) => {
+
+  // Retrives the recipe from the API
+
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    const response = await fetch('http://localhost:3000/recipe/1');
+    const jsonData = await response.json();
+    setData(jsonData);
+  };
+
+  if (!data) {
+    return <Text>Loading...</Text>;
+  }
+  
   // Limits the number of ingredients that are to be displayed
 
-  if (ingredients.length > ingredientsLines * ingredientsColumns) {
-    ingredients = ingredients.slice(0, ingredientsLines * ingredientsColumns);
+  if (data.ingredients.length > ingredientsLines * ingredientsColumns) {
+    data.ingredients = data.ingredients.slice(0, ingredientsLines * ingredientsColumns);
   }
-  // Sets the leaf and euro images to the right color and number
 
+  // Sets the leaf and euro images to the right color and number
+  
   let ecoImages = [];
   let moneyImages = [];
 
@@ -23,32 +56,31 @@ const Recipe = ({id, title, image, ingredients, moneyPrice, ecoPrice}) => {
       <Image 
         key={i}
         style={styles.recipe.pricesIndicators.image} 
-        source={(i <= ecoPrice) ? require('../assets/leaf.png') : require('../assets/leaf_empty.png')} 
-        tintColor={COLORS.indicatorColors[ecoPrice]}
+        source={(i <= data.ecoPrice) ? require('../assets/leaf.png') : require('../assets/leaf_empty.png')} 
+        tintColor={COLORS.indicatorColors[data.ecoPrice]}
       />
     )
     moneyImages.push(
       <Image 
         key={i}
         style={styles.recipe.pricesIndicators.image} 
-        source={(i <= moneyPrice) ? require('../assets/euro.png') : require('../assets/euro_empty.png')} 
-        tintColor={COLORS.indicatorColors[moneyPrice]}
+        source={(i <= data.moneyPrice) ? require('../assets/euro.png') : require('../assets/euro_empty.png')} 
+        tintColor={COLORS.indicatorColors[data.moneyPrice]}
       />
     )    
   }
-  
   return (
     <View style={styles.recipe.container}>
       <View style={styles.recipe.recipeInfo.container}>
         <Image 
             style={styles.recipe.recipeInfo.image} 
-            source={image} />
+            source={{uri: data.image}} />
         <View style={styles.recipe.recipeInfo.subcontainer}>
-          <Text style={styles.recipe.recipeInfo.title} numberOfLines={1}>{title}</Text>      
+          <Text style={styles.recipe.recipeInfo.title} numberOfLines={1}>{data.name}</Text>      
           <Text>Ingredients : </Text>
           <View style={styles.recipe.recipeInfo.ingredientsList.container}>
             <FlatList
-              data={ingredients}
+              data={data.ingredients}
               renderItem={({ item }) => (
                 <View style={styles.recipe.recipeInfo.ingredientsList.subcontainer}>
                   <Text 
