@@ -24,8 +24,8 @@ CREATE TYPE quantity_type AS ENUM ('kg', 'l');
 CREATE TABLE IF NOT EXISTS ingredients (
     ingredient_id INT NOT NULL AUTO_INCREMENT,
     ingredient_name VARCHAR(50) NOT NULL,
-    co2_per_unit 
-    price_per_unit 
+    co2_per_unit INT,
+    price_per_unit INT,
     PRIMARY KEY (ingredient_id)
 );
 
