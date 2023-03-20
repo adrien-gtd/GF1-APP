@@ -1,0 +1,9 @@
+install: 
+pip install -r requirements.txt
+
+require python3 to be installed
+
+usage:
+scrapy crawl recipe -a url='url-to-scrap'
+
+copy the html code from the url specified in the spider call to the data.txt file
