@@ -5,7 +5,7 @@ import styles from '../../styles';
 
 
 
-const AddToList= ()=>{
+const AddToListButton = ()=>{
     const [isAdded, setIsAdded] = useState(false);
     return (
         <><><View >
@@ -20,4 +20,4 @@ const AddToList= ()=>{
     );
 }
 
-export default AddToList;
+export default AddToListButton;

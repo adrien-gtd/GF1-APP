@@ -10,7 +10,7 @@ const ingredientsLines = 2;
 const getRecipeFromApi = async ({id}) => {
   try {
     const response = await fetch(
-      'http://localhost:3000/recipe/' + id,
+      'http://137.194.210.185:80/recipe/test',
     );
     const jsonRecipe = await response.json();
     console.log(jsonRecipe)
@@ -31,7 +31,7 @@ const Recipe = ({id}) => {
   }, []);
 
   const fetchData = async () => {
-    const response = await fetch('http://localhost:3000/recipe/1');
+    const response = await fetch('http://137.194.210.185:80/recipe/1');
     const jsonData = await response.json();
     setData(jsonData);
   };

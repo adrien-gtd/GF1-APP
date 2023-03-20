@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import {View, Button, Text, ScrollView } from 'react-native';
 import styles from '../../styles';
 import Dropdown from '../Dropdown';
+import AddToListButton from './AddToListButton';
 import SvgLogoIcon from './SvgLogoIcon';
-import AddToList from './AddToListButton';
 
 
 let countries=[{id:1,name:'France'},{id:2,name:'Europe'},{id:3,name:'Afrique'},{id:4,name:'Amérique'},{id:5,name:'Asie'}];
 
-const RecipeTest=({icon}) => {
+const RecipeFull=({icon}) => {
   const [selectedItem,setSelectedItem]=useState(null);
   const onSelect=(item)=>{
     setSelectedItem(item);
@@ -46,4 +46,4 @@ const RecipeTest=({icon}) => {
     </View>
   )
 }
-export default RecipeTest;
+export default RecipeFull;

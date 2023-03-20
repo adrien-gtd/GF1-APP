@@ -2,12 +2,12 @@ import { View, Text, StyleSheet, Button} from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import styles from '../../styles';
 
-import RecipeTest from '../RecipeTest/RecipeTest';
+import RecipeFull from '../RecipeFull/RecipeFull';
 
 const SettingsPage = ({ navigation }) => {
   return (
     <View >
-      <RecipeTest/>
+      <RecipeFull/>
     </View>
   )
 }
