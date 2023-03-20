@@ -5,7 +5,7 @@ import json
 from recipeParser import recipeParser
 
 #Url contenant une liste de recettes
-url = 'https://www.marmiton.org'
+url = 'https://www.marmiton.org/recettes/recette_filet-de-poulet-au-curry_80990.aspx'
 html = requests.get(url).text
 soup = BeautifulSoup(html, 'html.parser')
 urls = soup.find_all('a', href=re.compile('https://www.marmiton.org/recettes/'))

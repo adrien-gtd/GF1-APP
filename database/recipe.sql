@@ -5,6 +5,8 @@ CREATE TABLE IF NOT EXISTS recipes  (
     PRIMARY KEY (recipe_id)
 );
 
+CREATE TYPE quantity_type AS ENUM ('kg', 'l');
+
 CREATE TABLE IF NOT EXISTS ingredients_list (
     receipe_id INT NOT NULL,
     ingredient_id INT NOT NULL,
@@ -19,7 +21,6 @@ CREATE TABLE IF NOT EXISTS ingredients_list (
     PRIMARY KEY (receipe_id, ingredient_id)
 );
 
-CREATE TYPE quantity_type AS ENUM ('kg', 'l');
 
 CREATE TABLE IF NOT EXISTS ingredients (
     ingredient_id INT NOT NULL AUTO_INCREMENT,
