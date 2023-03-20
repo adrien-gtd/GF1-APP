@@ -75,3 +75,5 @@ GF1-App/ios/Pods/
 GF1-App/.expo/
 GF1-App/web-build/
 GF1-App/dist/
+
+.vscode
