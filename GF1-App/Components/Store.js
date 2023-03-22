@@ -14,9 +14,7 @@ export const getData = async (key) => {
   try {
     const value = await AsyncStorage.getItem(key);
     if (value !== null) {
-        console.log("getData");
-        console.log(value); 
-        return(JSON.stringify(value));
+        return(value);
     }
   } catch (error) {
     console.log(error);
