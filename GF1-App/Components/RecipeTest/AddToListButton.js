@@ -10,7 +10,8 @@ const AddToList= ()=>{
     return (
         <><><View >
         <Text style={styles.recipe.bold}>Titre de la recette</Text>
-    </View><Button
+    </View>
+    <Button
             color='rgba(100,200,100,1)'
             onPress={() => {
                 isAdded? setIsAdded(false):setIsAdded(true);
