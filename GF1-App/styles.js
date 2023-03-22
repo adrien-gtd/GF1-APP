@@ -7,7 +7,6 @@ import { COLORS } from './colors';
 // Essayez de garder les chemins clairs pour pas qu'il y ait de confusion ou de conflits quand on merge.
 
 
-
 export default StyleSheet.create({
   
   tabNavigator: {
@@ -76,7 +75,7 @@ export default StyleSheet.create({
       width: 48,
     },
   },
-  recipe:{
+  recipePreview:{
     container:{
       alignItems: 'center',
       backgroundColor: COLORS.backgroundColor,
@@ -145,6 +144,112 @@ export default StyleSheet.create({
       },
     },
   },
+  recipeFull: {
+    container:{
+      height: '100%',
+      flex: 1,
+      alignItems: 'center',
+      marginVertical: 16,
+      paddingVertical: 4,
+      backgroundColor: COLORS.backgroundColor,
+    },
+    title:{
+      fontSize: 32,
+      fontWeight:'bold',
+      textAlign: 'left',
+    },
+    pricesIndicators:{
+      container:{
+        marginTop: 24,
+        flexDirection: 'row',
+      },
+      subcontainer:{
+        width: '45%',
+        justifyContent: 'center',
+        flexDirection: 'row',
+        borderColor: 'orange',
+        borderWidth: 1,
+        backgroundColor: COLORS.backgroundColorDarker,
+      },
+      image:{
+        height:40,
+        width:40,
+      },
+    },
+    description:{
+      textAlign: 'left',
+      fontSize: 20,
+    },
+    image:{
+      height: '30%',
+      width: '100%',
+      marginTop: 24,
+    },
+    subcontainer:{
+      alignItems: 'flex-start',
+      backgroundColor: COLORS.backgroundColorDarker,
+      borderColor: 'gray',
+      borderLeftWidth: 1,
+      flexDirection: 'column',
+      marginRight:8,
+      padding: 4,
+    },
+    ingredientsList:{
+      container:{
+        width:"90%",
+        flexDirection: 'column',
+        marginHorizontal: 8,
+        marginTop: 24,
+        height: '100%',
+        backgroundColor:COLORS.backgroundColorDarker,
+        flex:1
+      },
+      title: {
+        fontSize: 24,
+        fontWeight: 'bold',
+      },
+      ingredientsNamesContainer:{
+        width:'60%',
+        alignText: 'center',
+        flexDirection: 'row',
+        padding:2,
+        borderRightWidth: 1,
+      },
+      bulletPoint:{
+        fontSize: 24,
+        marginRight:4,
+      },
+      item:{
+        fontSize: 24,
+      },
+    },
+  },
+  servingIndicator: {
+    container: {
+      marginVertical: 8,
+      flexDirection: 'row',
+      justifyContent: 'center', 
+    },
+    button: {
+      width: 40,
+      height: 40,
+      justifyContent: 'center',
+      alignItems: 'center',
+      borderRadius: 8,
+      borderWidth: 4,
+      borderColor: COLORS.backgroundColorDarkest,
+      height: 40,
+      width: 40,
+      fontSize: 28,
+      textAlign: 'center',
+      backgroundColor: COLORS.backgroundColorDarker,
+    },
+    indicator: {
+      fontSize: 32,
+      marginHorizontal: 20,
+    },
+  },  
+
   Budget: {
     graphContainer: {
       alignItems: 'center',
@@ -187,45 +292,6 @@ export default StyleSheet.create({
       flex: 3,
       flexDirection: 'row',
       backgroundColor: COLORS.backgroundColorDarkest,
-    },
-  },
-  recipeFull: {
-    text:{
-      fontWeight: 'bold',
-      fontSize:10,
-      marginVertical:5,
-      flex:1,
-    },
-    title:{
-      fontWeight: 'bold',
-      fontSize:10,
-      marginVertical:2,
-      flex:1
-    },
-    bold: {fontWeight: 'bold'},
-    italic: {fontStyle: 'italic'},
-    dropDown:{
-      backgroundColor: 'rgba(100,500,100,1)',
-      padding: 3,
-      flex:1,
-      borderRadius:0,
-      marginVertical:4,
-      marginTop:10,
-      minHeight:30,
-      justifyContent:'center',
-      flexDirection:'row',
-      marginBottom:0,
-      borderWidth:2,
-    },
-    itemsDropdown:{
-      backgroundColor:COLORS.dropwdownItemsColor,
-      padding:3,
-      flex:1,
-      borderRadius:10,
-      borderWidth:1,
-      borderColor:'rgba(10,10,10,0.8)',
-      marginBottom:4,
-      marginTop:4,
     },
   },
   shoppingList: {
@@ -281,6 +347,5 @@ export default StyleSheet.create({
       paddingVertical: 20,
       marginTop: 20
     }
-
   }
-})
+});

@@ -1,49 +1,87 @@
-import React, { useState } from 'react';
-import {View, Button, Text, ScrollView } from 'react-native';
-import styles from '../../styles';
-import Dropdown from '../Dropdown';
-import AddToListButton from './AddToListButton';
-import SvgLogoIcon from './SvgLogoIcon';
+import React, { useState, useEffect } from 'react';
+import { View, Image, Text, FlatList, TouchableOpacity, ScrollView} from 'react-native'
+import { COLORS } from '../../colors';
+import styles from '../../styles'
+
+import ServingIndicator from './ServingIndicator';
 
 
-let countries=[{id:1,name:'France'},{id:2,name:'Europe'},{id:3,name:'Afrique'},{id:4,name:'Amérique'},{id:5,name:'Asie'}];
+const RecipeFull = ({ route }) => {
+  // Retrives the recipe from the API
 
-const RecipeFull=({icon}) => {
-  const [selectedItem,setSelectedItem]=useState(null);
-  const onSelect=(item)=>{
-    setSelectedItem(item);
+  const { id } = route.params;
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    const response = await fetch('http://137.194.210.185:80/recipe/' + id);
+    const jsonData = await response.json();
+    setData(jsonData);
+  };
+
+  if (!data) {
+    return <Text>Loading...</Text>;
   }
-  const [selectedItem2,setSelectedItem2]=useState(null);
-  const onSelect2=(item)=>{
-    setSelectedItem2(item);
+  
+  // Sets the leaf and euro images to the right color and number
+  
+  let ecoImages = [];
+  let moneyImages = [];
+
+  for (let i = 0; i < 3; i++) {
+    ecoImages.push(
+      <Image 
+        key={i}
+        style={styles.recipeFull.pricesIndicators.image} 
+        source={(i <= data.ecoPrice) ? require('../../assets/leaf.png') : require('../../assets/leaf_empty.png')} 
+        tintColor={COLORS.indicatorColors[data.ecoPrice]}
+      />
+    )
+    moneyImages.push(
+      <Image 
+        key={i}
+        style={styles.recipeFull.pricesIndicators.image} 
+        source={(i <= data.moneyPrice) ? require('../../assets/euro.png') : require('../../assets/euro_empty.png')} 
+        tintColor={COLORS.indicatorColors[data.moneyPrice]}
+      />
+    )    
   }
   return (
-    <View>
-      <SvgLogoIcon/>
-      <AddToList/>
-      <ScrollView >
-        <View >
-          <Text>Etapes de la Recette</Text>
-          <Text style={styles.recipeFull.text}>1)Couper les Oignons</Text>
-          <Text style={styles.recipeFull.text}>2)Faire revenir les pommes</Text>
-          <Text style={styles.recipeFull.text} >Ah ! non ! c’est un peu court, jeune homme !</Text>
-          <Text style={styles.recipeFull.text}>On pouvait dire, oh bien des choses en somme!</Text>
+    <View style={styles.recipeFull.container}>
+      <Text style={styles.recipeFull.title} numberOfLines={1}>{data.name}</Text>
+        <View style={styles.recipeFull.pricesIndicators.container}>
+          <View style={styles.recipeFull.pricesIndicators.subcontainer}>
+            {ecoImages}
+          </View>
+          <View style={styles.recipeFull.pricesIndicators.subcontainer}>
+            {moneyImages}
+          </View>
         </View>
-        <Text style={styles.recipeFull.text}>Provenance des ingrédients</Text>
-        <Text style={styles.recipeFull.text}>Ingrédient 1</Text>
-        <Dropdown 
-          data={countries}
-          value={selectedItem}
-          onSelect={onSelect}
+        <Image
+          style={styles.recipeFull.image} 
+          source={{uri: data.image}} />
+        <View style={styles.recipeFull.ingredientsList.container}>      
+          <Text style={styles.recipeFull.ingredientsList.title}>Ingredients : </Text>
+          <ServingIndicator/>
+          <FlatList
+            data={data.ingredients}
+            renderItem={({ item }) => (
+              <View style={styles.recipeFull.ingredientsList.ingredientsNamesContainer}>
+                <Text style={styles.recipeFull.ingredientsList.bulletPoint}>•</Text>
+                <Text 
+                  style={styles.recipeFull.ingredientsList.item}
+                  >
+                  {item}
+                </Text>
+              </View>
+            )}
           />
-        <Text style={styles.recipeFull.text}>Ingrédient 2</Text>
-        <Dropdown 
-          data={countries}
-          value={selectedItem2}
-          onSelect={onSelect2}
-        />
-      </ScrollView>        
+        </View>
     </View>
-  )
+  );
 }
+
 export default RecipeFull;

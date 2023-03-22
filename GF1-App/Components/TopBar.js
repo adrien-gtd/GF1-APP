@@ -1,8 +1,6 @@
 import { View, TouchableHighlight, Image} from 'react-native'
 import styles from '../styles'
 
-import { Svg } from 'react-native-svg';
-
 import { COLORS } from '../colors'
 
 const TopBar = ({ navigation }) => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StatusBar, FlatList, Text } from 'react-native';
+import { View, StatusBar, FlatList, Text, TouchableOpacity } from 'react-native';
 import { COLORS } from '../../colors';
 
 import styles from '../../styles';
@@ -17,7 +17,7 @@ import saladeQuinoaLegumesGrilles from "../../data/saladeQuinoaLegumesGrilles"
 //const recipes = [tartiflette, saladeQuinoaLegumesGrilles, blanquette, quicheChevreEpinards, soupe];
 const recipes = [tartiflette, tartiflette, tartiflette, tartiflette, tartiflette, tartiflette, tartiflette, tartiflette, tartiflette];
 
-const HomePage = ({ navigation: stackNavigation }) => {
+const HomePage = ({ navigation: stackNavigation, }) => {
   return (
     <View style={styles.homePage.container}>
       <StatusBar
@@ -31,7 +31,11 @@ const HomePage = ({ navigation: stackNavigation }) => {
       <FlatList
         data={recipes}
         renderItem={({ item }) => (
-          <RecipePreview id={recipes.indexOf(item)}/>
+          <TouchableOpacity
+            onPress={() => stackNavigation.navigate('recipeFull', {id : item})}
+          >
+            <RecipePreview id={recipes.indexOf(item)}/>
+          </TouchableOpacity>
         )}
         numColumns={1}
       />

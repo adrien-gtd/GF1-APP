@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLinkProps } from '@react-navigation/native';
-import { View, Image, Text, FlatList} from 'react-native'
+import { View, Image, Text, FlatList, TouchableOpacity} from 'react-native'
 import { COLORS } from '../colors';
 import styles from '../styles'
 
@@ -19,7 +19,7 @@ const RecipePreview = ({id}) => {
   }, []);
 
   const fetchData = async () => {
-    const response = await fetch('http://137.194.210.185:80/recipe/1');
+    const response = await fetch('http://137.194.210.185:80/recipe/' + id);
     const jsonData = await response.json();
     setData(jsonData);
   };
@@ -43,7 +43,7 @@ const RecipePreview = ({id}) => {
     ecoImages.push(
       <Image 
         key={i}
-        style={styles.recipe.pricesIndicators.image} 
+        style={styles.recipePreview.pricesIndicators.image} 
         source={(i <= data.ecoPrice) ? require('../assets/leaf.png') : require('../assets/leaf_empty.png')} 
         tintColor={COLORS.indicatorColors[data.ecoPrice]}
       />
@@ -51,28 +51,28 @@ const RecipePreview = ({id}) => {
     moneyImages.push(
       <Image 
         key={i}
-        style={styles.recipe.pricesIndicators.image} 
+        style={styles.recipePreview.pricesIndicators.image} 
         source={(i <= data.moneyPrice) ? require('../assets/euro.png') : require('../assets/euro_empty.png')} 
         tintColor={COLORS.indicatorColors[data.moneyPrice]}
       />
     )    
   }
   return (
-    <View style={styles.recipe.container}>
-      <View style={styles.recipe.recipeInfo.container}>
+    <View style={styles.recipePreview.container}>
+      <View style={styles.recipePreview.recipeInfo.container}>
         <Image 
-            style={styles.recipe.recipeInfo.image} 
+            style={styles.recipePreview.recipeInfo.image} 
             source={{uri: data.image}} />
-        <View style={styles.recipe.recipeInfo.subcontainer}>
-          <Text style={styles.recipe.recipeInfo.title} numberOfLines={1}>{data.name}</Text>      
+        <View style={styles.recipePreview.recipeInfo.subcontainer}>
+          <Text style={styles.recipePreview.recipeInfo.title} numberOfLines={1}>{data.name}</Text>      
           <Text>Ingredients : </Text>
-          <View style={styles.recipe.recipeInfo.ingredientsList.container}>
+          <View style={styles.recipePreview.recipeInfo.ingredientsList.container}>
             <FlatList
               data={data.ingredients}
               renderItem={({ item }) => (
-                <View style={styles.recipe.recipeInfo.ingredientsList.subcontainer}>
+                <View style={styles.recipePreview.recipeInfo.ingredientsList.subcontainer}>
                   <Text 
-                    style={styles.recipe.recipeInfo.ingredientsList.item}
+                    style={styles.recipePreview.recipeInfo.ingredientsList.item}
                     numberOfLines={1}>
                     - {item}
                   </Text>
@@ -81,11 +81,11 @@ const RecipePreview = ({id}) => {
               numColumns={2}
             />
           </View>
-          <View style={styles.recipe.pricesIndicators.container}>
-            <View style={styles.recipe.pricesIndicators.subcontainer}>
+          <View style={styles.recipePreview.pricesIndicators.container}>
+            <View style={styles.recipePreview.pricesIndicators.subcontainer}>
               {ecoImages}
             </View>
-            <View style={styles.recipe.pricesIndicators.subcontainer}>
+            <View style={styles.recipePreview.pricesIndicators.subcontainer}>
               {moneyImages}
             </View>
           </View>

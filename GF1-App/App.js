@@ -12,7 +12,6 @@ import History from './Components/Budget/History';
 const App = () => {
   const Stack = createNativeStackNavigator ();
   return (
-    
     <SafeAreaProvider>
       <NavigationContainer>
         <Stack.Navigator initialRouteName='home'>
@@ -21,7 +20,7 @@ const App = () => {
           <Stack.Screen name = 'history' component={ History } />
           <Stack.Screen name = 'account' component={ Account } />
           <Stack.Screen name = 'settings' component={ SettingsPage } />
-          <Stack.Screen name = 'RecipeTest' component={RecipeFull}/>
+          <Stack.Screen name = 'recipeFull' options={{headerShown:false}} component={RecipeFull}/>
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
