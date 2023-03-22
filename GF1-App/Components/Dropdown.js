@@ -9,7 +9,8 @@ import styles from '../styles';
 const Dropdown=({
   data=[],
   value={},
-  onSelect = ()=>{}
+  onSelect = ()=>{},
+  title=''
 }) =>{
   console.log("selected value",value);
   const [showOption,setShowOption]=useState(false);
@@ -23,7 +24,7 @@ const Dropdown=({
       style={styles.recipeFull.dropDown} 
       activeOpacity={0.8}
       onPress={()=> setShowOption(!showOption)}>
-      <Text> {!!value? value.name: 'Choisir une provenance'} </Text>
+      <Text> {value != null? value.name: title} </Text>
       </TouchableOpacity>
         {showOption && (<View style={{backgroundColor:COLORS.dropwdownBackgroundColor,
         padding:5,
@@ -35,7 +36,7 @@ const Dropdown=({
             <TouchableOpacity
               key={String(i)}
               onPress={ () => onSelectedItem(val) }>
-              <View style={styles.recipeFull.itemsDropdown}>
+              <View style={value != val ? styles.recipeFull.itemsDropdown : styles.recipeFull.itemsDropdownSelected}>
               <Text>{val.name}</Text> 
             </View>   
           </TouchableOpacity>

@@ -35,12 +35,14 @@ const RecipeTest=({icon}) => {
           data={countries}
           value={selectedItem}
           onSelect={onSelect}
+          title='Choisir une provenance'
           />
         <Text style={styles.recipeFull.text}>Ingrédient 2</Text>
         <Dropdown 
           data={countries}
           value={selectedItem2}
           onSelect={onSelect2}
+          title='Choisir une provenance'
         />
       </ScrollView>        
     </View>
