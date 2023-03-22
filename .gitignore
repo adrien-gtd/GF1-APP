@@ -77,3 +77,4 @@ GF1-App/web-build/
 GF1-App/dist/
 
 .vscode
+*.temp
