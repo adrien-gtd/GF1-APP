@@ -29,13 +29,17 @@ const Dropdown=({
   }, []);
   
   const onSelectedItem = async (newValue) => {
+
     setShowOption(false);
     setCurrentValue(newValue);
-    try {
-      await AsyncStorage.setItem(storeKey, newValue);
+
+    if(storeKey!=null) {
+      try {
+       await AsyncStorage.setItem(storeKey, newValue);
     } catch (error) {
-      console.log(error);
+        console.log(error);
     }
+  }
   }
   if (currentValue == null) { console.log(currentValue); return <Text>Loading</Text>; }
   else {

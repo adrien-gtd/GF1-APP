@@ -3,7 +3,10 @@ import { View, StatusBar, FlatList, Text } from 'react-native';
 import { COLORS } from '../../colors';
 
 import styles from '../../styles';
-
+import { useState } from 'react';
+import { useEffect } from 'react';
+import { useFocusEffect } from '@react-navigation/native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import TopBar from '../TopBar';
 import Recipe from '../Recipe';
 import SearchBar from './SearchBar'
@@ -17,8 +20,24 @@ import saladeQuinoaLegumesGrilles from "../../data/saladeQuinoaLegumesGrilles"
 const recipes = [tartiflette, saladeQuinoaLegumesGrilles, blanquette, quicheChevreEpinards, soupe];
 
 const HomePage = ({ navigation: stackNavigation }) => {
+
+  const [globalTheme,setGlobalTheme]=useState(null);
+  
+  useFocusEffect(()=>{
+    AsyncStorage.getItem('theme')
+    .then((value)=>{
+      if(value=='dark'){
+        setGlobalTheme(COLORS.darkThemeColor);
+        console.log(value);
+      }
+      else{
+        setGlobalTheme(COLORS.brightThemeColor);
+      }
+    })
+    
+  })
   return (
-    <View style={styles.homePage.container}>
+    <View style={{backgroundColor:globalTheme ,flex:1}}>
       <StatusBar
         animated={true}
         backgroundColor={COLORS.backgroundColor}

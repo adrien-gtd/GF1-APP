@@ -26,7 +26,7 @@ export default StyleSheet.create({
   },
   homePage: {
     container: {
-      backgroundColor: COLORS.backgroundColor,
+      backgroundColor: COLORS.darkThemeColor,
       flex: 1,
     },
     suggestionText: {
@@ -205,9 +205,9 @@ export default StyleSheet.create({
     bold: {fontWeight: 'bold'},
     italic: {fontStyle: 'italic'},
     dropDown:{
-      backgroundColor: 'rgba(100,500,100,1)',
+      backgroundColor: '#fb5303',
       padding: 3,
-      flex:1,
+      flex:0.5,
       borderRadius:0,
       marginVertical:4,
       marginTop:10,
@@ -220,7 +220,8 @@ export default StyleSheet.create({
     itemsDropdown:{
       backgroundColor:COLORS.dropwdownItemsColor,
       padding:3,
-      flex:1,
+      flexDirection:'row',
+      flex:0.5,
       borderRadius:10,
       borderWidth:1,
       borderColor:'rgba(10,10,10,0.8)',
@@ -228,7 +229,7 @@ export default StyleSheet.create({
       marginTop:4,
     },
     itemsDropdownSelected:{
-      backgroundColor:"blue",
+      backgroundColor:"#5d8af2",
       padding:3,
       flex:1,
       borderRadius:10,

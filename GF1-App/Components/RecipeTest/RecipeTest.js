@@ -9,6 +9,20 @@ import AddToList from './AddToListButton';
 let countries=[{id:1,name:'France'},{id:2,name:'Europe'},{id:3,name:'Afrique'},{id:4,name:'Amérique'},{id:5,name:'Asie'}];
 
 const RecipeTest=({icon}) => {
+  const [globalTheme,setGlobalTheme]=useState(null);
+  
+  useEffect(()=>{
+    AsyncStorage.getItem('theme')
+    .then((value)=>{
+      if(value=='dark'){
+        setGlobalTheme(COLORS.darkThemeColor);
+        console.log(value);
+      }
+      else{
+        setGlobalTheme(COLORS.brightThemeColor);
+      }
+    })
+  })
   const [selectedItem,setSelectedItem]=useState(null);
   const onSelect=(item)=>{
     setSelectedItem(item);
@@ -18,7 +32,7 @@ const RecipeTest=({icon}) => {
     setSelectedItem2(item);
   }
   return (
-    <View>
+    <View style={{backgroundColor:globalTheme, padding:2}}>
       <SvgLogoIcon/>
       <AddToList/>
       <ScrollView >
