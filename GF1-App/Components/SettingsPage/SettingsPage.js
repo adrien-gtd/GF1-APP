@@ -1,11 +1,9 @@
-import { View, Text, StyleSheet, ScrollView} from 'react-native';
+import { View, Text, ScrollView} from 'react-native';
 import React, { useState, useEffect } from 'react';
-import styles from '../../styles';
+import styles,{setBackgroundColor} from '../../styles';
 import Dropdown from '../Dropdown';
 import { COLORS } from '../../colors';
-import { checkTheme } from '../Store';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { useFocusEffect } from '@react-navigation/native';
 
 
 let dietChoices=[{id:5,name:'Je mange de tout'},{id:1,name:'Végétarien'},{id:2,name:'Vegan'},{id:3,name:'Pas de porc'},{id:4,name:'Pescétarien'}]
@@ -14,13 +12,13 @@ let themeChoices=[{id:1,name:'bright'},{id:2,name:'dark'}]
 export const SettingsPage = ({}) => {
   
   const [globalTheme,setGlobalTheme]=useState(null);
-  
+  //se déclenche quand la page est (re)loadée
   useEffect(()=>{
     AsyncStorage.getItem('theme')
     .then((value)=>{
       if(value=='dark'){
         setGlobalTheme(COLORS.darkThemeColor);
-        console.log(value);
+        
       }
       else{
         setGlobalTheme(COLORS.brightThemeColor);

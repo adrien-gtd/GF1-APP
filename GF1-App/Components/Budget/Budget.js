@@ -33,7 +33,7 @@ const Budget = ({ navigation }) => {
   })
 
   return (
-    <View style={{backgroundColor:globalTheme ,flex:1}}>
+    <View style={styles.Budget.container}>
       <Text style={styles.Budget.graph_title}> {"Financial budget graph, cap: " + maxBudget + "$"}</Text>
       <View style={styles.Budget.graphContainer}>
         <LineChart

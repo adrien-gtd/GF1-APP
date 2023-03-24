@@ -6,7 +6,9 @@ import { COLORS } from './colors';
 // Mettez ici vos style sheets. 
 // Essayez de garder les chemins clairs pour pas qu'il y ait de confusion ou de conflits quand on merge.
 
-
+export const setBackgroundColor=({style,newBackgroundColor})=>{
+  style.backgroundColor=newBackgroundColor;
+}
 
 export default StyleSheet.create({
   
@@ -45,9 +47,19 @@ export default StyleSheet.create({
     },
   },
   topBar: {
-    container: {
+    brightContainer: {
       alignItems: 'center',
-      backgroundColor: COLORS.backgroundColor,
+      backgroundColor: COLORS.brightThemeColorItem,
+      borderBottomWidth: 1,
+      borderColor: 'gray',
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      paddingHorizontal: 8,
+      paddingVertical:6,
+    },
+    darkContainer:{
+      alignItems: 'center',
+      backgroundColor: COLORS.darkThemeColorItem,
       borderBottomWidth: 1,
       borderColor: 'gray',
       flexDirection: 'row',
@@ -77,12 +89,20 @@ export default StyleSheet.create({
     },
   },
   recipe:{
-    container:{
+    brightContainer:{
       alignItems: 'center',
-      backgroundColor: COLORS.backgroundColor,
+      backgroundColor: COLORS.brightThemeColorItem,
       flexDirection: 'column',
       marginVertical:8,
       paddingVertical:4,
+    },
+    darkContainer:{
+      alignItems: 'center',
+      backgroundColor: COLORS.darkThemeColorItem,
+      flexDirection: 'column',
+      marginVertical:8,
+      paddingVertical:4,
+
     },
     recipeInfo:{
       container:{
@@ -96,7 +116,7 @@ export default StyleSheet.create({
       },
       subcontainer:{
         alignItems: 'flex-start',
-        backgroundColor: COLORS.backgroundColorDarker,
+        backgroundColor: COLORS.brightThemeColorItem,
         borderColor: 'gray',
         borderLeftWidth: 1,
         flex: 1,

@@ -3,6 +3,8 @@
 
 import { DarkTheme } from "@react-navigation/native";
 
+
+
 export const COLORS = {
   backgroundColor: '#f0f0f0',
   backgroundColorDarker: '#e0e0e0',
@@ -12,6 +14,8 @@ export const COLORS = {
   dropwdownBackgroundColor: '#f49552',
   dropwdownItemsColor:'#fb5303',
   brightThemeColor:'#82f656',
-  darkThemeColor:'#2f8c0c'
+  brightThemeColorItem:'#5ef69c',
+  darkThemeColor:'#2f8c0c',
+  darkThemeColorItem:'#44ac3d'
 }
 

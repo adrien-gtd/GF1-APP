@@ -22,13 +22,13 @@ const recipes = [tartiflette, saladeQuinoaLegumesGrilles, blanquette, quicheChev
 const HomePage = ({ navigation: stackNavigation }) => {
 
   const [globalTheme,setGlobalTheme]=useState(null);
-  
+  //se déclenche quand on arrive/bascule sur cette page
   useFocusEffect(()=>{
     AsyncStorage.getItem('theme')
     .then((value)=>{
       if(value=='dark'){
         setGlobalTheme(COLORS.darkThemeColor);
-        console.log(value);
+        
       }
       else{
         setGlobalTheme(COLORS.brightThemeColor);

@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import {FlatList, View, StatusBar, Button, Text, ScrollView, TouchableOpacity } from 'react-native';
 import { COLORS } from '../colors';
-import styles from '../styles';
+import styles  from '../styles';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Dropdown=({

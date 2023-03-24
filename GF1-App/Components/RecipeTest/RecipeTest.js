@@ -10,7 +10,7 @@ let countries=[{id:1,name:'France'},{id:2,name:'Europe'},{id:3,name:'Afrique'},{
 
 const RecipeTest=({icon}) => {
   const [globalTheme,setGlobalTheme]=useState(null);
-  
+  //se déclenche quand la page est (re)loadée
   useEffect(()=>{
     AsyncStorage.getItem('theme')
     .then((value)=>{

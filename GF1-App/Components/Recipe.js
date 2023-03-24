@@ -2,13 +2,32 @@ import { useLinkProps } from '@react-navigation/native';
 import { View, Image, Text, FlatList} from 'react-native'
 import { COLORS } from '../colors';
 import styles from '../styles'
-
+import { useState } from 'react';
+import { useEffect } from 'react';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 const ingredientsColumns = 2;
 const ingredientsLines = 2;
 
 const Recipe = ({id, title, image, ingredients, moneyPrice, ecoPrice}) => {
 
   // Limits the number of ingredients that are to be displayed
+  const [globalThemeContainer,setGlobalThemeContainer]=useState(null);
+  const [globalThemeSubContainer,setGlobalThemeSubContainer]=useState(null);
+  useEffect(()=>{
+    AsyncStorage.getItem('theme')
+    .then((value)=>{
+      if(value=='dark'){
+        setGlobalThemeContainer(styles.recipe.darkContainer);
+        setGlobalThemeSubContainer();
+        
+      }
+      else{
+        setGlobalThemeContainer(styles.recipe.brightContainer);
+        setGlobalThemeSubContainer();
+
+      }
+    })
+  })
 
   if (ingredients.length > ingredientsLines * ingredientsColumns) {
     ingredients = ingredients.slice(0, ingredientsLines * ingredientsColumns);
@@ -38,7 +57,7 @@ const Recipe = ({id, title, image, ingredients, moneyPrice, ecoPrice}) => {
   }
   
   return (
-    <View style={styles.recipe.container}>
+    <View style={globalThemeContainer}>
       <View style={styles.recipe.recipeInfo.container}>
         <Image 
             style={styles.recipe.recipeInfo.image} 
