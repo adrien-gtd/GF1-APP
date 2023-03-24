@@ -53,6 +53,8 @@ const Dropdown=({
       </TouchableOpacity>
         {showOption && (<View style={{backgroundColor:COLORS.dropwdownBackgroundColor,
         padding:5,
+        width:250,
+        borderRadius:10,
         marginBottom:10,
         paddingHorizontal:5,
     }}>

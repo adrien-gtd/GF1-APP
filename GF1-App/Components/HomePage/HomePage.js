@@ -20,7 +20,7 @@ import saladeQuinoaLegumesGrilles from "../../data/saladeQuinoaLegumesGrilles"
 const recipes = [tartiflette, saladeQuinoaLegumesGrilles, blanquette, quicheChevreEpinards, soupe];
 
 const HomePage = ({ navigation: stackNavigation }) => {
-
+  const [globalThemeStatusBar,setGlobalThemeStatusBar]=useState(null);
   const [globalTheme,setGlobalTheme]=useState(null);
   //se déclenche quand on arrive/bascule sur cette page
   useFocusEffect(()=>{
@@ -28,10 +28,13 @@ const HomePage = ({ navigation: stackNavigation }) => {
     .then((value)=>{
       if(value=='dark'){
         setGlobalTheme(COLORS.darkThemeColor);
+        setGlobalThemeStatusBar(COLORS.darkThemeColorItem);
         
       }
       else{
         setGlobalTheme(COLORS.brightThemeColor);
+        setGlobalThemeStatusBar(COLORS.brightThemeColorItem);
+
       }
     })
     
@@ -40,7 +43,7 @@ const HomePage = ({ navigation: stackNavigation }) => {
     <View style={{backgroundColor:globalTheme ,flex:1}}>
       <StatusBar
         animated={true}
-        backgroundColor={COLORS.backgroundColor}
+        backgroundColor={globalThemeStatusBar}
         barStyle={'dark-content'}
         hidden={false} />
       <TopBar navigation={stackNavigation} />

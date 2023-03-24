@@ -6,7 +6,6 @@ import { COLORS } from '../../colors';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
-let dietChoices=[{id:5,name:'Je mange de tout'},{id:1,name:'Végétarien'},{id:2,name:'Vegan'},{id:3,name:'Pas de porc'},{id:4,name:'Pescétarien'}]
 let themeChoices=[{id:1,name:'bright'},{id:2,name:'dark'}]
 
 export const SettingsPage = ({}) => {
@@ -32,17 +31,13 @@ export const SettingsPage = ({}) => {
   <View style={{backgroundColor:globalTheme}}>
     <ScrollView>
     
-    <Dropdown
-      choices={dietChoices}
-      storeKey={'diet'}
-      title='Régime alimentaire'
-    />
+    
     <Text>Useless tex just here </Text>
 
-<Dropdown
-    choices={themeChoices}
-    storeKey={'theme'}
-    title="Thème de l'appli"/>
+  <Dropdown
+      choices={themeChoices}
+      storeKey={'theme'}
+      title="Thème de l'appli"/>
 
 
     </ScrollView>

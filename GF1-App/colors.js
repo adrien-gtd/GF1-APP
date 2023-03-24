@@ -11,11 +11,11 @@ export const COLORS = {
   backgroundColorDarkest: '#d0d0d0',
   
   indicatorColors:['green', 'orange', 'red'],
-  dropwdownBackgroundColor: '#f49552',
+  dropwdownBackgroundColor: '#f5a87b',
   dropwdownItemsColor:'#fb5303',
-  brightThemeColor:'#82f656',
-  brightThemeColorItem:'#5ef69c',
+  brightThemeColor:'#ce5d1c',
+  brightThemeColorItem:'#f5a87b',
   darkThemeColor:'#2f8c0c',
-  darkThemeColorItem:'#44ac3d'
+  darkThemeColorItem:'#a6fb94'
 }
 

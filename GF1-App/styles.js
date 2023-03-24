@@ -26,6 +26,12 @@ export default StyleSheet.create({
       width:30,
     },
   },
+  Account:{
+    profileIcon:{
+      align:'center',
+    },
+    
+  },
   homePage: {
     container: {
       backgroundColor: COLORS.darkThemeColor,
@@ -226,9 +232,11 @@ export default StyleSheet.create({
     italic: {fontStyle: 'italic'},
     dropDown:{
       backgroundColor: '#fb5303',
-      padding: 3,
+      width:250,
+      padding: 5,
+      paddingHorizontal:4,
       flex:0.5,
-      borderRadius:0,
+      borderRadius:10,
       marginVertical:4,
       marginTop:10,
       minHeight:30,
@@ -239,7 +247,9 @@ export default StyleSheet.create({
     },
     itemsDropdown:{
       backgroundColor:COLORS.dropwdownItemsColor,
+      width:200,
       padding:3,
+      paddingHorizontal:4,
       flexDirection:'row',
       flex:0.5,
       borderRadius:10,
@@ -250,10 +260,11 @@ export default StyleSheet.create({
     },
     itemsDropdownSelected:{
       backgroundColor:"#5d8af2",
+      width:230,
       padding:3,
       flex:1,
       borderRadius:10,
-      borderWidth:1,
+      borderWidth:2,
       borderColor:'rgba(10,10,10,0.8)',
       marginBottom:4,
       marginTop:4,

@@ -31,20 +31,4 @@ export const removeData = async (key) => {
   }
 };
 
-export const checkTheme= async ()=>{
-  try {
-    const value = await AsyncStorage.getItem('theme');
-    if (value !== null) {
-      if(value=='dark'){
-        console.log("dark reconnu");
-        return(COLORS.darkThemeColor);
-      }
-      else{
-        return(COLORS.brightThemeColor);
-      }
-    }
-  }
-   catch (error) {
-    console.log(error);
-  }
-}
+

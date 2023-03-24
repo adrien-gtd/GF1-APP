@@ -5,6 +5,8 @@ import { COLORS } from '../colors'
 import {storeData,removeData,getData} from './Store';
 import { useEffect, useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import SvgProfileComponent from './SVGProfileComponent';
+import SvgLogoIcon from './RecipeTest/SvgLogoIcon'
 
 const TopBar = ({ navigation }) => {
   const [globalTheme,setGlobalTheme]=useState(null);
@@ -31,11 +33,10 @@ const TopBar = ({ navigation }) => {
         style={styles.topBar.accountButton} 
         onPress={() => {navigation.navigate('account')}}
         underlayColor={COLORS.backgroundColorDarker}>
-        <Image 
-          style={styles.topBar.accountImage} 
-          source={require('../assets/account.png')} />
+        <SvgProfileComponent/>  
+        
       </TouchableHighlight>
-      <Image style={styles.topBar.homeImage} source={require('../assets/logoHalf.png')} />
+      <SvgLogoIcon/>
       <TouchableHighlight 
         style={styles.topBar.settingsButton}
         onPress={SettingsPressed}
