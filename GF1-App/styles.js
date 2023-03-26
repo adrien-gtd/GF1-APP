@@ -270,6 +270,39 @@ export default StyleSheet.create({
       marginTop:4,
     },
   },
+  AddToAsynStorageButton:{
+    no:{
+      backgroundColor: '#fb5303',
+      width:250,
+      padding: 5,
+      paddingHorizontal:4,
+      flex:0.5,
+      borderRadius:10,
+      marginVertical:4,
+      marginTop:10,
+      minHeight:30,
+      justifyContent:'center',
+      flexDirection:'row',
+      marginBottom:0,
+      borderWidth:2,
+    },
+    yes:{
+      backgroundColor: '#28f40f',
+      width:250,
+      padding: 5,
+      paddingHorizontal:4,
+      flex:0.5,
+      borderRadius:10,
+      marginVertical:4,
+      marginTop:10,
+      minHeight:30,
+      justifyContent:'center',
+      flexDirection:'row',
+      marginBottom:0,
+      borderWidth:2,
+    }
+    
+  },
   shoppingList: {
     itemContainer: {
       flexDirection: 'row',

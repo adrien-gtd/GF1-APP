@@ -5,8 +5,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import Dropdown from '../Dropdown';
 import { useState,useEffect } from 'react';
 import { COLORS } from '../../colors';
-import SvgProfileComponent from '../SVGProfileComponent';
 import SvgProfileComponentBig from '../SVGProfileComponentBig';
+import AddToAsyncStorageButton from '../AddToAssyncstorageButton';
 
 let nombresDePersonnes=[{id:1,name:'1'},{id:2,name:'2'},{id:3,name:'3'},{id:4,name:'4'},{id:5,name:'5'}];
 let dietChoices=[{id:5,name:'Je mange de tout'},{id:1,name:'Végétarien'},{id:2,name:'Vegan'},{id:3,name:'Pas de porc'},{id:4,name:'Pescétarien'}]
@@ -49,6 +49,18 @@ const Account = ({ navigation }) => {
       storeKey={'diet'}
       title='Régime alimentaire'
     />
+    <Text>Equipements possédés :</Text>
+    <AddToAsyncStorageButton
+    storeKey={'four'}
+    />
+    <AddToAsyncStorageButton
+    storeKey={'plaques chauffantes'}
+    />
+    <AddToAsyncStorageButton
+    storeKey={'four à micro-ondes'}
+    />
+
+
       </ScrollView>
 
       <StatusBar style="auto" />
