@@ -1,12 +1,12 @@
 import styles from '../../styles';
 import {TouchableWithoutFeedback, View, Text, TouchableOpacity, TextInput, Modal} from 'react-native';
 import SearchBar from './SearchBar';
+import React, {useState} from 'react';
 
 const ModalNewItem = ({
     isModalVisibleNewItem,
     setisModalVisibleNewItem,
     dismissKeyboard,
-    setNewQuantity,
     setdata,
     setisRender,
     saveData,

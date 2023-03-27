@@ -1,6 +1,6 @@
 import styles from '../../styles';
 import {View, Text, TouchableOpacity, FlatList} from 'react-native';
-import COLORS from '../../colors'
+import { COLORS } from '../../colors';
 
 const ShoppingListContent = ({
     data,
@@ -39,7 +39,7 @@ const ShoppingListContent = ({
     }
 
     return (
-        <View>
+        <View style = {styles.shoppingList.page}>
             <Text style = {styles.shoppingList.title}>Coût total estimé : {getTotal(data)} € </Text>
             <View
                 style = {styles.shoppingList.itemContainer}

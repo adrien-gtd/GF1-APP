@@ -69,6 +69,8 @@ const ShoppingList = ({ navigation }) => {
         saveData = {saveData}
         isRender = {isRender}
         data = {data}
+        inputText = {inputText}
+        editItem = {editItem}
         />
       
         <ModalNewItem 

@@ -11,7 +11,8 @@ const ModalEditItem = ({
     saveData,
     isRender,
     editItem,
-    data
+    data,
+    inputText
 }) => {  
 
     const handleEditItem = (editItem) => {
