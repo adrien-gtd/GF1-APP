@@ -3,16 +3,15 @@ import { View, Text, TouchableOpacity } from 'react-native';
 
 import styles from '../../styles';
 
-const ServingIndicator = () => {
-  const [value, setValue] = useState(1);
+const ServingIndicator = ({ value, updateValue }) => {
 
   const increaseValue = () => {
-    setValue(value + 1);
+    updateValue(value + 1);
   };
 
   const decreaseValue = () => {
     if (value > 1) {
-      setValue(value - 1);
+      updateValue(value - 1);
     }
   };
 

@@ -9,6 +9,7 @@ const ingredientsLines = 2;
 
 
 const RecipePreview = ({id}) => {
+  console.log(id)
 
   // Retrives the recipe from the API
 
@@ -21,11 +22,17 @@ const RecipePreview = ({id}) => {
   const fetchData = async () => {
     const response = await fetch('http://137.194.210.185:80/recipe/' + id);
     const jsonData = await response.json();
+    jsonData.score_co2 = Math.floor(jsonData.score_co2);
+    jsonData.score_prix = Math.floor(jsonData.score_prix);
     setData(jsonData);
   };
+  console.log(data)
 
   if (!data) {
     return <Text>Loading...</Text>;
+  }
+  else {
+    
   }
   
   // Limits the number of ingredients that are to be displayed
@@ -44,16 +51,16 @@ const RecipePreview = ({id}) => {
       <Image 
         key={i}
         style={styles.recipePreview.pricesIndicators.image} 
-        source={(i <= data.ecoPrice) ? require('../assets/leaf.png') : require('../assets/leaf_empty.png')} 
-        tintColor={COLORS.indicatorColors[data.ecoPrice]}
+        source={(i <= data.score_co2) ? require('../assets/leaf.png') : require('../assets/leaf_empty.png')} 
+        tintColor={COLORS.indicatorColors[data.score_co2]}
       />
     )
     moneyImages.push(
       <Image 
         key={i}
         style={styles.recipePreview.pricesIndicators.image} 
-        source={(i <= data.moneyPrice) ? require('../assets/euro.png') : require('../assets/euro_empty.png')} 
-        tintColor={COLORS.indicatorColors[data.moneyPrice]}
+        source={(i <= data.score_prix) ? require('../assets/euro.png') : require('../assets/euro_empty.png')} 
+        tintColor={COLORS.indicatorColors[data.score_prix]}
       />
     )    
   }
@@ -62,9 +69,9 @@ const RecipePreview = ({id}) => {
       <View style={styles.recipePreview.recipeInfo.container}>
         <Image 
             style={styles.recipePreview.recipeInfo.image} 
-            source={{uri: data.image}} />
+            source={{uri: data.image_uri}} />
         <View style={styles.recipePreview.recipeInfo.subcontainer}>
-          <Text style={styles.recipePreview.recipeInfo.title} numberOfLines={1}>{data.name}</Text>      
+          <Text style={styles.recipePreview.recipeInfo.title} numberOfLines={1}>{data.recipe_name}</Text>      
           <Text>Ingredients : </Text>
           <View style={styles.recipePreview.recipeInfo.ingredientsList.container}>
             <FlatList
@@ -74,7 +81,7 @@ const RecipePreview = ({id}) => {
                   <Text 
                     style={styles.recipePreview.recipeInfo.ingredientsList.item}
                     numberOfLines={1}>
-                    - {item}
+                    - {item.ingredient_name}
                   </Text>
                 </View>
               )}

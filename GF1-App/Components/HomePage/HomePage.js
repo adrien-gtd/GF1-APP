@@ -15,7 +15,7 @@ import quicheChevreEpinards from "../../data/quicheChevreEpinards"
 import saladeQuinoaLegumesGrilles from "../../data/saladeQuinoaLegumesGrilles"
 
 //const recipes = [tartiflette, saladeQuinoaLegumesGrilles, blanquette, quicheChevreEpinards, soupe];
-const recipes = [tartiflette, tartiflette, tartiflette, tartiflette, tartiflette, tartiflette, tartiflette, tartiflette, tartiflette];
+const recipes = [1,2,3,4,5];
 
 const HomePage = ({ navigation: stackNavigation, }) => {
   return (
@@ -34,7 +34,7 @@ const HomePage = ({ navigation: stackNavigation, }) => {
           <TouchableOpacity
             onPress={() => stackNavigation.navigate('recipeFull', {id : item})}
           >
-            <RecipePreview id={recipes.indexOf(item)}/>
+            <RecipePreview id={item}/>
           </TouchableOpacity>
         )}
         numColumns={1}

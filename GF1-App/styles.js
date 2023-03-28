@@ -219,7 +219,11 @@ export default StyleSheet.create({
         fontSize: 24,
         marginRight:4,
       },
-      item:{
+      ingredient_name:{
+        fontSize: 24,
+      },
+      quantity:{
+        marginLeft: 8,
         fontSize: 24,
       },
     },

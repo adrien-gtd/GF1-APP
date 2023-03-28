@@ -11,6 +11,7 @@ const RecipeFull = ({ route }) => {
 
   const { id } = route.params;
   const [data, setData] = useState(null);
+  const [servings, updateServings] = useState(1);
 
   useEffect(() => {
     fetchData();
@@ -19,6 +20,8 @@ const RecipeFull = ({ route }) => {
   const fetchData = async () => {
     const response = await fetch('http://137.194.210.185:80/recipe/' + id);
     const jsonData = await response.json();
+    jsonData.score_co2 = Math.floor(jsonData.score_co2);
+    jsonData.score_prix = Math.floor(jsonData.score_prix);
     setData(jsonData);
   };
 
@@ -36,22 +39,22 @@ const RecipeFull = ({ route }) => {
       <Image 
         key={i}
         style={styles.recipeFull.pricesIndicators.image} 
-        source={(i <= data.ecoPrice) ? require('../../assets/leaf.png') : require('../../assets/leaf_empty.png')} 
-        tintColor={COLORS.indicatorColors[data.ecoPrice]}
+        source={(i <= data.score_co2) ? require('../../assets/leaf.png') : require('../../assets/leaf_empty.png')} 
+        tintColor={COLORS.indicatorColors[Math.floor(data.score_co2)]}
       />
     )
     moneyImages.push(
       <Image 
-        key={i}
+        key={i}        
         style={styles.recipeFull.pricesIndicators.image} 
-        source={(i <= data.moneyPrice) ? require('../../assets/euro.png') : require('../../assets/euro_empty.png')} 
-        tintColor={COLORS.indicatorColors[data.moneyPrice]}
+        source={(i <= data.score_prix) ? require('../../assets/euro.png') : require('../../assets/euro_empty.png')} 
+        tintColor={COLORS.indicatorColors[Math.floor(data.score_prix)]}
       />
     )    
   }
   return (
     <View style={styles.recipeFull.container}>
-      <Text style={styles.recipeFull.title} numberOfLines={1}>{data.name}</Text>
+      <Text style={styles.recipeFull.title} numberOfLines={1}>{data.recipe_name}</Text>
         <View style={styles.recipeFull.pricesIndicators.container}>
           <View style={styles.recipeFull.pricesIndicators.subcontainer}>
             {ecoImages}
@@ -62,20 +65,23 @@ const RecipeFull = ({ route }) => {
         </View>
         <Image
           style={styles.recipeFull.image} 
-          source={{uri: data.image}} />
+          source={{uri: data.image_uri}} />
         <View style={styles.recipeFull.ingredientsList.container}>      
           <Text style={styles.recipeFull.ingredientsList.title}>Ingredients : </Text>
-          <ServingIndicator/>
+          <ServingIndicator value={servings} updateValue={updateServings} />
           <FlatList
             data={data.ingredients}
             renderItem={({ item }) => (
+              <View style={{flexDirection: 'row'}}>
               <View style={styles.recipeFull.ingredientsList.ingredientsNamesContainer}>
-                <Text style={styles.recipeFull.ingredientsList.bulletPoint}>•</Text>
-                <Text 
-                  style={styles.recipeFull.ingredientsList.item}
-                  >
-                  {item}
+                <Text style={styles.recipeFull.ingredientsList.bulletPoint}>
+                •
                 </Text>
+                <Text style={styles.recipeFull.ingredientsList.ingredient_name}>
+                  {item.ingredient_name}
+                </Text>
+              </View>
+              <Text style={styles.recipeFull.ingredientsList.quantity}>{item.quantity * servings}</Text>
               </View>
             )}
           />
