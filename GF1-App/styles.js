@@ -28,8 +28,33 @@ export default StyleSheet.create({
   },
   Account:{
     profileIcon:{
-      align:'center',
+      borderRadius: 150,
+      height:90,
+      width: 55,
+      paddingTop: 45,
+      padding:7,
+      overflow: 'hidden',
+      alignItems:'center',
+      justifyContent:'center',
+      backgroundColor: COLORS.brightThemeColorTopBar
     },
+    AddToAsynStorageButton:{
+      fontWeight: 'bold',
+      fontSize: 15,
+      padding: 4,
+
+    },
+    globalDark:{
+      alignItems:'center',
+      justifyContent:'center',
+      backgroundColor: COLORS.darkThemeColor,
+      flex : 1,
+    },
+    globalBright:{
+      align: 'center',
+      backgroundColor: COLORS.brightThemeColor,
+      flex: 1,
+    }
     
   },
   homePage: {
@@ -55,7 +80,7 @@ export default StyleSheet.create({
   topBar: {
     brightContainer: {
       alignItems: 'center',
-      backgroundColor: COLORS.brightThemeColorItem,
+      backgroundColor: COLORS.brightThemeColorTopBar,
       borderBottomWidth: 1,
       borderColor: 'gray',
       flexDirection: 'row',
@@ -65,7 +90,7 @@ export default StyleSheet.create({
     },
     darkContainer:{
       alignItems: 'center',
-      backgroundColor: COLORS.darkThemeColorItem,
+      backgroundColor: COLORS.darkThemeColorTopBar,
       borderBottomWidth: 1,
       borderColor: 'gray',
       flexDirection: 'row',
@@ -123,6 +148,16 @@ export default StyleSheet.create({
       subcontainer:{
         alignItems: 'flex-start',
         backgroundColor: COLORS.brightThemeColorItem,
+        borderColor: 'gray',
+        borderLeftWidth: 1,
+        flex: 1,
+        flexDirection: 'column',
+        marginRight:8,
+        padding: 4,
+      },
+      subcontainerDark:{
+        alignItems: 'flex-start',
+        backgroundColor: COLORS.darkThemeColorItem,
         borderColor: 'gray',
         borderLeftWidth: 1,
         flex: 1,
@@ -235,6 +270,7 @@ export default StyleSheet.create({
       width:250,
       padding: 5,
       paddingHorizontal:4,
+      paddingBottom: 5,
       flex:0.5,
       borderRadius:10,
       marginVertical:4,

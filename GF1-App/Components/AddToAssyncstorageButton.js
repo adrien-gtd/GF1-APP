@@ -9,34 +9,34 @@ const AddToAsyncStorageButton= ({storeKey})=>{
     useEffect(()=>{
         AsyncStorage.getItem(key)
     .then((value)=>{
-        if(value=='oui'){
-            setIsAdded('oui');
+        if(value=='Oui'){
+            setIsAdded('Oui');
 
         }
-        else if(value=='non'){
-            setIsAdded('non');
+        else if(value=='Non'){
+            setIsAdded('Non');
         }
         else if(value==null){
-            setIsAdded('oui');
+            setIsAdded('Oui');
         }
     })
     })
     return (
         <><><View >
-        <Text>{storeKey}</Text>    
+        <Text style={styles.Account.AddToAsynStorageButton}>{storeKey}</Text>    
         <TouchableOpacity
-        style={isAdded=='oui' ? styles.AddToAsynStorageButton.yes : styles.AddToAsynStorageButton.no}
+        style={isAdded=='Oui' ? styles.AddToAsynStorageButton.yes : styles.AddToAsynStorageButton.no}
         activeOpacity={0.8}
         onPress={async()=>{
             AsyncStorage.getItem(storeKey).
             then((value)=>{
-                if(value=='oui'){
-                    setIsAdded('non');
-                    AsyncStorage.setItem(key,'non');
+                if(value=='Oui'){
+                    setIsAdded('Non');
+                    AsyncStorage.setItem(key,'Non');
                 }
                 else{
-                    setIsAdded('oui');
-                    AsyncStorage.setItem(key,'oui');
+                    setIsAdded('Oui');
+                    AsyncStorage.setItem(key,'Oui');
                     
                     
                 }
@@ -45,7 +45,7 @@ const AddToAsyncStorageButton= ({storeKey})=>{
             })
             ;
         }}>
-            <Text>{isAdded}</Text>
+            <Text style={{fontWeight:'bold'}}>{isAdded}</Text>
 
         </TouchableOpacity>
     </View>

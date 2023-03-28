@@ -14,8 +14,10 @@ export const COLORS = {
   dropwdownBackgroundColor: '#f5a87b',
   dropwdownItemsColor:'#fb5303',
   brightThemeColor:'#ce5d1c',
-  brightThemeColorItem:'#f5a87b',
-  darkThemeColor:'#2f8c0c',
-  darkThemeColorItem:'#a6fb94'
+  brightThemeColorItem:'#b7b2ac',
+  brightThemeColorTopBar:'#b7b2ac',
+  darkThemeColor:'#318025',
+  darkThemeColorItem:'#CC5500',
+  darkThemeColorTopBar:'b7b2ac'
 }
 

@@ -18,12 +18,12 @@ const Recipe = ({id, title, image, ingredients, moneyPrice, ecoPrice}) => {
     .then((value)=>{
       if(value=='dark'){
         setGlobalThemeContainer(styles.recipe.darkContainer);
-        setGlobalThemeSubContainer();
+        setGlobalThemeSubContainer(styles.recipe.recipeInfo.subcontainerDark);
         
       }
       else{
         setGlobalThemeContainer(styles.recipe.brightContainer);
-        setGlobalThemeSubContainer();
+        setGlobalThemeSubContainer(styles.recipe.recipeInfo.subcontainer);
 
       }
     })
@@ -62,7 +62,7 @@ const Recipe = ({id, title, image, ingredients, moneyPrice, ecoPrice}) => {
         <Image 
             style={styles.recipe.recipeInfo.image} 
             source={image} />
-        <View style={styles.recipe.recipeInfo.subcontainer}>
+        <View style={globalThemeSubContainer}>
           <Text style={styles.recipe.recipeInfo.title} numberOfLines={1}>{title}</Text>      
           <Text>Ingredients : </Text>
           <View style={styles.recipe.recipeInfo.ingredientsList.container}>

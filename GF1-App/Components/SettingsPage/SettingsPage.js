@@ -28,7 +28,7 @@ export const SettingsPage = ({}) => {
   
 
   return(
-  <View style={{backgroundColor:globalTheme}}>
+  <View style={{backgroundColor:globalTheme ,flex : 6}}>
     <ScrollView>
     
     

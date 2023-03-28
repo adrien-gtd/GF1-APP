@@ -49,7 +49,7 @@ const Dropdown=({
       style={styles.recipeFull.dropDown} 
       activeOpacity={0.8}
       onPress={()=> setShowOption(!showOption)}>
-      <Text> {title} </Text>
+      <Text style={{fontWeight:'bold'}}> {title} </Text>
       </TouchableOpacity>
         {showOption && (<View style={{backgroundColor:COLORS.dropwdownBackgroundColor,
         padding:5,

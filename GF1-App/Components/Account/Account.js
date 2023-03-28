@@ -25,21 +25,27 @@ const Account = ({ navigation }) => {
     AsyncStorage.getItem('theme')
     .then((value)=>{
       if(value=='dark'){
-        setGlobalTheme(COLORS.darkThemeColor);
+        setGlobalTheme(styles.Account.globalDark);
         
       }
       else{
-        setGlobalTheme(COLORS.brightThemeColor);
+        setGlobalTheme(styles.Account.globalBright);
       }
     })
   })
 
   return (
-    <View style={styles.container}>
+    <View style={globalTheme}>
+      <View style={{alignItems:'center'}}>
       <View style={styles.Account.profileIcon}>
         <SvgProfileComponentBig />
       </View>
+      </View>
+      
+      
       <ScrollView>
+        <View style={{borderWidth: 1, borderRadius:10}}>
+      <Text style={styles.homePage.suggestionText}>Qui mange quoi :</Text>
       <Dropdown 
       choices={nombresDePersonnes}
       storeKey={'family'}
@@ -49,16 +55,22 @@ const Account = ({ navigation }) => {
       storeKey={'diet'}
       title='Régime alimentaire'
     />
-    <Text>Equipements possédés :</Text>
+    <Text>       </Text>
+    </View>
+    <Text>   </Text>
+    <View style={{borderWidth: 1, borderRadius:10}}>
+    <Text style={styles.homePage.suggestionText}>Equipements possédés :</Text>
     <AddToAsyncStorageButton
-    storeKey={'four'}
+    storeKey={'Four'}
     />
     <AddToAsyncStorageButton
-    storeKey={'plaques chauffantes'}
+    storeKey={'Plaques chauffantes'}
     />
     <AddToAsyncStorageButton
-    storeKey={'four à micro-ondes'}
+    storeKey={'Four à micro-ondes'}
     />
+    <Text>  </Text>
+    </View>
 
 
       </ScrollView>
