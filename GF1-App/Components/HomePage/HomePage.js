@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, StatusBar, FlatList, Text, TouchableOpacity } from 'react-native';
 import { COLORS } from '../../colors';
 
@@ -8,16 +8,25 @@ import TopBar from '../TopBar';
 import RecipePreview from '../RecipePreview';
 import SearchBar from './SearchBar'
 
-import tartiflette from "../../data/tartiflette"
-import blanquette from "../../data/blanquette"
-import soupe from "../../data/soupe"
-import quicheChevreEpinards from "../../data/quicheChevreEpinards"
-import saladeQuinoaLegumesGrilles from "../../data/saladeQuinoaLegumesGrilles"
-
-//const recipes = [tartiflette, saladeQuinoaLegumesGrilles, blanquette, quicheChevreEpinards, soupe];
-const recipes = [1,2,3,4,5];
-
+const randomRecipes = 6
 const HomePage = ({ navigation: stackNavigation, }) => {
+  
+  const [ids, setIds] = useState([]);
+
+  useEffect(() => {
+    fetchId();
+  }, []);
+
+  const fetchId = async () => {
+    const response = await fetch('http://137.194.210.185/random/' + randomRecipes);
+    const jsonData = await response.json();
+    setIds(jsonData);
+  };
+
+  if (!ids) {
+    return <Text>Loading...</Text>;
+  }
+
   return (
     <View style={styles.homePage.container}>
       <StatusBar
@@ -29,7 +38,7 @@ const HomePage = ({ navigation: stackNavigation, }) => {
       <SearchBar />
       <Text style={styles.homePage.suggestionText}>Suggestions :</Text>
       <FlatList
-        data={recipes}
+        data={ids}
         renderItem={({ item }) => (
           <TouchableOpacity
             onPress={() => stackNavigation.navigate('recipeFull', {id : item})}

@@ -1,5 +1,3 @@
-import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
-import React from 'react';
 import { StyleSheet } from 'react-native';
 import { COLORS } from './colors';
 
@@ -149,7 +147,7 @@ export default StyleSheet.create({
       height: '100%',
       flex: 1,
       alignItems: 'center',
-      marginVertical: 16,
+      marginVertical: 8,
       paddingVertical: 4,
       backgroundColor: COLORS.backgroundColor,
     },
@@ -162,18 +160,32 @@ export default StyleSheet.create({
       container:{
         marginTop: 24,
         flexDirection: 'row',
+        borderRadius: 16,
+        borderWidth: 2,
+        overflow: 'hidden',
       },
-      subcontainer:{
+      subcontainerEco:{
         width: '45%',
         justifyContent: 'center',
         flexDirection: 'row',
-        borderColor: 'orange',
-        borderWidth: 1,
+        borderColor: 'black',
+        borderRightWidth: 2,
         backgroundColor: COLORS.backgroundColorDarker,
+        paddingVertical: 4,
+      },
+      subcontainerMoney:{
+        width: '45%',
+        justifyContent: 'center',
+        flexDirection: 'row',
+        borderColor: 'black',
+        backgroundColor: COLORS.backgroundColorDarker,
+        paddingVertical: 4,
       },
       image:{
         height:40,
         width:40,
+        borderBottomWidth: 1,
+        borderTopWidth: 1,
       },
     },
     description:{
@@ -181,7 +193,7 @@ export default StyleSheet.create({
       fontSize: 20,
     },
     image:{
-      height: '30%',
+      height: '20%',
       width: '100%',
       marginTop: 24,
     },
@@ -196,17 +208,20 @@ export default StyleSheet.create({
     },
     ingredientsList:{
       container:{
-        width:"90%",
+        width:"95%",
         flexDirection: 'column',
         marginHorizontal: 8,
-        marginTop: 24,
+        marginTop: 12,
         height: '100%',
         backgroundColor:COLORS.backgroundColorDarker,
-        flex:1
+        flex:1,
+        borderRadius: 16,
+        overflow: 'hidden',
       },
       title: {
         fontSize: 24,
         fontWeight: 'bold',
+        marginLeft: 8, 
       },
       ingredientsNamesContainer:{
         width:'60%',
@@ -216,16 +231,55 @@ export default StyleSheet.create({
         borderRightWidth: 1,
       },
       bulletPoint:{
-        fontSize: 24,
+        fontSize: 18,
         marginRight:4,
       },
       ingredient_name:{
-        fontSize: 24,
+        fontSize: 18,
       },
       quantity:{
         marginLeft: 8,
-        fontSize: 24,
+        fontSize: 18,
       },
+    },
+    recipeButtons:{
+      container:{
+        marginTop:8,
+        height: '10%',
+        width: '95%',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        borderWidth: 1,
+        borderRadius: 16,
+        overflow: 'hidden',
+      },
+      instructionsButton:{
+        flex: 1/3,
+        height: '100%',
+        backgroundColor: 'lightblue',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRightWidth: 1,
+      },
+      doneRecipeButton:{
+        flex: 1/3,
+        height: '100%',
+        backgroundColor: 'lightgreen',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRightWidth: 1,
+      },
+      addToShoppingListButton:{
+        flex: 1/3,
+        height: '100%',
+        backgroundColor: 'orange',
+        alignItems: 'center',
+        justifyContent: 'center',
+      },
+      image:{
+        height: '80%',
+        resizeMode: 'contain',
+      }
     },
   },
   servingIndicator: {

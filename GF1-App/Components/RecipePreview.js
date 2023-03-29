@@ -9,7 +9,6 @@ const ingredientsLines = 2;
 
 
 const RecipePreview = ({id}) => {
-  console.log(id)
 
   // Retrives the recipe from the API
 
@@ -26,13 +25,9 @@ const RecipePreview = ({id}) => {
     jsonData.score_prix = Math.floor(jsonData.score_prix);
     setData(jsonData);
   };
-  console.log(data)
-
+  
   if (!data) {
     return <Text>Loading...</Text>;
-  }
-  else {
-    
   }
   
   // Limits the number of ingredients that are to be displayed

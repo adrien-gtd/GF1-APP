@@ -3,8 +3,8 @@ import { View, Image, Text, FlatList, TouchableOpacity, ScrollView} from 'react-
 import { COLORS } from '../../colors';
 import styles from '../../styles'
 
+import RecipeButtons from './RecipeButtons';
 import ServingIndicator from './ServingIndicator';
-
 
 const RecipeFull = ({ route }) => {
   // Retrives the recipe from the API
@@ -56,17 +56,17 @@ const RecipeFull = ({ route }) => {
     <View style={styles.recipeFull.container}>
       <Text style={styles.recipeFull.title} numberOfLines={1}>{data.recipe_name}</Text>
         <View style={styles.recipeFull.pricesIndicators.container}>
-          <View style={styles.recipeFull.pricesIndicators.subcontainer}>
+          <View style={styles.recipeFull.pricesIndicators.subcontainerEco}>
             {ecoImages}
           </View>
-          <View style={styles.recipeFull.pricesIndicators.subcontainer}>
+          <View style={styles.recipeFull.pricesIndicators.subcontainerMoney}>
             {moneyImages}
           </View>
         </View>
-        <Image
-          style={styles.recipeFull.image} 
-          source={{uri: data.image_uri}} />
-        <View style={styles.recipeFull.ingredientsList.container}>      
+          <Image
+            style={styles.recipeFull.image} 
+            source={{uri: data.image_uri}} />
+          <View style={styles.recipeFull.ingredientsList.container}>    
           <Text style={styles.recipeFull.ingredientsList.title}>Ingredients : </Text>
           <ServingIndicator value={servings} updateValue={updateServings} />
           <FlatList
@@ -86,6 +86,7 @@ const RecipeFull = ({ route }) => {
             )}
           />
         </View>
+        <RecipeButtons/>
     </View>
   );
 }
