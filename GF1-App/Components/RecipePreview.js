@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useLinkProps } from '@react-navigation/native';
 import { View, Image, Text, FlatList, TouchableOpacity} from 'react-native'
 import { COLORS } from '../colors';
+import { CONFIG } from '../config';
 import styles from '../styles'
+
 
 const ingredientsColumns = 2;
 const ingredientsLines = 2;
@@ -19,7 +21,7 @@ const RecipePreview = ({id}) => {
   }, []);
 
   const fetchData = async () => {
-    const response = await fetch('http://137.194.210.185:80/recipe/' + id);
+    const response = await fetch('http://' + CONFIG.serverIp + ':' + CONFIG.serverPort + '/recipe/' + id);
     const jsonData = await response.json();
     jsonData.score_co2 = Math.floor(jsonData.score_co2);
     jsonData.score_prix = Math.floor(jsonData.score_prix);
