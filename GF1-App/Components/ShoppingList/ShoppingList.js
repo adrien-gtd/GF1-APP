@@ -16,8 +16,6 @@ const ShoppingList = ({ navigation }) => {
   const [editItem, seteditItem] = useState();
   const [inputText, setinputText] = useState();
 
-
-
   const TOTAL_KEY = '@total';
 
   useEffect(() => {

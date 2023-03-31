@@ -18,6 +18,8 @@ const ModalEditItem = ({
     const handleEditItem = (editItem) => {
         const newData = data.map(item => {
           if (item.id === editItem) {
+            price_per_unit = item.price / item.quantity;
+            item.price = inputText * price_per_unit;
             item.quantity = inputText;
             return item; 
           }
@@ -56,6 +58,7 @@ const ModalEditItem = ({
                 defaultValue = {inputText}
                 onChangeText = {(text) => setinputText(text)}
                 editable = {true}
+                keyboardType="numeric"
                 multiline = {false}
                 maxLength = {200}
                 /> 

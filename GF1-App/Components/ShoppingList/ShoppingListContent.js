@@ -14,7 +14,7 @@ const ShoppingListContent = ({
     const getTotal = (array) => {
         let sum = 0;
         for (let i = 0; i < array.length; i++) {
-          sum = sum + array[i].price;
+          sum = sum + parseFloat(array[i].price);
         }
         return sum;
     }
@@ -48,7 +48,7 @@ const ShoppingListContent = ({
                 <Text style = {styles.shoppingList.quantity}>Quantity</Text> 
                 <Text style = {styles.shoppingList.price}>Price</Text>
             </View>
-            <View style = {{height: '72%', backgroundColor: COLORS.backgroundColorDarkest}}>
+            <View style = {{flex:1, marginBottom: 75, backgroundColor: COLORS.backgroundColorDarkest}}>
                 <FlatList
                 data = {data}
                 keyExtractor = {(item) => item.id.toString()}

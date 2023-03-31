@@ -1,5 +1,5 @@
 import styles from '../../styles';
-import {TouchableWithoutFeedback, View, Text, TouchableOpacity, TextInput, Modal} from 'react-native';
+import {Alert, TouchableWithoutFeedback, View, Text, TouchableOpacity, TextInput, Modal} from 'react-native';
 import SearchBar from './SearchBar';
 import React, {useState} from 'react';
 
@@ -17,37 +17,62 @@ const ModalNewItem = ({
     const [newItem, setNewItem] = useState();
     const [newQuantity, setNewQuantity] = useState();
 
-    function getNewId(arr) {
-        let id = 1;
-        while (arr.some(obj => obj.id === id)) {
-          id++;
-        }
-        return id;
+
+    const creatAlert = (title, message) => {
+      Alert.alert(title, message, [
+        {
+          text: 'Ok',
+          style: 'cancel',
+        }]
+      );
+    }
+
+    const alreadyExist = (result) => {
+      const newData = [...data];
+      newData[result].quantity += newQuantity;
+      newData[result].price += newItem.price_per_unit * newQuantity;
+    }
+
+
+    const handleCreate = () => {
+      const newData = [
+        ...data,
+        {
+          id: newItem.ingredient_id,
+          name: newItem.ingredient_name,
+          quantity: newQuantity,
+          quantityType: newItem.unit,
+          price: (newItem.price_per_unit * newQuantity).toFixed(2),
+        },
+      ];
+      return newData;
     }
 
     const addItem = () => {
-        if (newItem !== '') {
-          const newData = [
-            ...data,
-            {
-              id: getNewId(data),
-              name: newItem,
-              quantity: newQuantity,
-              quantityType: "kg",
-              price: 1,
-            },
-          ];
-          setdata(newData);
-          setisRender(!isRender);
-          setNewItem('');
-          setNewQuantity('');
-          saveData(newData);
-          setisModalVisibleNewItem(false)
+      if (newItem !== undefined && newQuantity !== undefined) {
+        const result = data.findIndex((obj) => obj.id === newItem.ingredient_id);
+        if (result !== -1) {
+          newData = alreadyExist(result);
+        } else {
+          newData = handleCreate();
         }
-        else {
-          console.log("Ingrédient non valide !!")
+        setdata(newData);
+        setisRender(!isRender);
+        setNewItem();
+        setNewQuantity();
+        saveData(newData);
+        setisModalVisibleNewItem(false)
+      }
+      else {
+        if (newItem === undefined) {
+          creatAlert("Erreur", "Ingrédient non valide.");
+          console.log("Ingrédient non valide !!");
+        } else {
+          creatAlert("Erreur", "Quantité non valide.");
+          console.log("Quantité non valide !!");
         }
-      };
+      }
+    };
 
     const handleOutPut = (output) => {
         setNewItem(output)
@@ -63,12 +88,15 @@ const ModalNewItem = ({
             <View style = {styles.shoppingList.modalView}>
                 <Text style = {styles.shoppingList.text}>Add item</Text>
                 <Text style = {styles.shoppingList.text}>Item Name: </Text>
-                <SearchBar onOutput = {handleOutPut}/>
+                <SearchBar 
+                  onOutput = {handleOutPut}
+                  creatAlert = {creatAlert}
+                />
                 <Text style = {styles.shoppingList.text}>Quantity: </Text>
                 <TextInput
                 style={styles.shoppingList.searchBar}
                 defaultValue = {newQuantity}
-                onChangeText = {(text) => setNewQuantity(text)}
+                onChangeText = {(int) => setNewQuantity(int)}
                 keyboardType="numeric"
                 editable = {true}
                 multiline = {false}
@@ -80,10 +108,9 @@ const ModalNewItem = ({
                     style = {styles.shoppingList.button}
                 >
                     <Text style = {styles.shoppingList.buttonText}>Add Item</Text>
-
                 </TouchableOpacity>
                 <TouchableOpacity
-                    onPress = {() => {setisModalVisibleNewItem(false); setNewQuantity('');setNewItem('') }} 
+                    onPress = {() => {setisModalVisibleNewItem(false); setNewQuantity();setNewItem() }} 
                     style = {styles.shoppingList.button}
                 >
                     <Text style = {styles.shoppingList.buttonText}>Quit</Text>

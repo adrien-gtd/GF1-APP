@@ -1,8 +1,11 @@
     import React, { useState } from 'react';
-    import { View, TextInput, TouchableOpacity, FlatList, Text, RecyclerViewBackedScrollViewComponent } from 'react-native';
+    import { Alert, View, TextInput, TouchableOpacity, FlatList, Text } from 'react-native';
     import styles from '../../styles';
 
-    const SearchBar = ({onOutput}) => {
+    const adr = '192.168.1.47'           //mettre l'addresse ici!!!!!
+    const timeout = 1000
+
+    const SearchBar = ({onOutput, creatAlert}) => {
     const [searchText, setSearchText] = useState('');
     const [showSuggestions, setShowSuggestions] = useState(false);
     const [data, setData] = useState([]);
@@ -10,19 +13,31 @@
     const handleSuggestionPress = (suggestion) => {
         setShowSuggestions(false)
         setSearchText(suggestion.ingredient_name)
-        onOutput(suggestion.ingredient_name)
+        console.log(suggestion)
+        onOutput(suggestion)
     };
+
+
 
     const updateSuggestion = async (text) => {
         try {
-        console.log('http://137.194.210.185/ingredientBegining/' + text)
-            const response = await fetch('http://137.194.210.185/ingredientBegining/' + text);
-            const jsonData = await response.json();
-            console.log(jsonData)
-            setData(jsonData);
-            console.log(data)
+            if (text !== '') {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), timeout);
+                console.log('http://'+ adr + '/ingredientBegining/' + text)
+                const response = await fetch('http://'+ adr + '/ingredientBegining/' + text);
+                clearTimeout(timeoutId);
+                const jsonData = await response.json();
+                setData(jsonData);
+            }
         } catch (error) {
-            console.error(error);
+            if (error.name === 'AbortError') {
+                creatAlert("Connection erreur", "Timeout: impossible de joindre le serveur en un temps convenable")
+                throw new Error('Request timed out');
+            } else {
+                creatAlert("Connection erreur", "Aucune connection au serveur")
+                console.error(error);
+            }
         }
     };
     
@@ -30,17 +45,26 @@
         try {
             setSearchText(text);
             await updateSuggestion(text);
-            onOutput('');
+            onOutput();
             const result = data.find(
                 (obj) => obj.ingredient_name.toLowerCase() === text.toLowerCase()
             );
-        if (result !== undefined) {
-            onOutput(result.ingredient_name);
-        }
+            if (result !== undefined) {
+                onOutput(result);
+            }
         } catch (error) {
             console.error(error);
         }
     };
+
+    const filterData = (toFilter) => {
+        if (Object.keys(toFilter).length !== 0) {
+            return toFilter.filter((suggestion) =>
+                suggestion.ingredient_name.toLowerCase().includes(searchText.toLowerCase())
+            )
+        }
+        return {}
+    } 
     
 
     return (
@@ -56,10 +80,8 @@
                 <FlatList
                 style = {{width: "80%"}}
                 contentContainerStyle = {{}}
-                data={data.filter((suggestion) =>
-                    suggestion.ingredient_name.toLowerCase().includes(searchText.toLowerCase())
-                )}
-                keyExtractor={(item) => item.id.toString()}
+                data={filterData(data)}
+                keyExtractor={(item) => item.ingredient_id.toString()}
                 renderItem={({ item }) => (
                     <TouchableOpacity 
                     style={styles.shoppingList.searchBarSuggestion} 
