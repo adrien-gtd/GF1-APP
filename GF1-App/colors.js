@@ -9,6 +9,8 @@ export const COLORS = {
   indicatorColors:['green', 'orange', 'red'],
   dropwdownBackgroundColor: 'rgba(300,400,100,0.5)',
   dropwdownItemsColor:'rgba(100,500,100,0.7)',
+
+  buttonColor: 'orange',
   
   logoOrange: 'rgba(233, 136, 57, 1)',
   logoGreen: 'rgba(116, 182, 80, 1)',

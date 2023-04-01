@@ -409,23 +409,32 @@ export default StyleSheet.create({
     },
   },
   shoppingList: {
+    page: {
+      flex: 1, 
+      width: '100%', 
+      pointerEvents: 'box-none', 
+      backgroundColor: COLORS.backgroundColor
+    },
     itemContainer: {
       flexDirection: 'row',
       justifyContent: 'space-around',
       borderBottomWidth: 1,
-      borderBottomColor: 'grey',
+      borderBottomColor: COLORS.backgroundColorDarker,
+      borderTopWidth: 1,
+      borderTopColor: COLORS.backgroundColorDarker,
     },
     name: {
       marginVertical: 20,
+      paddingHorizontal: 20,
       fontSize: 15,
       fontWeigth: 'bold', 
-      width: '60%',
+      width: '50%',
     },
     quantity: {
       marginVertical: 20,
       fontSize: 15,
       fontWeigth: 'bold', 
-      width: '20%',
+      width: '30%',
     },
     price: {
       marginVertical: 20,
@@ -433,33 +442,75 @@ export default StyleSheet.create({
       fontWeigth: 'bold', 
       width: '20%',
     },
-    remove: {
-      weidth: '20%',
-      height: 20,
-    },
     input: {
       width: '90%',
       height: 70,
-      borderColor: 'grey',
+      borderColor: COLORS.backgroundColorDarkest,
       borderWidth: 1,
       fontSize: 25
     },
     modalView: {
       flex: 1,
+      backgroundColor: COLORS.backgroundColor,
       alignItems: 'center',
       justifyContent: 'center'
     },
     text: {
       marginVertical: 20,
+      fontSize: 15,
+      fontWeigth: 'bold'
+    },
+    title: {
+      textAlign: 'center',
+      color: 'green',
+      marginVertical: 20,
       fontSize: 25,
       fontWeigth: 'bold'
     },
-    saveEdits: {
-      backgroundColor: 'grey',
+    buttonContainer: {
+      flexDirection: 'row',
+      justifyContent: 'space-between',
       alignItems: 'center',
       paddingHorizontal: 20,
-      paddingVertical: 20,
-      marginTop: 20
-    }
+      paddingBottom: 20,
+      position: 'absolute',
+      bottom: 0,
+      left: 0,
+      right: 0,
+    },
+    button: {
+      backgroundColor: COLORS.buttonColor,
+      flex: 1,
+      paddingVertical: 10,
+      paddingHorizontal: 20,
+      borderRadius: 5,
+      marginRight: 10,
+    },
+    buttonText: {
+      fontWeight: 'bold',
+      textAlign: 'center',
+    },
+    searchBarContainer: {
+      width: '100%', 
+      flexDirection: 'column',
+      alignItems: 'center',
+    },
+    searchBar: {
+      width: '80%',
+      height: 50,
+      backgroundColor: COLORS.backgroundColorDarker,
+      borderRadius: 5,
+      justifyContent: 'center',
+      paddingHorizontal: 10,
+      paddingLeft: 10,
+      paddingRight: 10,
+      flexDirection: 'row',
+    },
+    searchBarSuggestion: {
+      height: 50,
+      backgroundColor: COLORS.backgroundColorDarkest,
+      justifyContent: 'center',
+      paddingLeft: 10,
+    },
   }
 });
