@@ -42,6 +42,15 @@ export default StyleSheet.create({
       margin: 8,
       padding: 8,
     },
+    searchBarSuggestion: {
+      height: 50,
+      backgroundColor: COLORS.backgroundColorDarker,
+      borderRadius: 4,
+      justifyContent: 'center',
+      paddingLeft: 10,
+      marginHorizontal: 8,
+      marginVertical: 1,
+    },
   },
   topBar: {
     brightContainer: {

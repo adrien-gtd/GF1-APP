@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, StatusBar, FlatList, Text, TouchableOpacity } from 'react-native';
 import { COLORS } from '../../colors';
 import styles from '../../styles';
+import {CONFIG} from '../../config'
 
 import TopBar from '../TopBar';
 import RecipePreview from '../RecipePreview';
@@ -16,7 +17,7 @@ const HomePage = ({ navigation: stackNavigation, }) => {
   }, []);
 
   const fetchId = async () => {
-    const response = await fetch('http://137.194.210.185/random/' + randomRecipes);
+    const response = await fetch('http://' + CONFIG.serverIp + '/random/' + randomRecipes);
     const jsonData = await response.json();
     setIds(jsonData);
   };
@@ -24,6 +25,12 @@ const HomePage = ({ navigation: stackNavigation, }) => {
   if (!ids) {
     return <Text>Loading...</Text>;
   }
+
+  const onOutput = (recipe_id) => {
+    if(recipe_id !== undefined) {
+      stackNavigation.navigate('recipeFull', {id : recipe_id});
+    }
+  } 
 
   return (
     <View style={styles.homePage.container}>
@@ -33,7 +40,7 @@ const HomePage = ({ navigation: stackNavigation, }) => {
         barStyle={'dark-content'}
         hidden={false} />
       <TopBar navigation={stackNavigation} />
-      <SearchBar />
+      <SearchBar onOutput = {onOutput}/>
       <Text style={styles.homePage.suggestionText}>Suggestions :</Text>
       <FlatList
         data={ids}
