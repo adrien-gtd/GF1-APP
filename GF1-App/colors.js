@@ -1,19 +1,29 @@
 
 // Mettez ici les couleurs que vous allez utiliser afin que ce soit facile de maintenir le code.
 
+import { DarkTheme } from "@react-navigation/native";
+
+
+
 export const COLORS = {
   backgroundColor: '#f0f0f0',
   backgroundColorDarker: '#e0e0e0',
   backgroundColorDarkest: '#d0d0d0',
   
   indicatorColors:['green', 'orange', 'red'],
-  dropwdownBackgroundColor: 'rgba(300,400,100,0.5)',
-  dropwdownItemsColor:'rgba(100,500,100,0.7)',
+  dropwdownBackgroundColor: '#f5a87b',
+  dropwdownItemsColor:'#fb5303',
+  brightThemeColor:'#ce5d1c',
+  brightThemeColorItem:'#b7b2ac',
+  brightThemeColorTopBar:'#b7b2ac',
+  darkThemeColor:'#318025',
+  darkThemeColorItem:'#CC5500',
 
   buttonColor: 'orange',
   
   logoOrange: 'rgba(233, 136, 57, 1)',
   logoGreen: 'rgba(116, 182, 80, 1)',
   logoGreenDarker: 'rgba(84, 111, 70, 1)',
+  darkThemeColorTopBar:'b7b2ac'
 }
 

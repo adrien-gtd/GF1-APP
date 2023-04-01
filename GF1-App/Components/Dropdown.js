@@ -1,48 +1,75 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {FlatList, View, StatusBar, Button, Text, ScrollView, TouchableOpacity } from 'react-native';
 import { COLORS } from '../colors';
-import styles from '../styles';
-
-
+import styles  from '../styles';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Dropdown=({
-  data=[],
-  value={},
-  onSelect = ()=>{}
+  choices,
+  storeKey,
+  title
 }) =>{
-  console.log("selected value",value);
+
+  const [currentValue,setCurrentValue]=useState(null);
   const [showOption,setShowOption]=useState(false);
-  const onSelectedItem= (val) => {
+
+  useEffect(() => {
+    const getData = async (storeKey) => {
+      try {
+        const value = await AsyncStorage.getItem(storeKey);
+        if (value !== null) {
+          setCurrentValue(value);
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    getData(storeKey);
+  }, []);
+  
+  const onSelectedItem = async (newValue) => {
+
     setShowOption(false);
-    onSelect(val);
+    setCurrentValue(newValue);
+
+    if(storeKey!=null) {
+      try {
+       await AsyncStorage.setItem(storeKey, newValue);
+    } catch (error) {
+        console.log(error);
+    }
   }
+  }
+  if (currentValue == null) { console.log(currentValue); return <Text>Loading</Text>; }
+  else {
   return(
     <View>
       <TouchableOpacity 
-      style={styles.recipeFull.dropDown} 
+      style={styles.settings.dropDown} 
       activeOpacity={0.8}
       onPress={()=> setShowOption(!showOption)}>
-      <Text> {!!value? value.name: 'Choisir une provenance'} </Text>
+      <Text style={{fontWeight:'bold'}}> {title} </Text>
       </TouchableOpacity>
         {showOption && (<View style={{backgroundColor:COLORS.dropwdownBackgroundColor,
         padding:5,
+        width:250,
+        borderRadius:10,
         marginBottom:10,
         paddingHorizontal:5,
     }}>
-            {data.map((val,i)=>{
-            return(
-            <TouchableOpacity
-              key={String(i)}
-              onPress={ () => onSelectedItem(val) }>
-              <View style={styles.recipeFull.itemsDropdown}>
-              <Text>{val.name}</Text> 
-            </View>   
+      {choices.map((item, index)=>{
+        return(
+          <TouchableOpacity
+            key={String(index)}
+            onPress={ () => onSelectedItem(item.name) }>
+            <View style={currentValue == item.name ? styles.settings.itemsDropdownSelected : styles.settings.itemsDropdown}>
+              <Text>{item.name}</Text> 
+            </View>
           </TouchableOpacity>
         )
       })}</View>)}
     </View>
   )
-}
-
+}}
 export default Dropdown;

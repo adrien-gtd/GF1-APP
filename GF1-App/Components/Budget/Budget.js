@@ -2,6 +2,9 @@ import { TextInput, Input, View, Text, StyleSheet, Button, Image, Dimensions } f
 import React  from 'react';
 import { useState } from 'react';
 import styles from '../../styles';
+import { useFocusEffect } from '@react-navigation/native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { COLORS } from '../../colors';
 
 import { LineChart, BarChart, PieChart, ProgressChart, ContributionGraph, StackedBarChart } from "react-native-chart-kit";
 
@@ -12,6 +15,22 @@ const Budget = ({ navigation }) => {
 
   const [maxBudget, setText1] = useState('');
   const [maxCarbon, setText2] = useState('');
+  const [globalTheme,setGlobalTheme]=useState(null);
+  
+  useFocusEffect(()=>{
+    console.log('arrivée sur homepage');
+    AsyncStorage.getItem('theme')
+    .then((value)=>{
+      if(value=='dark'){
+        setGlobalTheme(COLORS.darkThemeColor);
+        console.log(value);
+      }
+      else{
+        setGlobalTheme(COLORS.brightThemeColor);
+      }
+    })
+    console.log('fin de useEffect');
+  })
 
   return (
     <View style={styles.Budget.container}>
