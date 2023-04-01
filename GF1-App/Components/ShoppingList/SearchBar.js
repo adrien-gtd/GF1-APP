@@ -1,9 +1,9 @@
     import React, { useState } from 'react';
     import { Alert, View, TextInput, TouchableOpacity, FlatList, Text } from 'react-native';
+    import { CONFIG } from '../../config';
     import styles from '../../styles';
 
-    const adr = '192.168.1.47'           //mettre l'addresse ici!!!!!
-    const timeout = 1000
+    const timeout = 5000
 
     const SearchBar = ({onOutput, creatAlert}) => {
     const [searchText, setSearchText] = useState('');
@@ -24,8 +24,8 @@
             if (text !== '') {
                 const controller = new AbortController();
                 const timeoutId = setTimeout(() => controller.abort(), timeout);
-                console.log('http://'+ adr + '/ingredientBegining/' + text)
-                const response = await fetch('http://'+ adr + '/ingredientBegining/' + text);
+                console.log('http://'+ CONFIG.serverIp + '/ingredientBegining/' + text)
+                const response = await fetch('http://'+ CONFIG.serverIp + '/ingredientBegining/' + text);
                 clearTimeout(timeoutId);
                 const jsonData = await response.json();
                 setData(jsonData);
