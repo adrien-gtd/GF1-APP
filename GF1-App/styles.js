@@ -116,20 +116,12 @@ export default StyleSheet.create({
     },
   },
   recipePreview:{
-    brightContainer:{
+    container:{
       alignItems: 'center',
-      backgroundColor: COLORS.brightThemeColorItem,
+      backgroundColor: COLORS.backgroundColor,
       flexDirection: 'column',
-      marginVertical:8,
+      marginVertical:4,
       paddingVertical:4,
-    },
-    darkContainer:{
-      alignItems: 'center',
-      backgroundColor: COLORS.darkThemeColorItem,
-      flexDirection: 'column',
-      marginVertical:8,
-      paddingVertical:4,
-
     },
     recipeInfo:{
       container:{
@@ -143,17 +135,7 @@ export default StyleSheet.create({
       },
       subcontainer:{
         alignItems: 'flex-start',
-        backgroundColor: COLORS.brightThemeColorItem,
-        borderColor: 'gray',
-        borderLeftWidth: 1,
-        flex: 1,
-        flexDirection: 'column',
-        marginRight:8,
-        padding: 4,
-      },
-      subcontainerDark:{
-        alignItems: 'flex-start',
-        backgroundColor: COLORS.darkThemeColorItem,
+        backgroundColor: COLORS.backgroundColorDarker,
         borderColor: 'gray',
         borderLeftWidth: 1,
         flex: 1,
@@ -200,7 +182,7 @@ export default StyleSheet.create({
         width:24,
       },
     },
-  },
+  }, 
   recipeFull: {
     container:{
       height: '100%',

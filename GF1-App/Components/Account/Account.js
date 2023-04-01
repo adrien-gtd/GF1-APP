@@ -1,10 +1,9 @@
-import { View, Text, StyleSheet, Button, ScrollView} from 'react-native';
+import { View, Text, ScrollView} from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import styles from '../../styles';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Dropdown from '../Dropdown';
 import { useState,useEffect } from 'react';
-import { COLORS } from '../../colors';
 import SvgProfileComponentBig from '../SVGProfileComponentBig';
 import AddToAsyncStorageButton from '../AddToAsyncStorageButton';
 
