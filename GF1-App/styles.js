@@ -119,7 +119,6 @@ export default StyleSheet.create({
         },
         subcontainer:{
           width:'50%',
-          alignText: 'center',
           flexDirection: 'row',
         },
         item:{
@@ -225,7 +224,6 @@ export default StyleSheet.create({
       },
       ingredientsNamesContainer:{
         width:'60%',
-        alignText: 'center',
         flexDirection: 'row',
         padding:2,
         borderRightWidth: 1,
@@ -253,7 +251,7 @@ export default StyleSheet.create({
         borderRadius: 16,
         overflow: 'hidden',
       },
-      instructionsButton:{
+      addToShoppingListButton:{
         flex: 1/3,
         height: '100%',
         backgroundColor: 'lightblue',
@@ -269,7 +267,7 @@ export default StyleSheet.create({
         justifyContent: 'center',
         borderRightWidth: 1,
       },
-      addToShoppingListButton:{
+      descriptionButton:{
         flex: 1/3,
         height: '100%',
         backgroundColor: 'orange',
@@ -279,7 +277,65 @@ export default StyleSheet.create({
       image:{
         height: '80%',
         resizeMode: 'contain',
-      }
+      },
+    },
+    recipeDescription:{
+      background: {
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        flex: 1,
+      },
+      modal: {
+        position: 'absolute',
+        top: '2.5%',
+        left: '2.5%',
+        right: '2.5%',
+        bottom: '2.5%',
+        borderRadius: 16,
+        backgroundColor: 'rgba(255, 255, 255, 1)',
+        justifyContent: 'center',
+        alignItems: 'center'
+      },
+      title:{
+        fontSize: 32,
+        fontWeight: 'bold',
+        margin: 8,
+        borderBottomWidth: 1,
+        width: '100%',
+        textAlign: 'center'
+
+      },
+      step:{
+        container:{
+          flexDirection: 'row',
+          marginHorizontal: 10,
+          marginBottom: 8,
+        },
+        drawingContainer: {
+          flexDirection: 'column',
+          alignItems: 'center',
+        },
+        circle: {
+          width: 24,
+          height: 24,
+          borderRadius: 1000,
+          backgroundColor: 'gray',
+          marginTop: 8,
+        },
+        line: {
+          flex: 1,
+          width: 4,
+          backgroundColor: 'lightgray',
+          marginHorizontal: 8,
+        },
+        text: {
+          fontSize: 20,
+          lineHeight: 28,
+          marginVertical:5,
+          marginHorizontal:12,
+          width:'86%',
+          textAlign: 'justify',
+        },
+      },
     },
   },
   servingIndicator: {

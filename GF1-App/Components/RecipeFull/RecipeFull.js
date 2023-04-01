@@ -6,13 +6,14 @@ import styles from '../../styles'
 
 import RecipeButtons from './RecipeButtons';
 import ServingIndicator from './ServingIndicator';
-
+import RecipeDescription from './RecipeDescription';
 const RecipeFull = ({ route }) => {
   // Retrives the recipe from the API
 
   const { id } = route.params;
   const [data, setData] = useState(null);
   const [servings, updateServings] = useState(1);
+  const [isDescriptionVisible, setDescriptionVisibility] = useState(false);
 
   useEffect(() => {
     fetchData();
@@ -55,6 +56,7 @@ const RecipeFull = ({ route }) => {
   }
   return (
     <View style={styles.recipeFull.container}>
+      <RecipeDescription description={data.recipe_description} isModalVisible={isDescriptionVisible} setModalVisibility={setDescriptionVisibility}/>
       <Text style={styles.recipeFull.title} numberOfLines={1}>{data.recipe_name}</Text>
         <View style={styles.recipeFull.pricesIndicators.container}>
           <View style={styles.recipeFull.pricesIndicators.subcontainerEco}>
@@ -87,7 +89,7 @@ const RecipeFull = ({ route }) => {
             )}
           />
         </View>
-        <RecipeButtons/>
+        <RecipeButtons setDescriptionVisibility={setDescriptionVisibility}/>
     </View>
   );
 }

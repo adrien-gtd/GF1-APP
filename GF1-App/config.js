@@ -4,6 +4,7 @@
 export const CONFIG = {
     serverIp: "137.194.210.185",
     serverPort: "80",
+    recipeDescriptionSeparator: "|",
   }
   
   
