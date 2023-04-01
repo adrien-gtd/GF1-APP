@@ -1,7 +1,8 @@
-import { Keyboard, View} from 'react-native';
+import { Keyboard, View } from 'react-native';
 import styles from '../../styles';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { useFocusEffect } from '@react-navigation/native'
 import ModalEditItem from './ModalEditItem';
 import ModalNewItem from './ModalNewItem';
 import ShoppingListContent from './ShoppingListContent';
@@ -18,9 +19,9 @@ const ShoppingList = ({ navigation }) => {
 
   const TOTAL_KEY = '@total';
 
-  useEffect(() => {
+  useFocusEffect(() => {
     loadData();
-  }, []);
+  });
 
   const dismissKeyboard = () => {
     Keyboard.dismiss();
