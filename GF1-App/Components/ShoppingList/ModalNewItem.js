@@ -29,8 +29,9 @@ const ModalNewItem = ({
 
     const alreadyExist = (result) => {
       const newData = [...data];
-      newData[result].quantity += newQuantity;
-      newData[result].price += newItem.price_per_unit * newQuantity;
+      newData[result].quantity = parseInt(newData[result].quantity) + parseInt(parseInt(newQuantity));
+      newData[result].price = (parseFloat(newData[result].price) + parseFloat(newItem.price_per_unit * newQuantity)).toFixed(2);
+      return newData;
     }
 
 
