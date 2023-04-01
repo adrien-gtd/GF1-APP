@@ -34,7 +34,6 @@ const ModalNewItem = ({
       return newData;
     }
 
-
     const handleCreate = () => {
       const newData = [
         ...data,

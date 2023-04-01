@@ -7,6 +7,7 @@ import styles from '../../styles'
 import RecipeButtons from './RecipeButtons';
 import ServingIndicator from './ServingIndicator';
 import RecipeDescription from './RecipeDescription';
+
 const RecipeFull = ({ route }) => {
   // Retrives the recipe from the API
 
@@ -16,10 +17,10 @@ const RecipeFull = ({ route }) => {
   const [isDescriptionVisible, setDescriptionVisibility] = useState(false);
 
   useEffect(() => {
-    fetchData();
+    fetchRecipe();
   }, []);
 
-  const fetchData = async () => {
+  const fetchRecipe = async () => {
     const response = await fetch('http://' + CONFIG.serverIp + ':' + CONFIG.serverPort + '/recipe/' + id);
     const jsonData = await response.json();
     jsonData.score_co2 = Math.floor(jsonData.score_co2);
@@ -71,7 +72,7 @@ const RecipeFull = ({ route }) => {
             source={{uri: data.image_uri}} />
           <View style={styles.recipeFull.ingredientsList.container}>    
           <Text style={styles.recipeFull.ingredientsList.title}>Ingredients : </Text>
-          <ServingIndicator value={servings} updateValue={updateServings} />
+          <ServingIndicator value={servings} servings={servings} updateValue={updateServings} />
           <FlatList
             data={data.ingredients}
             renderItem={({ item }) => (
@@ -89,7 +90,7 @@ const RecipeFull = ({ route }) => {
             )}
           />
         </View>
-        <RecipeButtons setDescriptionVisibility={setDescriptionVisibility}/>
+        <RecipeButtons recipe={data} servings={servings} setDescriptionVisibility={setDescriptionVisibility}/>
     </View>
   );
 }
