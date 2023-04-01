@@ -47,7 +47,6 @@ const ShoppingList = ({ navigation }) => {
 
   return (
     <View style={styles.shoppingList.page}>
-
         <ShoppingListContent
         data = {data}
         isRender = {isRender}
@@ -56,7 +55,6 @@ const ShoppingList = ({ navigation }) => {
         setisModalVisibleEditItem = {setisModalVisibleEditItem}
         setinputText = {setinputText}
         />
-
         <ModalEditItem 
         isModalVisibleEditItem = {isModalVisibleEditItem}
         setisModalVisibleEditItem = {setisModalVisibleEditItem}
@@ -70,7 +68,6 @@ const ShoppingList = ({ navigation }) => {
         inputText = {inputText}
         editItem = {editItem}
         />
-      
         <ModalNewItem 
         isModalVisibleNewItem = {isModalVisibleNewItem}
         setisModalVisibleNewItem = {setisModalVisibleNewItem}

@@ -33,7 +33,6 @@ const ModalNewItem = ({
       newData[result].price += newItem.price_per_unit * newQuantity;
     }
 
-
     const handleCreate = () => {
       const newData = [
         ...data,

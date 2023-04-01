@@ -4,7 +4,6 @@ import styles from '../../styles';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Dropdown from '../Dropdown';
 import { useState,useEffect } from 'react';
-import SvgProfileComponentBig from '../SVGProfileComponentBig';
 import AddToAsyncStorageButton from '../AddToAsyncStorageButton';
 
 let nombresDePersonnes=[{id:1,name:'1'},{id:2,name:'2'},{id:3,name:'3'},{id:4,name:'4'},{id:5,name:'5'}];
