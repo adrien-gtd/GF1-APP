@@ -23,36 +23,6 @@ export default StyleSheet.create({
       width:30,
     },
   },
-  account:{
-    profileIcon:{
-      borderRadius: 150,
-      height:90,
-      width: 55,
-      paddingTop: 45,
-      padding:7,
-      overflow: 'hidden',
-      alignItems:'center',
-      justifyContent:'center',
-      backgroundColor: COLORS.brightThemeColorTopBar
-    },
-    addToAsynStorageButton:{
-      fontWeight: 'bold',
-      fontSize: 15,
-      padding: 4,
-    },
-    globalDark:{
-      alignItems:'center',
-      justifyContent:'center',
-      backgroundColor: COLORS.darkThemeColor,
-      flex : 1,
-    },
-    globalBright:{
-      align: 'center',
-      backgroundColor: COLORS.brightThemeColor,
-      flex: 1,
-    }
-    
-  },
   homePage: {
     container: {
       backgroundColor: COLORS.darkThemeColor,
@@ -451,38 +421,65 @@ export default StyleSheet.create({
     },
   },
   settings :{
+    container:{
+      width: '100%',
+      backgroundColor: COLORS.backgroundColor,
+      alignItems: 'center',
+    },
+    subcontainer:{
+      borderWidth: 1,
+      borderRadius: 20,
+      marginTop: 16,
+      flexDirection:'column',
+      flex:1,
+      alignItems: 'center',
+      justifyContent: 'center',
+      paddingBottom: 16,
+      paddingHorizontal: 32,
+    },
+    title:{
+      textAlign: 'left',
+      fontSize:24,
+      marginTop: 24,
+      marginBottom :16,
+    },
+    addToAsynStorageButton:{
+      fontWeight: 'bold',
+      fontSize: 15,
+      padding: 4,
+    },
     dropDown:{
-      backgroundColor: '#fb5303',
-      width:250,
-      padding: 5,
-      paddingHorizontal:4,
-      paddingBottom: 5,
-      flex:0.5,
+      backgroundColor: COLORS.backgroundColorDarkest,
+      width:300,
       borderRadius:10,
-      marginVertical:4,
-      marginTop:10,
+      marginBottom:12,
       minHeight:30,
       justifyContent:'center',
       flexDirection:'row',
       marginBottom:0,
       borderWidth:2,
     },
+    dropdownItemsContainer: {
+      backgroundColor:COLORS.dropwdownBackgroundColor,
+      padding:5,
+      width:300,
+      borderRadius:10,
+      marginBottom:10,
+      paddingHorizontal:5,
+    },
     itemsDropdown:{
-      backgroundColor:COLORS.dropwdownItemsColor,
-      width:200,
+      backgroundColor:COLORS.backgroundColorDarkest,
+      flex:1,
       padding:3,
       paddingHorizontal:4,
       flexDirection:'row',
-      flex:0.5,
       borderRadius:10,
       borderWidth:1,
-      borderColor:'rgba(10,10,10,0.8)',
-      marginBottom:4,
-      marginTop:4,
+      marginVertical:4,
+      textAlign: 'center'
     },
     itemsDropdownSelected:{
-      backgroundColor:"#5d8af2",
-      width:230,
+      backgroundColor: COLORS.logoGreen,
       padding:3,
       flex:1,
       borderRadius:10,
@@ -491,25 +488,17 @@ export default StyleSheet.create({
       marginBottom:4,
       marginTop:4,
     },
-
-    AddToAsynStorageButton:{
-      no:{
-        backgroundColor: '#fb5303',
-        width:250,
-        padding: 5,
-        paddingHorizontal:4,
-        flex:0.5,
-        borderRadius:10,
-        marginVertical:4,
-        marginTop:10,
-        minHeight:30,
-        justifyContent:'center',
-        flexDirection:'row',
-        marginBottom:0,
-        borderWidth:2,
+    addToAsyncStorage:{
+      container:{
+        flexDirection: 'row',
+        alignItems: 'center',
       },
-      yes:{
-        backgroundColor: '#28f40f',
+      text:{
+        fontSize: 20,
+        marginLeft: 24,
+        width: '70%',
+      },
+      button:{
         width:250,
         padding: 5,
         paddingHorizontal:4,

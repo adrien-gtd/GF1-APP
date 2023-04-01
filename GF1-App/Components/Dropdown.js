@@ -51,13 +51,7 @@ const Dropdown=({
       onPress={()=> setShowOption(!showOption)}>
       <Text style={{fontWeight:'bold'}}> {title} </Text>
       </TouchableOpacity>
-        {showOption && (<View style={{backgroundColor:COLORS.dropwdownBackgroundColor,
-        padding:5,
-        width:250,
-        borderRadius:10,
-        marginBottom:10,
-        paddingHorizontal:5,
-    }}>
+        {showOption && (<View style={styles.settings.dropdownItemsContainer}>
       {choices.map((item, index)=>{
         return(
           <TouchableOpacity

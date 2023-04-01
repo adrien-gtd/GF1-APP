@@ -23,24 +23,18 @@ const TopBar = ({ navigation }) => {
       }
     })
   })
-  const SettingsPressed=()=>{
-    navigation.navigate('settings');
-    console.log(getData('diet'));
-    console.log('test');
-  }
   return(
     <View style={globalTheme}>
       <TouchableHighlight 
         style={styles.topBar.accountButton} 
-        onPress={() => {navigation.navigate('account')}}
+        onPress={() => {navigation.navigate('Account')}}
         underlayColor={COLORS.backgroundColorDarker}>
-        <SvgProfileComponent/>  
-        
+        <SvgProfileComponent/>
       </TouchableHighlight>
       <Image style={styles.topBar.homeImage} source={require('../assets/logoHalf.png')} />
       <TouchableHighlight 
         style={styles.topBar.settingsButton}
-        onPress={SettingsPressed}
+        onPress={() => {navigation.navigate('Settings')}}
         underlayColor={COLORS.backgroundColorDarker}>
         <Image style={styles.topBar.homeImage} source={require('../assets/settings.png')} />
       </TouchableHighlight>

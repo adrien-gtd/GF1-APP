@@ -18,8 +18,8 @@ const App = () => {
           <Stack.Screen name = 'home' options={{headerShown:false}} component={ Home } />
           <Stack.Screen name = 'shopping' component={ ShoppingList } />
           <Stack.Screen name = 'history' component={ History } />
-          <Stack.Screen name = 'account' component={ Account } />
-          <Stack.Screen name = 'settings' component={ SettingsPage } />
+          <Stack.Screen name = 'Account' component={ Account } />
+          <Stack.Screen name = 'Settings' component={ SettingsPage } />
           <Stack.Screen name = 'recipeFull' options={{headerShown:false}} component={RecipeFull}/>
         </Stack.Navigator>
       </NavigationContainer>

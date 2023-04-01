@@ -6,6 +6,7 @@ import ShoppingList from './ShoppingList/ShoppingList';
 import Budget from './Budget/Budget';
 
 import styles from '../styles';
+import { COLORS } from '../colors';
 
 const Home = () => {
   const Tab = createBottomTabNavigator();
@@ -18,7 +19,7 @@ const Home = () => {
           return <Image 
             style={styles.tabNavigator.budget} 
             source={require('../assets/euro.png')} 
-            tintColor={focused ? 'green' : 'black'}
+            tintColor={focused ? COLORS.logoGreen : 'black'}
           />
         },}} />
       <Tab.Screen 
@@ -29,7 +30,7 @@ const Home = () => {
             return <Image 
               style={styles.tabNavigator.home} 
               source={require('../assets/home.png')} 
-              tintColor={focused ? 'green' : 'black'}
+              tintColor={focused ? COLORS.logoGreen : 'black'}
             />
           },
           headerShown:false,
@@ -41,7 +42,7 @@ const Home = () => {
           return <Image 
             style={styles.tabNavigator.shopping}
             source={require('../assets/shopping_cart.png')} 
-            tintColor={focused ? 'green' : 'black'}
+            tintColor={focused ? COLORS.logoGreen : 'black'}
           />
         },}} />
     </Tab.Navigator>
