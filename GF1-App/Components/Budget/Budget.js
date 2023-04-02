@@ -1,4 +1,4 @@
-import { TextInput, Input, View, Text, StyleSheet, Button, Image, Dimensions } from 'react-native';
+import { TextInput, Input, View, Text, StyleSheet, Button, Image, Dimensions, ScrollView } from 'react-native';
 import React  from 'react';
 import { useState } from 'react';
 import styles from '../../styles';
@@ -33,7 +33,7 @@ const Budget = ({ navigation }) => {
   })
 
   return (
-    <View style={styles.Budget.container}>
+    <ScrollView contentcontainerstyle={styles.Budget.container}>
       <Text style={styles.Budget.graph_title}> {"Financial budget graph, cap: " + maxBudget + "$"}</Text>
       <View style={styles.Budget.graphContainer}>
         <LineChart
@@ -145,7 +145,7 @@ const Budget = ({ navigation }) => {
           onPress={() => navigation.navigate("history")} 
         />
       </View>
-    </View>
+    </ScrollView>
   )
 }
 
