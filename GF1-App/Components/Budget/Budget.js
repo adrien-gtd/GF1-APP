@@ -43,15 +43,18 @@ const Budget = ({ navigation }) => {
     console.log('fin de useEffect');
   })
 
+
+
   return (
     <ScrollView contentcontainerstyle={styles.Budget.container}>
       <Text style={styles.Budget.graph_title}> {"Financial budget graph, cap: " + maxBudget + "$"}</Text>
       <View style={styles.Budget.graphContainer}>
-        <LineChart
+        <LineChart 
           data={{
             labels: ["1","4","5","10","15","17","19"],
-            datasets: [
+            datasets: [ 
               {
+                label: 'Dataset 1',
                 data: [30,65,80,100,130,145,190],
                 
               },
@@ -66,7 +69,7 @@ const Budget = ({ navigation }) => {
           height={220}
           yAxisLabel="$"
           yAxisInterval={1.5} 
-          xAxisLabel='W'
+          title="Hello"
           withDots={false}
           fromZero={true}
           chartConfig={{
