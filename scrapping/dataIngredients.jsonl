@@ -1,0 +1,211 @@
+{"ingredient_name": "lasagnes", "unit": "g", "price": 0.09, "co2": 0.05}
+{"ingredient_name": "oignon jaune", "unit": "", "price": 0.03, "co2": 0.02}
+{"ingredient_name": "carotte", "unit": "", "price": 0.04, "co2": 0.02}
+{"ingredient_name": "pur\u00e9e de tomate", "unit": "g", "price": 0.04, "co2": 0.07}
+{"ingredient_name": "eau", "unit": "ml", "price": 0.01, "co2": 0.02}
+{"ingredient_name": "feuille de laurier", "unit": "", "price": 0.05, "co2": 0.08}
+{"ingredient_name": "thym", "unit": "", "price": 0.09, "co2": 0.03}
+{"ingredient_name": "fromage r\u00e2p\u00e9", "unit": "g", "price": 0.06, "co2": 0.04}
+{"ingredient_name": "sel", "unit": "", "price": 0.05, "co2": 0.01}
+{"ingredient_name": "poivre", "unit": "", "price": 0.07, "co2": 0.07}
+{"ingredient_name": "farine", "unit": "g", "price": 0.01, "co2": 0.01}
+{"ingredient_name": "beurre", "unit": "g", "price": 0.06, "co2": 0.01}
+{"ingredient_name": "ail", "unit": "g", "price": 0.09, "co2": 0.1}
+{"ingredient_name": "c\u00e9leri", "unit": "g", "price": 0.1, "co2": 0.07}
+{"ingredient_name": "boeuf hach\u00e9", "unit": "g", "price": 0.05, "co2": 0.05}
+{"ingredient_name": "vin rouge", "unit": "ml", "price": 0.09, "co2": 0.07}
+{"ingredient_name": "basilic", "unit": "", "price": 0.03, "co2": 0.05}
+{"ingredient_name": "muscade", "unit": "g", "price": 0.05, "co2": 0.09}
+{"ingredient_name": "Parmesan", "unit": "g", "price": 0.04, "co2": 0.06}
+{"ingredient_name": "lait", "unit": "ml", "price": 0.05, "co2": 0.1}
+{"ingredient_name": "oignon", "unit": "g", "price": 0.04, "co2": 0.02}
+{"ingredient_name": "reblochon", "unit": "", "price": 0.05, "co2": 0.07}
+{"ingredient_name": "huile", "unit": "ml", "price": 0.05, "co2": 0.06}
+{"ingredient_name": "pomme de terre", "unit": "g", "price": 0.02, "co2": 0.04}
+{"ingredient_name": "lardons fum\u00e9s", "unit": "g", "price": 0.04, "co2": 0.03}
+{"ingredient_name": "cube de bouillon", "unit": "", "price": 0.09, "co2": 0.05}
+{"ingredient_name": "cr\u00e8me fra\u00eeche", "unit": "ml", "price": 0.03, "co2": 0.07}
+{"ingredient_name": "blanquette de veau", "unit": "g", "price": 0.02, "co2": 0.08}
+{"ingredient_name": "bouillon de poule", "unit": "", "price": 0.09, "co2": 0.04}
+{"ingredient_name": "champignon", "unit": "g", "price": 0.03, "co2": 0.03}
+{"ingredient_name": "citron", "unit": "", "price": 0.04, "co2": 0.08}
+{"ingredient_name": "jaune d'oeuf", "unit": "", "price": 0.05, "co2": 0.1}
+{"ingredient_name": "vin blanc", "unit": "ml", "price": 0.04, "co2": 0.05}
+{"ingredient_name": "merguez", "unit": "", "price": 0.1, "co2": 0.05}
+{"ingredient_name": "huile d'olive", "unit": "", "price": 0.08, "co2": 0.03}
+{"ingredient_name": "harissa", "unit": "g", "price": 0.09, "co2": 0.02}
+{"ingredient_name": "tomate", "unit": "", "price": 0.09, "co2": 0.06}
+{"ingredient_name": "courgette", "unit": "", "price": 0.04, "co2": 0.03}
+{"ingredient_name": "pois chiches", "unit": "g", "price": 0.02, "co2": 0.06}
+{"ingredient_name": "pilon de poulet", "unit": "", "price": 0.02, "co2": 0.09}
+{"ingredient_name": "concentr\u00e9 de tomates", "unit": "g", "price": 0.02, "co2": 0.1}
+{"ingredient_name": "\u00e9pices \u00e0 couscous", "unit": "g", "price": 0.07, "co2": 0.04}
+{"ingredient_name": "navet", "unit": "", "price": 0.09, "co2": 0.08}
+{"ingredient_name": "chili", "unit": "g", "price": 0.1, "co2": 0.08}
+{"ingredient_name": "cumin en poudre", "unit": "g", "price": 0.02, "co2": 0.04}
+{"ingredient_name": "haricots rouges", "unit": "g", "price": 0.07, "co2": 0.02}
+{"ingredient_name": "bouillon de boeuf", "unit": "ml", "price": 0.08, "co2": 0.1}
+{"ingredient_name": "persil", "unit": "", "price": 0.08, "co2": 0.02}
+{"ingredient_name": "lardons", "unit": "g", "price": 0.04, "co2": 0.03}
+{"ingredient_name": "p\u00e2tes", "unit": "g", "price": 0.02, "co2": 0.09}
+{"ingredient_name": "tomates cerise", "unit": "g", "price": 0.01, "co2": 0.04}
+{"ingredient_name": "poulet", "unit": "", "price": 0.06, "co2": 0.02}
+{"ingredient_name": "jus de citron", "unit": "ml", "price": 0.07, "co2": 0.06}
+{"ingredient_name": "bouillon de volaille", "unit": "", "price": 0.06, "co2": 0.1}
+{"ingredient_name": "bourguignon", "unit": "g", "price": 0.08, "co2": 0.04}
+{"ingredient_name": "bouquet garni", "unit": "", "price": 0.09, "co2": 0.02}
+{"ingredient_name": "poireau", "unit": "g", "price": 0.08, "co2": 0.08}
+{"ingredient_name": "moutarde de Dijon", "unit": "g", "price": 0.02, "co2": 0.02}
+{"ingredient_name": "r\u00f4ti de boeuf", "unit": "g", "price": 0.09, "co2": 0.07}
+{"ingredient_name": "bouillon de l\u00e9gumes", "unit": "", "price": 0.09, "co2": 0.06}
+{"ingredient_name": "moutarde", "unit": "", "price": 0.07, "co2": 0.02}
+{"ingredient_name": "filet mignon", "unit": "", "price": 0.03, "co2": 0.1}
+{"ingredient_name": "vin blanc sec", "unit": "ml", "price": 0.08, "co2": 0.08}
+{"ingredient_name": "curcuma", "unit": "g", "price": 0.05, "co2": 0.09}
+{"ingredient_name": "piment", "unit": "", "price": 0.03, "co2": 0.07}
+{"ingredient_name": "saucisse", "unit": "", "price": 0.03, "co2": 0.07}
+{"ingredient_name": "laurier", "unit": "", "price": 0.03, "co2": 0.06}
+{"ingredient_name": "pur\u00e9e", "unit": "g", "price": 0.05, "co2": 0.07}
+{"ingredient_name": "viande hach\u00e9e", "unit": "g", "price": 0.03, "co2": 0.05}
+{"ingredient_name": "herbes de Provence", "unit": "g", "price": 0.07, "co2": 0.06}
+{"ingredient_name": "riz", "unit": "g", "price": 0.03, "co2": 0.05}
+{"ingredient_name": "\u00e9chalote", "unit": "", "price": 0.08, "co2": 0.08}
+{"ingredient_name": "mont d'or", "unit": "", "price": 0.03, "co2": 0.09}
+{"ingredient_name": "moules", "unit": "ml", "price": 0.06, "co2": 0.09}
+{"ingredient_name": "beurre tendre", "unit": "g", "price": 0.04, "co2": 0.02}
+{"ingredient_name": "gruy\u00e8re r\u00e2p\u00e9", "unit": "g", "price": 0.1, "co2": 0.07}
+{"ingredient_name": "pain de mie", "unit": "g", "price": 0.05, "co2": 0.06}
+{"ingredient_name": "jambon", "unit": "g", "price": 0.06, "co2": 0.04}
+{"ingredient_name": "toastinette", "unit": "", "price": 0.02, "co2": 0.04}
+{"ingredient_name": "clou de girofle", "unit": "", "price": 0.01, "co2": 0.04}
+{"ingredient_name": "cuisse de poulet", "unit": "", "price": 0.01, "co2": 0.07}
+{"ingredient_name": "geni\u00e8vre", "unit": "", "price": 0.03, "co2": 0.02}
+{"ingredient_name": "r\u00f4ti de porc", "unit": "", "price": 0.08, "co2": 0.08}
+{"ingredient_name": "romarin", "unit": "g", "price": 0.05, "co2": 0.01}
+{"ingredient_name": "gros sel", "unit": "g", "price": 0.07, "co2": 0.09}
+{"ingredient_name": "gigot d'agneau", "unit": "", "price": 0.06, "co2": 0.08}
+{"ingredient_name": "graisse d'oie", "unit": "", "price": 0.03, "co2": 0.06}
+{"ingredient_name": "fond de veau", "unit": "g", "price": 0.03, "co2": 0.07}
+{"ingredient_name": "vinaigre balsamique", "unit": "ml", "price": 0.01, "co2": 0.03}
+{"ingredient_name": "paupiette de veau", "unit": "", "price": 0.02, "co2": 0.01}
+{"ingredient_name": "sauce barbecue", "unit": "g", "price": 0.05, "co2": 0.1}
+{"ingredient_name": "gouda", "unit": "g", "price": 0.06, "co2": 0.02}
+{"ingredient_name": "lard fum\u00e9", "unit": "g", "price": 0.06, "co2": 0.09}
+{"ingredient_name": "pain d'\u00e9pices", "unit": "g", "price": 0.03, "co2": 0.02}
+{"ingredient_name": "boeuf", "unit": "g", "price": 0.06, "co2": 0.02}
+{"ingredient_name": "cassonade", "unit": "g", "price": 0.07, "co2": 0.09}
+{"ingredient_name": "bi\u00e8re brune", "unit": "ml", "price": 0.1, "co2": 0.07}
+{"ingredient_name": "endive", "unit": "g", "price": 0.02, "co2": 0.03}
+{"ingredient_name": "cr\u00e8me", "unit": "g", "price": 0.01, "co2": 0.04}
+{"ingredient_name": "tomates concass\u00e9es", "unit": "g", "price": 0.09, "co2": 0.02}
+{"ingredient_name": "jarret de veau", "unit": "g", "price": 0.06, "co2": 0.07}
+{"ingredient_name": "coriandre", "unit": "g", "price": 0.08, "co2": 0.01}
+{"ingredient_name": "huile de friture", "unit": "", "price": 0.07, "co2": 0.07}
+{"ingredient_name": "f\u00e8ves", "unit": "g", "price": 0.02, "co2": 0.09}
+{"ingredient_name": "paprika", "unit": "g", "price": 0.02, "co2": 0.07}
+{"ingredient_name": "basilic frais", "unit": "g", "price": 0.09, "co2": 0.06}
+{"ingredient_name": "poivron", "unit": "g", "price": 0.04, "co2": 0.05}
+{"ingredient_name": "comt\u00e9", "unit": "g", "price": 0.05, "co2": 0.06}
+{"ingredient_name": "beaufort", "unit": "g", "price": 0.04, "co2": 0.06}
+{"ingredient_name": "emmental", "unit": "g", "price": 0.06, "co2": 0.07}
+{"ingredient_name": "ma\u00efzena", "unit": "g", "price": 0.07, "co2": 0.05}
+{"ingredient_name": "liqueur", "unit": "ml", "price": 0.09, "co2": 0.08}
+{"ingredient_name": "oeuf", "unit": "", "price": 0.02, "co2": 0.01}
+{"ingredient_name": "viande", "unit": "g", "price": 0.07, "co2": 0.02}
+{"ingredient_name": "os \u00e0 moelle", "unit": "", "price": 0.03, "co2": 0.03}
+{"ingredient_name": "sucre", "unit": "g", "price": 0.03, "co2": 0.02}
+{"ingredient_name": "rhum", "unit": "ml", "price": 0.09, "co2": 0.02}
+{"ingredient_name": "chocolat p\u00e2tissier", "unit": "g", "price": 0.06, "co2": 0.08}
+{"ingredient_name": "sucre en poudre", "unit": "g", "price": 0.08, "co2": 0.06}
+{"ingredient_name": "levure chimique", "unit": "g", "price": 0.04, "co2": 0.05}
+{"ingredient_name": "sucre semoule", "unit": "g", "price": 0.02, "co2": 0.06}
+{"ingredient_name": "yaourt nature", "unit": "g", "price": 0.1, "co2": 0.07}
+{"ingredient_name": "huile de colza", "unit": "ml", "price": 0.08, "co2": 0.04}
+{"ingredient_name": "vanille", "unit": "", "price": 0.06, "co2": 0.02}
+{"ingredient_name": "chocolat noir", "unit": "g", "price": 0.09, "co2": 0.03}
+{"ingredient_name": "levure", "unit": "g", "price": 0.09, "co2": 0.09}
+{"ingredient_name": "p\u00e2te feuillet\u00e9e", "unit": "", "price": 0.09, "co2": 0.02}
+{"ingredient_name": "sucre fin", "unit": "g", "price": 0.08, "co2": 0.06}
+{"ingredient_name": "amandes en poudre", "unit": "g", "price": 0.06, "co2": 0.08}
+{"ingredient_name": "sucre vanill\u00e9", "unit": "g", "price": 0.05, "co2": 0.1}
+{"ingredient_name": "pruneau", "unit": "g", "price": 0.08, "co2": 0.02}
+{"ingredient_name": "sucre roux", "unit": "g", "price": 0.05, "co2": 0.09}
+{"ingredient_name": "biscuits \u00e0 la cuill\u00e8re", "unit": "", "price": 0.04, "co2": 0.08}
+{"ingredient_name": "cacao amer", "unit": "g", "price": 0.04, "co2": 0.1}
+{"ingredient_name": "mascarpone", "unit": "g", "price": 0.06, "co2": 0.04}
+{"ingredient_name": "caf\u00e9", "unit": "ml", "price": 0.1, "co2": 0.03}
+{"ingredient_name": "beurre doux", "unit": "g", "price": 0.04, "co2": 0.05}
+{"ingredient_name": "p\u00e2te bris\u00e9e", "unit": "", "price": 0.03, "co2": 0.06}
+{"ingredient_name": "pomme", "unit": "", "price": 0.09, "co2": 0.08}
+{"ingredient_name": "sucre de canne", "unit": "g", "price": 0.03, "co2": 0.05}
+{"ingredient_name": "pain", "unit": "g", "price": 0.02, "co2": 0.05}
+{"ingredient_name": "sucre glace", "unit": "g", "price": 0.1, "co2": 0.02}
+{"ingredient_name": "blanc d'oeuf", "unit": "", "price": 0.04, "co2": 0.08}
+{"ingredient_name": "miel", "unit": "g", "price": 0.05, "co2": 0.04}
+{"ingredient_name": "anis", "unit": "g", "price": 0.04, "co2": 0.03}
+{"ingredient_name": "gingembre", "unit": "g", "price": 0.05, "co2": 0.03}
+{"ingredient_name": "quatre-\u00e9pices", "unit": "g", "price": 0.03, "co2": 0.02}
+{"ingredient_name": "cannelle", "unit": "g", "price": 0.09, "co2": 0.03}
+{"ingredient_name": "lait demi-\u00e9cr\u00e9m\u00e9", "unit": "ml", "price": 0.09, "co2": 0.1}
+{"ingredient_name": "g\u00e9latine", "unit": "g", "price": 0.07, "co2": 0.02}
+{"ingredient_name": "cr\u00e8me fra\u00eeche liquide", "unit": "ml", "price": 0.08, "co2": 0.07}
+{"ingredient_name": "eau de fleur d'oranger", "unit": "g", "price": 0.02, "co2": 0.08}
+{"ingredient_name": "bicarbonate", "unit": "g", "price": 0.01, "co2": 0.05}
+{"ingredient_name": "banane", "unit": "", "price": 0.02, "co2": 0.05}
+{"ingredient_name": "pain de campagne", "unit": "", "price": 0.06, "co2": 0.02}
+{"ingredient_name": "beurre demi-sel", "unit": "", "price": 0.05, "co2": 0.04}
+{"ingredient_name": "artichaut", "unit": "", "price": 0.04, "co2": 0.09}
+{"ingredient_name": "pois cass\u00e9s", "unit": "g", "price": 0.06, "co2": 0.03}
+{"ingredient_name": "vermicelles de riz", "unit": "g", "price": 0.05, "co2": 0.1}
+{"ingredient_name": "galette de riz", "unit": "", "price": 0.08, "co2": 0.08}
+{"ingredient_name": "blanc de poulet", "unit": "g", "price": 0.05, "co2": 0.06}
+{"ingredient_name": "sauce soja", "unit": "ml", "price": 0.04, "co2": 0.05}
+{"ingredient_name": "germes de soja", "unit": "g", "price": 0.08, "co2": 0.07}
+{"ingredient_name": "salade", "unit": "g", "price": 0.09, "co2": 0.09}
+{"ingredient_name": "menthe", "unit": "g", "price": 0.08, "co2": 0.03}
+{"ingredient_name": "crevettes", "unit": "", "price": 0.09, "co2": 0.02}
+{"ingredient_name": "sauce pour nem", "unit": "", "price": 0.05, "co2": 0.09}
+{"ingredient_name": "s\u00e9same", "unit": "", "price": 0.03, "co2": 0.05}
+{"ingredient_name": "vinaigre de riz", "unit": "ml", "price": 0.09, "co2": 0.04}
+{"ingredient_name": "avocat", "unit": "", "price": 0.08, "co2": 0.07}
+{"ingredient_name": "concombre", "unit": "", "price": 0.05, "co2": 0.03}
+{"ingredient_name": "crabe", "unit": "g", "price": 0.01, "co2": 0.02}
+{"ingredient_name": "feuille de nori", "unit": "", "price": 0.04, "co2": 0.04}
+{"ingredient_name": "riz rond", "unit": "g", "price": 0.08, "co2": 0.1}
+{"ingredient_name": "wasabi", "unit": "", "price": 0.05, "co2": 0.08}
+{"ingredient_name": "butternut", "unit": "", "price": 0.1, "co2": 0.08}
+{"ingredient_name": "curry", "unit": "g", "price": 0.05, "co2": 0.07}
+{"ingredient_name": "brick", "unit": "g", "price": 0.07, "co2": 0.04}
+{"ingredient_name": "origan", "unit": "", "price": 0.06, "co2": 0.06}
+{"ingredient_name": "chou-fleur", "unit": "", "price": 0.09, "co2": 0.03}
+{"ingredient_name": "potimarron", "unit": "", "price": 0.06, "co2": 0.05}
+{"ingredient_name": "aneth", "unit": "g", "price": 0.07, "co2": 0.03}
+{"ingredient_name": "saumon frais", "unit": "g", "price": 0.1, "co2": 0.09}
+{"ingredient_name": "porc", "unit": "g", "price": 0.07, "co2": 0.08}
+{"ingredient_name": "oignon blanc", "unit": "", "price": 0.04, "co2": 0.07}
+{"ingredient_name": "nuoc mam", "unit": "ml", "price": 0.08, "co2": 0.03}
+{"ingredient_name": "feuille de riz", "unit": "", "price": 0.08, "co2": 0.03}
+{"ingredient_name": "noix de saint-jacques", "unit": "", "price": 0.06, "co2": 0.03}
+{"ingredient_name": "fromage blanc", "unit": "", "price": 0.07, "co2": 0.08}
+{"ingredient_name": "vinaigre", "unit": "", "price": 0.09, "co2": 0.08}
+{"ingredient_name": "radis", "unit": "", "price": 0.02, "co2": 0.02}
+{"ingredient_name": "rumsteak", "unit": "g", "price": 0.09, "co2": 0.1}
+{"ingredient_name": "escalope de poulet", "unit": "", "price": 0.03, "co2": 0.02}
+{"ingredient_name": "quenelle de veau", "unit": "", "price": 0.02, "co2": 0.02}
+{"ingredient_name": "cr\u00e8me fra\u00eeche \u00e9paisse", "unit": "ml", "price": 0.04, "co2": 0.07}
+{"ingredient_name": "lard", "unit": "g", "price": 0.09, "co2": 0.05}
+{"ingredient_name": "champignon de Paris", "unit": "g", "price": 0.02, "co2": 0.03}
+{"ingredient_name": "vieille", "unit": "", "price": 0.05, "co2": 0.05}
+{"ingredient_name": "chou", "unit": "", "price": 0.02, "co2": 0.08}
+{"ingredient_name": "bouillon", "unit": "", "price": 0.05, "co2": 0.01}
+{"ingredient_name": "cresson", "unit": "g", "price": 0.02, "co2": 0.03}
+{"ingredient_name": "nori", "unit": "g", "price": 0.04, "co2": 0.01}
+{"ingredient_name": "laitue", "unit": "", "price": 0.01, "co2": 0.07}
+{"ingredient_name": "gruy\u00e8re", "unit": "g", "price": 0.02, "co2": 0.08}
+{"ingredient_name": "olives noires", "unit": "", "price": 0.02, "co2": 0.06}
+{"ingredient_name": "d\u00e9s de jambon", "unit": "", "price": 0.1, "co2": 0.01}
+{"ingredient_name": "vinaigrette", "unit": "", "price": 0.02, "co2": 0.08}
+{"ingredient_name": "poisson", "unit": "g", "price": 0.02, "co2": 0.08}
+{"ingredient_name": "olives", "unit": "", "price": 0.03, "co2": 0.02}
+{"ingredient_name": "potiron", "unit": "", "price": 0.09, "co2": 0.02}
+{"ingredient_name": "cr\u00e8me liquide", "unit": "ml", "price": 0.05, "co2": 0.07}
