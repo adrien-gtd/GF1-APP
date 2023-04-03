@@ -26,23 +26,7 @@ const Budget = ({ navigation }) => {
     .then((value)=>{
       setText2(value);
     })
-    });
-  
-  useFocusEffect(()=>{
-    console.log('arrivée sur homepage');
-    AsyncStorage.getItem('theme')
-    .then((value)=>{
-      if(value=='dark'){
-        setGlobalTheme(COLORS.darkThemeColor);
-        console.log(value);
-      }
-      else{
-        setGlobalTheme(COLORS.brightThemeColor);
-      }
-    })
-    console.log('fin de useEffect');
-  })
-
+  });
 
 
   return (
@@ -56,12 +40,10 @@ const Budget = ({ navigation }) => {
               {
                 label: 'Dataset 1',
                 data: [30,65,80,100,130,145,190],
-                
               },
               {
                 data: [maxBudget,maxBudget,maxBudget,maxBudget,maxBudget,maxBudget,maxBudget],
                 color: (opacity = 1) => `rgba(130, 0, 0, ${100})`,
-
               }
             ]
           }}
@@ -154,7 +136,7 @@ const Budget = ({ navigation }) => {
         <Button
           title="History"
           color='green'
-          onPress={() => navigation.navigate("history")} 
+          onPress={() => navigation.navigate("History")} 
         />
       </View>
     </ScrollView>

@@ -17,7 +17,7 @@ const App = () => {
         <Stack.Navigator initialRouteName='home'>
           <Stack.Screen name = 'home' options={{headerShown:false}} component={ Home } />
           <Stack.Screen name = 'shopping' component={ ShoppingList } />
-          <Stack.Screen name = 'history' component={ History } />
+          <Stack.Screen name = 'History' component={ History } />
           <Stack.Screen name = 'Account' component={ Account } />
           <Stack.Screen name = 'Settings' component={ SettingsPage } />
           <Stack.Screen name = 'recipeFull' options={{headerShown:false}} component={RecipeFull}/>
