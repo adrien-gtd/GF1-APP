@@ -16,7 +16,7 @@ const ShoppingListContent = ({
     for (let i = 0; i < array.length; i++) {
       sum = sum + parseFloat(array[i].price);
     }
-    return sum;
+    return sum.toFixed(2);
   }
 
   const onPressItem = (item) => {

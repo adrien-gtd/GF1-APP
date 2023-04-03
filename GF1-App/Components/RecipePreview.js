@@ -21,11 +21,15 @@ const RecipePreview = ({id}) => {
   }, []);
 
   const fetchData = async () => {
-    const response = await fetch('http://' + CONFIG.serverIp + ':' + CONFIG.serverPort + '/recipe/' + id);
-    const jsonData = await response.json();
-    jsonData.score_co2 = Math.floor(jsonData.score_co2);
-    jsonData.score_prix = Math.floor(jsonData.score_prix);
-    setData(jsonData);
+    try {
+      const response = await fetch('http://' + CONFIG.serverIp + ':' + CONFIG.serverPort + '/recipe/' + id);
+      const jsonData = await response.json();
+      jsonData.score_co2 = Math.floor(jsonData.score_co2);
+      jsonData.score_prix = Math.floor(jsonData.score_prix);
+      setData(jsonData);
+    } catch (error){
+      console.log(error)
+    }
   };
   
   if (!data) {

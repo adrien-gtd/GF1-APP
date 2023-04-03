@@ -6,8 +6,9 @@ import styles from '../../styles';
 import { CONFIG } from '../../config';
 
 const shoppingListKey = '@total'
+const historyKey = "@history";
 
-const RecipeButtons = ({ recipe, servings, setDescriptionVisibility }) => {
+const RecipeButtons = ({ recipe, servings, setDescriptionVisibility, recipe_id }) => {
   const addToShoppingList = async ({recipe, servings}) => {
     let jsonValue = await AsyncStorage.getItem(shoppingListKey);
     let shoppingList = JSON.parse(jsonValue);
@@ -36,6 +37,19 @@ const RecipeButtons = ({ recipe, servings, setDescriptionVisibility }) => {
     });
   }
 
+  const addToHistory = async (data) => {
+    try {
+      let jsonValue = await AsyncStorage.getItem(historyKey);
+      let history = JSON.parse(jsonValue);
+      newHistoryItem = {history_id: history != null ? history.length : 0, recipe_id: data};
+      history != null ? history.push(newHistoryItem) : history = [newHistoryItem];
+      console.log(history)
+      await AsyncStorage.setItem(historyKey, JSON.stringify(history));
+    } catch (e) {
+      console.log('Error saving data:', e);
+    }
+  }
+
   return (
     <View style={styles.recipeFull.recipeButtons.container}>
       <TouchableOpacity 
@@ -43,7 +57,8 @@ const RecipeButtons = ({ recipe, servings, setDescriptionVisibility }) => {
         onPress={() => addToShoppingList({recipe, servings})}>
           <Image style={styles.recipeFull.recipeButtons.image} source={require('../../assets/addToCart.png')} />
       </TouchableOpacity>
-      <TouchableOpacity style={styles.recipeFull.recipeButtons.doneRecipeButton}>
+      <TouchableOpacity style={styles.recipeFull.recipeButtons.doneRecipeButton}
+      onPress={() => addToHistory(recipe_id)}>
         <Image style={styles.recipeFull.recipeButtons.image} source={require('../../assets/recipeDone.png')} />
       </TouchableOpacity>
       <TouchableOpacity 

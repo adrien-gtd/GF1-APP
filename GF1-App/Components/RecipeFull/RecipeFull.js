@@ -90,7 +90,7 @@ const RecipeFull = ({ route }) => {
             )}
           />
         </View>
-        <RecipeButtons recipe={data} servings={servings} setDescriptionVisibility={setDescriptionVisibility}/>
+        <RecipeButtons recipe={data} servings={servings} setDescriptionVisibility={setDescriptionVisibility} recipe_id = {id}/>
     </View>
   );
 }

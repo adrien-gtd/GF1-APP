@@ -1,6 +1,6 @@
-import { TextInput, Input, View, Text, StyleSheet, Button, Image, Dimensions } from 'react-native';
+import { TextInput, Input, View, Text, StyleSheet, Button, Image, Dimensions, ScrollView } from 'react-native';
 import React  from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from '../../styles';
 import { useFocusEffect } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -16,6 +16,17 @@ const Budget = ({ navigation }) => {
   const [maxBudget, setText1] = useState('');
   const [maxCarbon, setText2] = useState('');
   const [globalTheme,setGlobalTheme]=useState(null);
+
+  useEffect(() => {
+    AsyncStorage.getItem("budg")
+    .then((value)=>{
+     setText1(value);
+  }),
+    AsyncStorage.getItem("carb")
+    .then((value)=>{
+      setText2(value);
+    })
+    });
   
   useFocusEffect(()=>{
     console.log('arrivée sur homepage');
@@ -32,20 +43,23 @@ const Budget = ({ navigation }) => {
     console.log('fin de useEffect');
   })
 
+
+
   return (
-    <View style={styles.Budget.container}>
+    <ScrollView contentcontainerstyle={styles.Budget.container}>
       <Text style={styles.Budget.graph_title}> {"Financial budget graph, cap: " + maxBudget + "$"}</Text>
       <View style={styles.Budget.graphContainer}>
-        <LineChart
+        <LineChart 
           data={{
-            datasets: [
+            labels: ["1","4","5","10","15","17","19"],
+            datasets: [ 
               {
+                label: 'Dataset 1',
                 data: [30,65,80,100,130,145,190],
-                labels: ["1","4","5","10","15","17","19"],
+                
               },
               {
                 data: [maxBudget,maxBudget,maxBudget,maxBudget,maxBudget,maxBudget,maxBudget],
-                labels: ["1","4","5","10","15","17","19"],
                 color: (opacity = 1) => `rgba(130, 0, 0, ${100})`,
 
               }
@@ -55,6 +69,7 @@ const Budget = ({ navigation }) => {
           height={220}
           yAxisLabel="$"
           yAxisInterval={1.5} 
+          title="Hello"
           withDots={false}
           fromZero={true}
           chartConfig={{
@@ -80,8 +95,7 @@ const Budget = ({ navigation }) => {
           placeholder="Edit budget cap"
           inputMode='numeric'
           keyboardType='numeric'
-          onChangeText={newText => setText1(newText)}
-          defaultValue={maxBudget}
+          onChangeText= {newText => {setText1(newText), AsyncStorage.setItem("budg",newText), this.textInput.clear()}}
           onSubmitEditing={() => this.textInput.clear()}
         />
       </View>
@@ -90,14 +104,14 @@ const Budget = ({ navigation }) => {
       <View style={styles.Budget.graphContainer} >
         <LineChart
           data={{
+            labels: ["1","4","5","10","15","17","19"],
             datasets: [
               {
                 data: [30,65,80,110,134,145,200],
-                labels: ["1","4","5","10","15","17","19"],
+                
               },
               {
                 data: [maxCarbon,maxCarbon,maxCarbon,maxCarbon,maxCarbon,maxCarbon,maxCarbon],
-                labels: ["1","4","5","10","15","17","19"],
                 color: (opacity = 1) => `rgba(130, 0, 0, ${100})`,
 
               }
@@ -132,10 +146,8 @@ const Budget = ({ navigation }) => {
           maxLength= {8}
           placeholder="Edit carbon cap"
           keyboardType='numeric'
-          inputMode='numeric'
-          onChangeText={newText => setText2(newText)}
-          defaultValue={maxCarbon}
-          onSubmitEditing={() =>  this.textInput.clear()}
+          onChangeText= {newText => {setText2(newText), AsyncStorage.setItem("carb",newText), this.textInput.clear()}}
+          onSubmitEditing={() => this.textInput.clear()}
         />
       </View>
       <View style={styles.Budget.button}>
@@ -145,7 +157,7 @@ const Budget = ({ navigation }) => {
           onPress={() => navigation.navigate("history")} 
         />
       </View>
-    </View>
+    </ScrollView>
   )
 }
 
