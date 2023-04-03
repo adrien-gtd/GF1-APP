@@ -31,7 +31,7 @@ const SearchBar = ({onOutput}) => {
         if (text !== '') {
             const controller = new AbortController();
             const timeoutId = setTimeout(() => controller.abort(), timeout);
-            const response = await fetch('http://'+ CONFIG.serverIp + '/recipeBegining/' + text);
+            const response = await fetch('http://'+ CONFIG.serverIp + ":" + CONFIG.serverPort + '/recipeBegining/' + text);
             clearTimeout(timeoutId);
             const jsonData = await response.json();
             setData(jsonData);

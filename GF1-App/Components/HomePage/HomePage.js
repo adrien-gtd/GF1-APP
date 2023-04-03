@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, StatusBar, FlatList, Text, TouchableOpacity } from 'react-native';
 import { COLORS } from '../../colors';
 import styles from '../../styles';
-import {CONFIG} from '../../config'
+import { CONFIG } from '../../config'
 
 import TopBar from '../TopBar';
 import RecipePreview from '../RecipePreview';
@@ -17,7 +17,7 @@ const HomePage = ({ navigation: stackNavigation, }) => {
   }, []);
 
   const fetchId = async () => {
-    const response = await fetch('http://' + CONFIG.serverIp + '/random/' + randomRecipes);
+    const response = await fetch('http://' + CONFIG.serverIp + ":" + CONFIG.serverPort + '/random/' + randomRecipes);
     const jsonData = await response.json();
     setIds(jsonData);
   };
