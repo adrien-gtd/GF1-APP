@@ -41,9 +41,10 @@ const RecipeButtons = ({ recipe, servings, setDescriptionVisibility, recipe_id }
     try {
       let jsonValue = await AsyncStorage.getItem(historyKey);
       let history = JSON.parse(jsonValue);
-      newHistoryItem = {history_id: history != null ? history.length : 0, recipe_id: data};
+      let date = new Date().getFullYear() + '-' + new Date().getMonth() + '-' + new Date().getDate();
+      newHistoryItem = {history_id: history != null ? history.length : 0, recipe_id: data, date : date};
       history != null ? history.push(newHistoryItem) : history = [newHistoryItem];
-      console.log(history)
+      console.log();
       await AsyncStorage.setItem(historyKey, JSON.stringify(history));
     } catch (e) {
       console.log('Error saving data:', e);

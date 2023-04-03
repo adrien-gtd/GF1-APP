@@ -77,7 +77,6 @@ const SearchBar = ({onOutput}) => {
     return {}
   } 
 
-
   return (
       <View>
           <TextInput
