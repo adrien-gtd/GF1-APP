@@ -1,5 +1,6 @@
-= Rapport d’avancement: Groupe “8.3”
-PACT groupe xy (Les plus beaux)
+= Rapport d’avancement: groupe “8.3”
+PACT groupe 8.3
+
 ifdef::env-gitlab,env-browser[:outfilesuffix: .adoc]
 :doctype: book
 :stem: latexmath
@@ -9,10 +10,18 @@ ifdef::env-gitlab,env-browser[:outfilesuffix: .adoc]
 :sectnums:
 :imagesdir: images
 
+// [style]
+// .justify {
+//   text-align: justify;
+// }
+
+// :stylesdir: styles
+// :stylesheet: mystyles.css
+
 
 // Partie non numérotée
 :sectnums!:
-== Groupe “8.3”
+== GF1
 
 === Membres du groupe
 
@@ -36,25 +45,57 @@ ifdef::env-gitlab,env-browser[:outfilesuffix: .adoc]
 
 == Résumé du sujet choisi en français (PAN1)
 
-// Décrire votre projet sans le scénariser : De quoi s’agit-il ? En quoi
-// cette idée est compatible avec le thème de PACT ? Qu’est-ce qu’il
-// permettrait de faire de façon générale.
+Notre projet PACT consiste en la création d'une application compagnon qui simplifie tous les aspects liés à l'alimentation d'un étudiant. 
 
-Notre projet PACT vise à développer une application et un site web pour simplifier tous les aspects liés l’alimentation d’un étudiant. 
-Le principe de base de l’application est de suivre les aliments que l’utilisateur possède et de proposer des recettes en conséquent. Nous souhaitons également implémenter une fonctionnalité permettant de simplifier au maximum la gestion de listes de courses. Notre objectif est de proposer une solution la plus ergonomique possible. 
-De plus, nous souhaitons nous démarquer en proposant également à l’utilisateur de pouvoir suivre l'évolution de ses dépenses alimentaires et son impact sur l’environnement, l’objectif étant de sensibiliser sur l’aspect écologique de l'alimentation.
-Le projet s'inscrit dans le thème de PACT car il nous permettra développer des compétences dans des domaines importants, qu'ils soient techniques (développemment Android, développemment web...) ou socio-économiques (ergonomie, étude des usages utilisateurs...).
+L'objectif est d'aider l'étudiant à gérer:
+
+- la qualité et la diversité de leur alimentation
+- leur budget au cours du temps
+- l'impact carbone de son alimentation
+
+L'application se présente donc comme un livre de recettes. Il permet à l'utilisateur de rechercher des recettes avec des filtres en fonction de son alimentation, du matériel qu'il a chez lui, de ce qu'il aime, de son budget et de l'impact carbone.
+
+Pour chaque recette, un estimation du prix ainsi que du bilan carbone est proposée à l'utilisateur. Elle permet à l'étudiant d'anticiper ses dépenses et d'adopter un comportement plus durable. 
+
+L'utilisateur a aussi accès à une page bilan. Elle lui permet de visualiser ses dépenses ainsi que ses émissions carbones sur une période donnée. Cette page est actualisée à chaque fois que l'utilisateur effectue une recette. 
+
+
+Ce projet PACT s'inscrit dans le thème : changer le monde à notre échelle. 
+
+
+// Notre projet PACT vise à développer une application et un site web pour simplifier tous les aspects liés l’alimentation d’un étudiant. 
+// Le principe de base de l’application est de suivre les aliments que l’utilisateur possède et de proposer des recettes en conséquent. Nous souhaitons également implémenter une fonctionnalité permettant de simplifier au maximum la gestion de listes de courses. Notre objectif est de proposer une solution la plus ergonomique possible. 
+// De plus, nous souhaitons nous démarquer en proposant également à l’utilisateur de pouvoir suivre l'évolution de ses dépenses alimentaires et son impact sur l’environnement, l’objectif étant de sensibiliser sur l’aspect écologique de l'alimentation.
+// Le projet s'inscrit dans le thème de PACT car il nous permettra développer des compétences dans des domaines importants, qu'ils soient techniques (développemment Android, développemment web...) ou socio-économiques (ergonomie, étude des usages utilisateurs...).
 
 == English Summary (PAN1)
 
-// *_Note : 15 lignes max, version anglaise du texte précédent_*
+//*_Note : 15 lignes max, version anglaise du texte précédent_*
 
-Our PACT project aims to develop an application and a website to simplify all aspects of a student's diet. 
-The basic principle of the application is to follow the food that the user owns and to propose recipes accordingly. We also want to implement a feature to simplify the management of shopping lists. Our goal is to offer the most ergonomic solution possible. 
-Moreover, we want to distinguish ourselves by offering the user the possibility to follow the evolution of his food expenses and his impact on the environment, the objective being to raise awareness on the ecological aspect of food.
-The project is in line with the theme of PACT because it will allow us to develop skills in important areas, whether technical (Android development, web development ...) or socio-economic (ergonomics, study of user uses ...).
+Our PACT project consists of the creation of a companion application that simplifies all aspects of a student's diet. 
+
+The aim is to help the student manage
+
+- the quality and diversity of their diet
+- their budget over time
+- the carbon impact of their food
+
+The application is therefore like a recipe book. It allows the user to search for recipes with filters according to their diet, the material they have at home, what they like, their budget and the carbon impact.
+
+For each recipe, an estimate of the price as well as the carbon footprint is proposed to the user. It allows the student to anticipate his expenses and to adopt a more sustainable behaviour. 
+
+The user also has access to a balance sheet page. It allows them to visualise their expenses and their carbon emissions over a given period. This page is updated each time the user makes a recipe. 
+
+
+This PACT project is part of the theme: changing the world on our scale.
+
+// Our PACT project aims to develop an application and a website to simplify all aspects of a student's diet. 
+// The basic principle of the application is to follow the food that the user owns and to propose recipes accordingly. We also want to implement a feature to simplify the management of shopping lists. Our goal is to offer the most ergonomic solution possible. 
+// Moreover, we want to distinguish ourselves by offering the user the possibility to follow the evolution of his food expenses and his impact on the environment, the objective being to raise awareness on the ecological aspect of food.
+// The project is in line with the theme of PACT because it will allow us to develop skills in important areas, whether technical (Android development, web development ...) or socio-economic (ergonomics, study of user uses ...).
 
 <<<
+
 
 // *Notes concenant le rapport*
 

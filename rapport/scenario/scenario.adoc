@@ -6,49 +6,79 @@
 // produit/service ou si vous avez changé d’idées entre-temps.
 
 
-Jackie est un étudiant, il n’a pas beaucoup d’argent mais aimerait bien pouvoir mieux manger et visualiser l’impact carbone de sa consommation de nourriture. Il installe alors notre super application GF1 sur son téléphone.
+Jackie est un étudiant, il n’a pas beaucoup d’argent mais aimerait bien pouvoir mieux manger et visualiser l’impact carbone de sa consommation de nourriture. Il installe alors notre application GF1 sur son téléphone.
 
-==== Acte 1 : Setup de GF1
-Lorsqu’il arrive sur l’application, on lui demande de créer un compte (afin qu’il puisse utiliser son compte sur différents appareils). Une fois le compte créé, il passe par un petit questionnaire rapide et pas trop ennuyeux qui lui permet de définir son profil alimentaire et matériel :
+==== Acte 1 : Installation de GF1
+Une fois l'application installée, Jackie est invité à rentrer le matériel qu'il possède chez lui ainsi que son régime alimentaire. 
 
-*item Son régime alimentaire (allergies, choix personnels, goûts)
-*item Le nombre de personnes pour lesquels il faut cuisiner
-*item Les équipements qu’il possède (plaques de cuisson, four etc…)
-*item Un budget mensuel (préréglage de X euros par mois)
+// Lorsqu’il arrive sur l’application, on lui demande de créer un compte (afin qu’il puisse utiliser son compte sur différents appareils). Une fois le compte créé, il passe par un petit questionnaire rapide et pas trop ennuyeux qui lui permet de définir son profil alimentaire et matériel :
+
+// *item Son régime alimentaire (allergies, choix personnels, goûts)
+// *item Le nombre de personnes pour lesquels il faut cuisiner
+// *item Les équipements qu’il possède (plaques de cuisson, four etc…)
+// *item Un budget mensuel (préréglage de X euros par mois)
 
 
-Ensuite, Jackie arrive sur l'interface de l'application, il peut ajouter les ingrédients qu’il a chez lui, chercher des recettes et les sélectionner pour ajouter les ingrédients à sa liste de course.
+Le setup est déjà fini ! Jackie arrive sur l'application.
 
 ==== Acte 2 : Choix d'une recette
 
-Jackie a chez lui du poulet et un oignon qu’il faut vite consommer. Il rentre alors ces données dans l’application. Dans les suggestions de repas, il repère un poulet curry qui lui met l’eau à la bouche, il est plutôt habitué aux pâtes au beurre et au poivre. 
+Jackie a déjà chez lui du poulet et un oignon qu'il souhaiterait vite consommer. IL fait donc une recherche sur ces ingrédients et trouve pleins de recettes faciles à réaliser et diversifées. 
 
-Il voit aussi les aspects nutritifs du plat, un indicateur de l’impact carbone de celui-ci ainsi que la difficulté de réalisation de la recette. Il peut alors calibrer son alimentation par rapport à ses objectifs nutritionnels, carbones et budgétaires.
-Il décide d’ajouter la recette de poulet curry à sa liste et alors, de manière instantanée et automatique, les ingrédients manquants sont ajoutés à sa liste de course.
+Il voit passer un poulet curry qui a l'air succulent. Ca change des classiques pâtes à la sauce pesto. Même si la recette à un éco-score pas si bon que ça, il se dit qu'il fera plus attention pour la prochaine fois. 
 
-==== Acte 3 : Les courses
+Il clique sur la fiche recette pour voir les ingrédients et les étapes de la recette. Jackie remarque alors qu'il lui manque de la crème fraîche (il a tout le reste). 
 
-Jackie part alors faire ses courses mais pas au Franprix car c’est trop cher. 
-Une fois dans le magasin, il dégaine son application et suit sa liste de courses. Comme il a activé le mode course, il peut cocher les ingrédients mis dans son cadis ou les décocher si jamais il ne les prend pas. 
+Il sait qu'il ne va pas utiliser tout le pot de crème fraîche d'un coup. Il cherche donc d'autres recettes utilisant de la crème fraîche et trouve des Gnocchi à la crème fraîche et aux lardons. Miam !
 
-Une fois passé à la caisse, il appuie sur le bouton “Courses terminées”, les ingrédients cochés sont alors ajoutés à son garde-manger. Il peut aussi prendre en photo son ticket de caisse pour que son budget soit mis à jour. 
 
-Si jamais les quantités de la liste de course n’ont pas pu être respectées, il y a des curseurs qui lui permettent d’ajuster.
+
+// Jackie a chez lui du poulet et un oignon qu’il faut vite consommer. Il rentre alors ces données dans l’application. Dans les suggestions de repas, il repère un poulet curry qui lui met l’eau à la bouche, il est plutôt habitué aux pâtes au beurre et au poivre. 
+
+// Il voit aussi les aspects nutritifs du plat, un indicateur de l’impact carbone de celui-ci ainsi que la difficulté de réalisation de la recette. Il peut alors calibrer son alimentation par rapport à ses objectifs nutritionnels, carbones et budgétaires.
+// Il décide d’ajouter la recette de poulet curry à sa liste et alors, de manière instantanée et automatique, les ingrédients manquants sont ajoutés à sa liste de course.
+
+==== Acte 3 : La liste de courses
+
+Maintenant que JAckie a repéré les recettes qu'il souhaite faire. Il peut les ajouter à sa liste de courses pour ne pas oublier ce qu'il doit acheter. 
+
+Sur la liste de courses, il enlève les ingrédients qu'il a déjà, pour ne pas les acheter à nouveau. 
+
+Puis une fois les courses faites, Jackie supprime tous les ingrédients encore présents dans sa liste de courses. 
+
+// Jackie part alors faire ses courses mais pas au Franprix car c’est trop cher. 
+// Une fois dans le magasin, il dégaine son application et suit sa liste de courses. Comme il a activé le mode course, il peut cocher les ingrédients mis dans son cadis ou les décocher si jamais il ne les prend pas. 
+
+// Une fois passé à la caisse, il appuie sur le bouton “Courses terminées”, les ingrédients cochés sont alors ajoutés à son garde-manger. Il peut aussi prendre en photo son ticket de caisse pour que son budget soit mis à jour. 
+
+// Si jamais les quantités de la liste de course n’ont pas pu être respectées, il y a des curseurs qui lui permettent d’ajuster.
 
 ==== Acte 4 : Le repas
 
-Jackie rentre chez lui tout content, car l’application a vraiment facilité ses courses : lui qui avait tendance à acheter un peu n’importe quoi et à perdre de l’argent bêtement. Il se lance alors dans la recette et l’interface intuitive et fonctionnelle lui permet de la suivre avec plaisir et sans se prendre la tête.
+Jackie rentre chez lui. Il est content parce que l'application a vraiment facilité le processus du choix de la recette et des courses. C'est fini l'époque des pâtes ou riz tous les soirs. Aussi la liste de courses lui evité d'acheter n'importe quoi et de perdre de l'argent inutilement.
 
-Une fois la recette finie, une fenêtre apparaît, il peut alors détailler les ingrédients restants, cela permet d’éviter le gaspillage. Tout est alors déduit automatiquement de son garde-manger. 
+La phase de la recette se déroule très bien, l'application explique toutes les étapes clairement. Etant donné que les recettes sont simples et adapté au matériel de Jackie. Il n'y a aucune difficulté dans la réalisation de la recette. 
+
+
+
+// Jackie rentre chez lui tout content, car l’application a vraiment facilité ses courses : lui qui avait tendance à acheter un peu n’importe quoi et à perdre de l’argent bêtement. Il se lance alors dans la recette et l’interface intuitive et fonctionnelle lui permet de la suivre avec plaisir et sans se prendre la tête.
+
+// Une fois la recette finie, une fenêtre apparaît, il peut alors détailler les ingrédients restants, cela permet d’éviter le gaspillage. Tout est alors déduit automatiquement de son garde-manger. 
 
 ==== Acte 5 : Après le repas
 
-Ensuite il est invité à noter la recette, l’application met alors à jour ses préférences. Cela permet aussi aux prochains utilisateurs de voir l’évaluation de la recette.
+Une fois la recette finie, elle est ajoutée aux bilans de l'application. Ainsi, Jackie peut suivre l'évolution de ses dépenses ainsi que la quantité de carbone émise par son alimenation sur une période donnée. 
 
-Jackie voit aussi le bilan carbone de son repas. Cela fonctionne sous forme de jauge de couleur, plus il pollue, plus la jauge est rouge/noire. Il est alors subtilement incité à faire attention. Sur le long terme, il en apprendra plus sur l'impact alimentaire de son alimentation et pourra prendre de meilleures habitudes, par exemple en privilégiant les produits locaux et dont la production pollue peu.
+Jackie est invité à définir des objectif de dépenses ainsi que de CO2. Cela lui permet de réduire ses dépenses et son impact carbone. 
+
+// Ensuite il est invité à noter la recette, l’application met alors à jour ses préférences. Cela permet aussi aux prochains utilisateurs de voir l’évaluation de la recette.
+
+// Jackie voit aussi le bilan carbone de son repas. Cela fonctionne sous forme de jauge de couleur, plus il pollue, plus la jauge est rouge/noire. Il est alors subtilement incité à faire attention. Sur le long terme, il en apprendra plus sur l'impact alimentaire de son alimentation et pourra prendre de meilleures habitudes, par exemple en privilégiant les produits locaux et dont la production pollue peu.
 
 ==== Conclusion
 
-Jackie est repu et peut aller dormir tranquille. Il est non seulement soulagé car il a eu un super repas pour pas cher, mais en plus, pour la première fois de sa vie, il a un retour sur l’empreinte carbone de son alimentation. 
+Jackie a très bien mangé, mieux que d'habitude. Et il a le sentiment de mieux contrôler son alimentation. Il peut surveiller sont budget et il a le sentiment d'avoir un vrai impact positif pour la planète en étant ammené à faire plus attention à ce qu'il mange. 
 
-Ces informations sont aussi résumées dans l’onglet profil de l’application. Il y voit sa jauge de budget, sa jauge carbone et une note nutritionnelle de son alimentation.
+// Jackie est repu et peut aller dormir tranquille. Il est non seulement soulagé car il a eu un super repas pour pas cher, mais en plus, pour la première fois de sa vie, il a un retour sur l’empreinte carbone de son alimentation. 
+
+// Ces informations sont aussi résumées dans l’onglet profil de l’application. Il y voit sa jauge de budget, sa jauge carbone et une note nutritionnelle de son alimentation.
