@@ -1,9 +1,9 @@
 === Scénarios d’usage
-Mettre ici le scénario d’usage que vous avez construit lors des séances
-encadrées par les experts SES. Vous pouvez mettre un scénario amélioré
-(et non celui noté) si vous jugez votre scénario insuffisant pour faire
-comprendre au jury PACT les différentes étapes d’utilisation de votre
-produit/service ou si vous avez changé d’idées entre-temps.
+// Mettre ici le scénario d’usage que vous avez construit lors des séances
+// encadrées par les experts SES. Vous pouvez mettre un scénario amélioré
+// (et non celui noté) si vous jugez votre scénario insuffisant pour faire
+// comprendre au jury PACT les différentes étapes d’utilisation de votre
+// produit/service ou si vous avez changé d’idées entre-temps.
 
 
 Jackie est un étudiant, il n’a pas beaucoup d’argent mais aimerait bien pouvoir mieux manger et visualiser l’impact carbone de sa consommation de nourriture. Il installe alors notre super application GF1 sur son téléphone.
