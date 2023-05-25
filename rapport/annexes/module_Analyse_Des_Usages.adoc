@@ -2,15 +2,15 @@
 
 ==== Descriptions
 
-- Recherches ciblées sur des services existants ou proches
+- Recherches ciblées sur des services existants ou proches :
    Fonctionnement d’applications ou de services similaires,
    Réseaux sociaux, revue de presse, etc,
    Retours d’utilisateurs à partir de l’expression spontanée.
-- Etat des lieux d’activités connexes
+- Etat des lieux d’activités connexes :
    Rapports de tendances ou d’habitudes de consommation (CREDOC, IPSOS..),
    Etudes sociologiques, rapports parlementaires identifiant des enjeux,
    Partenaires potentiels : associations, acteurs politiques, entreprises.
-- Identification des verrous juridiques, sociaux, économiques
+- Identification des verrous juridiques, sociaux, économiques :
    Type de données recueillies, protection des données personnelles (RGPD),
    Réticences ou freins liés aux pratiques sociales, à l’opinion,
    Enjeux de sécurité,
