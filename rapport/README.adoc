@@ -1,4 +1,4 @@
-= Rapport d’avancement: groupe “8.3”
+= Rapport d’avancement: Groupe “8.3”
 PACT groupe xy (Les plus beaux)
 ifdef::env-gitlab,env-browser[:outfilesuffix: .adoc]
 :doctype: book
@@ -12,7 +12,7 @@ ifdef::env-gitlab,env-browser[:outfilesuffix: .adoc]
 
 // Partie non numérotée
 :sectnums!:
-== « Nom du groupe »
+== Groupe “8.3”
 
 === Membres du groupe
 
@@ -36,9 +36,9 @@ ifdef::env-gitlab,env-browser[:outfilesuffix: .adoc]
 
 == Résumé du sujet choisi en français (PAN1)
 
-Décrire votre projet sans le scénariser : De quoi s’agit-il ? En quoi
-cette idée est compatible avec le thème de PACT ? Qu’est-ce qu’il
-permettrait de faire de façon générale.
+// Décrire votre projet sans le scénariser : De quoi s’agit-il ? En quoi
+// cette idée est compatible avec le thème de PACT ? Qu’est-ce qu’il
+// permettrait de faire de façon générale.
 
 Notre projet PACT vise à développer une application et un site web pour simplifier tous les aspects liés l’alimentation d’un étudiant. 
 Le principe de base de l’application est de suivre les aliments que l’utilisateur possède et de proposer des recettes en conséquent. Nous souhaitons également implémenter une fonctionnalité permettant de simplifier au maximum la gestion de listes de courses. Notre objectif est de proposer une solution la plus ergonomique possible. 
@@ -47,7 +47,7 @@ Le projet s'inscrit dans le thème de PACT car il nous permettra développer des
 
 == English Summary (PAN1)
 
-*_Note : 15 lignes max, version anglaise du texte précédent_*
+// *_Note : 15 lignes max, version anglaise du texte précédent_*
 
 Our PACT project aims to develop an application and a website to simplify all aspects of a student's diet. 
 The basic principle of the application is to follow the food that the user owns and to propose recipes accordingly. We also want to implement a feature to simplify the management of shopping lists. Our goal is to offer the most ergonomic solution possible. 
@@ -56,22 +56,22 @@ The project is in line with the theme of PACT because it will allow us to develo
 
 <<<
 
-*Notes concenant le rapport*
+// *Notes concenant le rapport*
 
-Les différentes pages du document sont rédigées en utilisant le langage
-AsciiDoc. Le squelette de rapport contient des exemples avec entre autres:
+// Les différentes pages du document sont rédigées en utilisant le langage
+// AsciiDoc. Le squelette de rapport contient des exemples avec entre autres:
 
-* des images,
-* des liens,
-* des équations.
+// * des images,
+// * des liens,
+// * des équations.
 
-La structure du rapport (parties, sections et la relation avec les
-différents fichiers) se trouve dans le fichier courant.
+// La structure du rapport (parties, sections et la relation avec les
+// différents fichiers) se trouve dans le fichier courant.
 
-**Prenez le temps** de supprimer le texte de remplissage et les sections non
-utilisées pour l'instant. Vous pouvez par exemple commenter ces parties non
-utilisées pour qu'elles n'apparaissent pas dans le document final. En Asciidoc,
-il suffit de les précéder de deux slashs (`//`).
+// **Prenez le temps** de supprimer le texte de remplissage et les sections non
+// utilisées pour l'instant. Vous pouvez par exemple commenter ces parties non
+// utilisées pour qu'elles n'apparaissent pas dans le document final. En Asciidoc,
+// il suffit de les précéder de deux slashs (`//`).
 
 <<<
 toc::[]
