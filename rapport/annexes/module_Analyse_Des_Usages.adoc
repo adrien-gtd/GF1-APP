@@ -1,43 +1,28 @@
-=== Module X
+=== Module Analyse Des Usages
 
 ==== Descriptions
 
-[source,cpp]
-----
-#include <iostream>
-
-using namespace std;
-
-class M
-{
-public:
-   void hello()
-   {
-      cout << "hello" << endl;
-   }
-};
-
-int main()
-{
-   M m;
-   m.hello();
-   return 0;
-}
-----
-
-
-[source,c]
-----
-include::code/test.c[]
-----
-
-Et l'équation:
-
-[latexmath]
-++++
-A \in \mathcal{M}_{u,k}(\mathbb{R}) et B \in \mathcal{M}_{k,f}(\mathbb{R})
-++++
+- Recherches ciblées sur des services existants ou proches
+   ‣ Fonctionnement d’applications ou de services similaires
+   ‣ Réseaux sociaux, revue de presse etc.
+   ‣ Retours d’utilisateurs à partir de l’expression spontanée
+- Etat des lieux d’activités connexes
+   ‣ Rapports de tendances ou d’habitudes de consommation (CREDOC, IPSOS..)
+   ‣ Etudes sociologiques, rapports parlementaires identifiant des enjeux
+   ‣ Partenaires potentiels : associations, acteurs politiques, entreprises
+- Identification des verrous juridiques, sociaux, économiques
+   ‣ Type de données recueillies, protection des données personnelles (RGPD)
+   ‣ Réticences ou freins liés aux pratiques sociales, à l’opinion
+   ‣ Enjeux de sécurité
+   ‣ Évaluation des ressources nécessaires (matérielles et humaines)
+- Découpage analytique des différentes phases dans
+l’utilisation du produit/service et des « moments » dans le
+parcours de l’utilisateur
+- Création d'un guide d'entretien permettant de mener à bien les entretiens semi-dirigés et pour s'assurer
+que les informations recueillies soient riches et fiables.
+- Passage d'un total de 4 entretiens dans le but de recueillir des données sur de potentiels utilisateurs pour améliorer notre application.
+- Transcription et synthèse de ces entretiens pour mieux comprendre les habitudes en terme de : cuisine, gestion de budget, écologie, planification de l'alimentation.
+- Création d'une One Sheet permettant de rassembler nos découvertes et de les synthétiser pour le donner aux autres membres du groupe.
 
 ==== Avancement
 
-==== Bibliographie spécifique
