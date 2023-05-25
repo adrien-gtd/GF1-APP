@@ -26,3 +26,4 @@ que les informations recueillies soient riches et fiables.
 
 ==== Avancement
 
+Ce module nous a permis de mieux comprendre les utilisateurs, d'optimiser l'expérience utilisateur, d'augmenter la rétention des utilisateurs, d'optimiser les fonctionnalités et de prendre des décisions basées sur les données. C'est un outil précieux qui nous a permis d'améliorer continuellement notre produit et de satisfaire les attentes des futurs utilisateurs.
