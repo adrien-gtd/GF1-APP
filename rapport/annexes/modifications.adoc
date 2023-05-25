@@ -7,7 +7,7 @@ des experts et encadrant informatique
 
 [cols=",,",options="header",]
 |====
-| libellé / date | Description brève | Validé par :
+| Libellé / Date | Description brève | Validé par :
 |                |                   |
 |                |                   |
 |====
@@ -24,3 +24,13 @@ des experts et encadrant informatique
 
 ===== Modifications du rapport au PAN4
 
+- Retirer des notes du rapport final.
+- Renommer certaines parties non-modifiées.
+- Actualiser les résumés, la description du projet et le diagramme de flot.
+- Actualiser le scénario d'usage.
+- Actualiser le schéma d'architecture.
+- Actualiser les descriptions des interfaces.
+- Rentrer les dates effectives dans le planning prévisionnel.
+- Transcrire le plan de test.
+- Noter les modifications de fond et du rapport.
+- Ecrire le suivi de chaque module.
