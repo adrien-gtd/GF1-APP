@@ -2,15 +2,15 @@
 
 ==== Descriptions
 
-- Recherches ciblées sur des services existants ou proches :
+- Recherches ciblées sur des services existants ou proches
    Fonctionnement d’applications ou de services similaires,
    Réseaux sociaux, revue de presse, etc,
    Retours d’utilisateurs à partir de l’expression spontanée.
-- Etat des lieux d’activités connexes :
+- Etat des lieux d’activités connexes
    Rapports de tendances ou d’habitudes de consommation (CREDOC, IPSOS..),
    Etudes sociologiques, rapports parlementaires identifiant des enjeux,
    Partenaires potentiels : associations, acteurs politiques, entreprises.
-- Identification des verrous juridiques, sociaux, économiques :
+- Identification des verrous juridiques, sociaux, économiques
    Type de données recueillies, protection des données personnelles (RGPD),
    Réticences ou freins liés aux pratiques sociales, à l’opinion,
    Enjeux de sécurité,
@@ -26,4 +26,34 @@ que les informations recueillies soient riches et fiables.
 
 ==== Avancement
 
-Ce module nous a permis de mieux comprendre les utilisateurs, d'optimiser l'expérience utilisateur, d'augmenter la rétention des utilisateurs, d'optimiser les fonctionnalités et de prendre des décisions basées sur les données. C'est un outil précieux qui nous a permis d'améliorer continuellement notre produit et de satisfaire les attentes des futurs utilisateurs.
+=== Module Communication Client Serveur
+
+
+==== Descriptions
+
+==== Avancement
+
+=== Module Scraping
+
+==== Descriptions
+
+- Prise en main des outils de programmation : Utilisation de la bibliothèque Python Beautiful Soup 
+et du site web https://www.marmiton.org/ pour scraper les recettes
+- Nous avons cherché dans le code source de la page les balises permettant d'accéder aux détails 
+des recettes
+-Il a fallu ensuite chercher une page de marmiton sur laquelle il était possible d'obtenir un maximum de recettes
+dans le but de réitérer le processus pour chaque page.
+- Nous avons ainsi récupéré le titre des recettes, les ingrédients, l'image du plat et 
+les instructions à la préparation de la recette choisie dans un dictionnaire.
+-Il nous fallait aussi accéder aux prix des ingrédients par une unité choisie et à leur cout en carbone.
+Ce travail fut complexe en raison des différentes unités utilisées dans chaque recette ( 200g de poulet ou un filet de poulet 
+par exemple).
+- Il a donc fallu trouver une base de donnée qui correspondait à nos besoins, il fallait qu'elle soit exhaustive
+mais pas immense inutilement, et comprenne les prix et les couts carbones.
+- De plus, nous avons aussi utilisé une base de donnée qui n'avait de lien avec celles des 
+ingrédients de marmiton,il a donc fallu faire un travail de raccord "à la main". 
+
+==== Avancement
+
+-Il est encore nécessaire de finaliser le travail décrit plus haut pour obtenir des prix/couts carbones cohérents
+, étant donné qu'il s'agit de l'objectif même de notre application.
