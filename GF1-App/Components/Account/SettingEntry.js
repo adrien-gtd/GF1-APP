@@ -11,7 +11,7 @@ let dietChoices=[{id:5,name:'Je mange de tout'},{id:1,name:'Végétarien'},{id:2
 
 const SettingEntry = ( {title} ) => {
 
-  const[family,setFamily]=useState(null);
+  const[family,setFamily]=useState();
   //se déclenche quand la page est (re)loadée
   useEffect(()=>{
     AsyncStorage.getItem('family')

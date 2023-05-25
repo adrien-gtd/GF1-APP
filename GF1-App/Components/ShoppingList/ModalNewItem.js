@@ -18,7 +18,7 @@ const ModalNewItem = ({
     const [newQuantity, setNewQuantity] = useState();
 
 
-    const creatAlert = (title, message) => {
+    const createAlert = (title, message) => {
       Alert.alert(title, message, [
         {
           text: 'Ok',
@@ -65,10 +65,10 @@ const ModalNewItem = ({
       }
       else {
         if (newItem === undefined) {
-          creatAlert("Erreur", "Ingrédient non valide.");
+          createAlert("Erreur", "Ingrédient non valide.");
           console.log("Ingrédient non valide !!");
         } else {
-          creatAlert("Erreur", "Quantité non valide.");
+          createAlert("Erreur", "Quantité non valide.");
           console.log("Quantité non valide !!");
         }
       }
@@ -90,7 +90,7 @@ const ModalNewItem = ({
                 <Text style = {styles.shoppingList.text}>Item Name: </Text>
                 <SearchBar 
                   onOutput = {handleOutPut}
-                  creatAlert = {creatAlert}
+                  createAlert = {createAlert}
                 />
                 <Text style = {styles.shoppingList.text}>Quantity: </Text>
                 <TextInput

@@ -21,6 +21,14 @@ const Dropdown=({
         if (value !== null) {
           setCurrentValue(value);
         }
+        else {
+          try {
+            await AsyncStorage.setItem(storeKey, choices[0].name);
+            setCurrentValue(choices[0].name);
+          } catch (error) {
+            console.log(error);
+          }
+        }
       } catch (error) {
         console.log(error);
       }
@@ -35,11 +43,11 @@ const Dropdown=({
 
     if(storeKey!=null) {
       try {
-       await AsyncStorage.setItem(storeKey, newValue);
-    } catch (error) {
+        await AsyncStorage.setItem(storeKey, newValue);
+      } catch (error) {
         console.log(error);
+      }
     }
-  }
   }
   if (currentValue == null) { console.log(currentValue); return <Text>Loading</Text>; }
   else {
