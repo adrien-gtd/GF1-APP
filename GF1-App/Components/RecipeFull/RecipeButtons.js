@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { View, TouchableOpacity, Image } from 'react-native';
+import {Alert, View, TouchableOpacity, Image } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { showMessage } from "react-native-flash-message";
 
 import styles from '../../styles';
 import { CONFIG } from '../../config';
@@ -8,7 +9,19 @@ import { CONFIG } from '../../config';
 const shoppingListKey = '@total'
 const historyKey = "@history";
 
+
+
 const RecipeButtons = ({ recipe, servings, setDescriptionVisibility, recipe_id }) => {
+
+  const createAlert = (title, message) => {
+    Alert.alert(title, message, [
+      {
+        text: 'Ok',
+        style: 'cancel',
+      }]
+    );
+  }
+
   const addToShoppingList = async ({recipe, servings}) => {
     let jsonValue = await AsyncStorage.getItem(shoppingListKey);
     let shoppingList = JSON.parse(jsonValue);
@@ -35,6 +48,7 @@ const RecipeButtons = ({ recipe, servings, setDescriptionVisibility, recipe_id }
       }
       await AsyncStorage.setItem(shoppingListKey, JSON.stringify(shoppingList));
     });
+    createAlert("Validation", "Ingrédients ajoutés à la liste de course !");
   }
 
   const addToHistory = async (data) => {
@@ -46,6 +60,9 @@ const RecipeButtons = ({ recipe, servings, setDescriptionVisibility, recipe_id }
       history != null ? history.push(newHistoryItem) : history = [newHistoryItem];
       console.log();
       await AsyncStorage.setItem(historyKey, JSON.stringify(history));
+      // Show confirmation message
+      createAlert("Validation", "Recette ajouté à l'historique !");
+
     } catch (e) {
       console.log('Error saving data:', e);
     }
