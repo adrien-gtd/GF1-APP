@@ -3,18 +3,18 @@
 ==== Descriptions
 
 - Recherches ciblées sur des services existants ou proches
-   - Fonctionnement d’applications ou de services similaires
-   - Réseaux sociaux, revue de presse etc.
-   - Retours d’utilisateurs à partir de l’expression spontanée
+   Fonctionnement d’applications ou de services similaires,
+   Réseaux sociaux, revue de presse, etc,
+   Retours d’utilisateurs à partir de l’expression spontanée.
 - Etat des lieux d’activités connexes
-   - Rapports de tendances ou d’habitudes de consommation (CREDOC, IPSOS..)
-   - Etudes sociologiques, rapports parlementaires identifiant des enjeux
-   - Partenaires potentiels : associations, acteurs politiques, entreprises
+   Rapports de tendances ou d’habitudes de consommation (CREDOC, IPSOS..),
+   Etudes sociologiques, rapports parlementaires identifiant des enjeux,
+   Partenaires potentiels : associations, acteurs politiques, entreprises.
 - Identification des verrous juridiques, sociaux, économiques
-   - Type de données recueillies, protection des données personnelles (RGPD)
-   - Réticences ou freins liés aux pratiques sociales, à l’opinion
-   - Enjeux de sécurité
-   - Évaluation des ressources nécessaires (matérielles et humaines)
+   Type de données recueillies, protection des données personnelles (RGPD),
+   Réticences ou freins liés aux pratiques sociales, à l’opinion,
+   Enjeux de sécurité,
+   Évaluation des ressources nécessaires (matérielles et humaines).
 - Découpage analytique des différentes phases dans
 l’utilisation du produit/service et des « moments » dans le
 parcours de l’utilisateur
