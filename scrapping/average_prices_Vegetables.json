@@ -1,0 +1,492 @@
+[
+  {
+    "name": "AIL blanc sec France 50-70 ou 60-80mm filet 3 têtes (le filet)",
+    "Prixmoyen": "3.35",
+    "varia.": "+0.22",
+    "mini": "2.49",
+    "maxi": "3.95"
+  },
+  {
+    "name": "AIL blanc sec France biologique",
+    "Prixmoyen": "16.31",
+    "varia.": "-1.48",
+    "mini": "13.96",
+    "maxi": "19.96"
+  },
+  {
+    "name": "AIL blanc sec France vrac",
+    "Prixmoyen": "10.49",
+    "varia.": "+0.22",
+    "mini": "8.99",
+    "maxi": "11.99"
+  },
+  {
+    "name": "AIL blanc sec hors Fr. 50-70 ou 60-80mm filet 3 têtes (le filet)",
+    "Prixmoyen": "3.18",
+    "varia.": "-0.01",
+    "mini": "2.79",
+    "maxi": "4.49"
+  },
+  {
+    "name": "AIL blanc sec hors Fr. vrac",
+    "Prixmoyen": "10.04",
+    "varia.": "-0.15",
+    "mini": "6.95",
+    "maxi": "11.99"
+  },
+  {
+    "name": "ARTICHAUT Globuleux France (la pièce)",
+    "Prixmoyen": "1.82",
+    "varia.": "+0.03",
+    "mini": "1.29",
+    "maxi": "2.50"
+  },
+  {
+    "name": "ARTICHAUT Globuleux hors Fr. (la pièce)",
+    "Prixmoyen": "1.79",
+    "varia.": "-0.04",
+    "mini": "1.29",
+    "maxi": "2.40"
+  },
+  {
+    "name": "ASPERGE \"autre que verte\" France 10-16 ou 12-16mm cdt 500g",
+    "Prixmoyen": "9.55",
+    "varia.": "+0.52",
+    "mini": "",
+    "maxi": ""
+  },
+  {
+    "name": "ASPERGE \"autre que verte\" France +16 mm cdt 1kg",
+    "Prixmoyen": "8.21",
+    "varia.": "-1.46",
+    "mini": "5.99",
+    "maxi": "9.99"
+  },
+  {
+    "name": "ASPERGE \"autre que verte\" France +16 mm cdt 500g",
+    "Prixmoyen": "11.00",
+    "varia.": "-0.32",
+    "mini": "7.98",
+    "maxi": "13.98"
+  },
+  {
+    "name": "ASPERGE \"autre que verte\" France +16 mm vrac",
+    "Prixmoyen": "9.14",
+    "varia.": "-0.91",
+    "mini": "5.79",
+    "maxi": "10.99"
+  },
+  {
+    "name": "ASPERGE France biologique",
+    "Prixmoyen": "15.20",
+    "varia.": "+0.02",
+    "mini": "13.80",
+    "maxi": "17.80"
+  },
+  {
+    "name": "ASPERGE verte hors Fr. 10-16 ou 12-16mm cdt 500g",
+    "Prixmoyen": "8.28",
+    "varia.": "-0.67",
+    "mini": "5.98",
+    "maxi": "11.98"
+  },
+  {
+    "name": "AUBERGINE violette France vrac",
+    "Prixmoyen": "3.54",
+    "varia.": "-0.16",
+    "mini": "1.99",
+    "maxi": "3.99"
+  },
+  {
+    "name": "AUBERGINE violette hors Fr. biologique",
+    "Prixmoyen": "4.19",
+    "varia.": "+0.03",
+    "mini": "3.29",
+    "maxi": "5.50"
+  },
+  {
+    "name": "AUBERGINE violette hors Fr. biologique cdt 2 (le cdt 2)",
+    "Prixmoyen": "2.21",
+    "varia.": "-0.19",
+    "mini": "1.80",
+    "maxi": "2.99"
+  },
+  {
+    "name": "AUBERGINE violette hors Fr. vrac",
+    "Prixmoyen": "2.35",
+    "varia.": "+0.06",
+    "mini": "1.79",
+    "maxi": "2.99"
+  },
+  {
+    "name": "AVOCAT hors Fr. biologique (la pièce)",
+    "Prixmoyen": "1.65",
+    "varia.": "-0.05",
+    "mini": "1.39",
+    "maxi": "2.25"
+  },
+  {
+    "name": "AVOCAT hors Fr. filet (la pièce)",
+    "Prixmoyen": "0.93",
+    "varia.": "-0.01",
+    "mini": "0.76",
+    "maxi": "1.00"
+  },
+  {
+    "name": "AVOCAT hors Fr. vrac (la pièce)",
+    "Prixmoyen": "1.50",
+    "varia.": "-0.12",
+    "mini": "1.19",
+    "maxi": "1.99"
+  },
+  {
+    "name": "CAROTTE France lavée biologique",
+    "Prixmoyen": "2.66",
+    "varia.": "+0.04",
+    "mini": "2.19",
+    "maxi": "3.29"
+  },
+  {
+    "name": "CAROTTE France lavée sachet 1,5 kg",
+    "Prixmoyen": "2.27",
+    "varia.": "+0.08",
+    "mini": "1.93",
+    "maxi": "2.66"
+  },
+  {
+    "name": "CAROTTE France lavée sachet 2kg",
+    "Prixmoyen": "1.48",
+    "varia.": "-0.01",
+    "mini": "0.80",
+    "maxi": "1.75"
+  },
+  {
+    "name": "CAROTTE France lavée vrac",
+    "Prixmoyen": "2.35",
+    "varia.": "+0.12",
+    "mini": "1.89",
+    "maxi": "2.99"
+  },
+  {
+    "name": "CAROTTE hors Fr. lavée biologique",
+    "Prixmoyen": "2.61",
+    "varia.": "-0.01",
+    "mini": "2.19",
+    "maxi": "2.99"
+  },
+  {
+    "name": "CAROTTE hors Fr. lavée sachet 1,5 kg",
+    "Prixmoyen": "2.40",
+    "varia.": "+0.06",
+    "mini": "1.93",
+    "maxi": "2.66"
+  },
+  {
+    "name": "CAROTTE hors Fr. lavée vrac",
+    "Prixmoyen": "2.36",
+    "varia.": "+0.02",
+    "mini": "1.99",
+    "maxi": "2.89"
+  },
+  {
+    "name": "CHICORÉE frisée France (la pièce)",
+    "Prixmoyen": "3.12",
+    "varia.": "+0.05",
+    "mini": "2.79",
+    "maxi": "3.79"
+  },
+  {
+    "name": "CHOU FLEUR France (la pièce)",
+    "Prixmoyen": "3.44",
+    "varia.": "+0.30",
+    "mini": "2.99",
+    "maxi": "4.20"
+  },
+  {
+    "name": "CHOU FLEUR France biologique (la pièce)",
+    "Prixmoyen": "3.62",
+    "varia.": "+0.07",
+    "mini": "2.99",
+    "maxi": "4.99"
+  },
+  {
+    "name": "CONCOMBRE France (la pièce)",
+    "Prixmoyen": "1.14",
+    "varia.": "-0.15",
+    "mini": "0.69",
+    "maxi": "1.49"
+  },
+  {
+    "name": "CONCOMBRE France biologique (la pièce)",
+    "Prixmoyen": "1.98",
+    "varia.": "",
+    "mini": "1.50",
+    "maxi": "2.49"
+  },
+  {
+    "name": "CONCOMBRE hors Fr. biologique (la pièce)",
+    "Prixmoyen": "1.67",
+    "varia.": "-0.05",
+    "mini": "1.11",
+    "maxi": "2.29"
+  },
+  {
+    "name": "COURGETTE longue verte France biologique",
+    "Prixmoyen": "3.82",
+    "varia.": "-0.42",
+    "mini": "2.49",
+    "maxi": "4.99"
+  },
+  {
+    "name": "COURGETTE longue verte France vrac",
+    "Prixmoyen": "2.46",
+    "varia.": "-0.02",
+    "mini": "1.75",
+    "maxi": "2.99"
+  },
+  {
+    "name": "COURGETTE longue verte hors Fr. biologique",
+    "Prixmoyen": "3.85",
+    "varia.": "+0.04",
+    "mini": "2.65",
+    "maxi": "5.32"
+  },
+  {
+    "name": "COURGETTE longue verte hors Fr. filet 1kg",
+    "Prixmoyen": "1.88",
+    "varia.": "-0.07",
+    "mini": "1.49",
+    "maxi": "2.49"
+  },
+  {
+    "name": "COURGETTE longue verte hors Fr. vrac",
+    "Prixmoyen": "1.99",
+    "varia.": "-0.09",
+    "mini": "1.49",
+    "maxi": "2.49"
+  },
+  {
+    "name": "ENDIVE France sachet 1kg",
+    "Prixmoyen": "3.16",
+    "varia.": "-0.07",
+    "mini": "2.49",
+    "maxi": "3.69"
+  },
+  {
+    "name": "ENDIVE France vrac",
+    "Prixmoyen": "3.73",
+    "varia.": "+0.04",
+    "mini": "2.99",
+    "maxi": "3.99"
+  },
+  {
+    "name": "LAITUE Batavia France (la pièce)",
+    "Prixmoyen": "1.39",
+    "varia.": "-0.01",
+    "mini": "1.25",
+    "maxi": "1.69"
+  },
+  {
+    "name": "LAITUE Feuille de chêne France (la pièce)",
+    "Prixmoyen": "1.40",
+    "varia.": "-0.01",
+    "mini": "1.19",
+    "maxi": "1.69"
+  },
+  {
+    "name": "LAITUE pommée France (la pièce)",
+    "Prixmoyen": "1.42",
+    "varia.": "-0.02",
+    "mini": "1.19",
+    "maxi": "1.69"
+  },
+  {
+    "name": "MELON Charentais vert hors Fr. 750g + (la pièce)",
+    "Prixmoyen": "3.11",
+    "varia.": "-0.09",
+    "mini": "2.15",
+    "maxi": "3.99"
+  },
+  {
+    "name": "OIGNON jaune France biologique",
+    "Prixmoyen": "2.99",
+    "varia.": "+0.02",
+    "mini": "2.49",
+    "maxi": "3.40"
+  },
+  {
+    "name": "OIGNON jaune France filet 1kg",
+    "Prixmoyen": "2.60",
+    "varia.": "+0.13",
+    "mini": "1.49",
+    "maxi": "3.99"
+  },
+  {
+    "name": "POIREAU France entier biologique",
+    "Prixmoyen": "4.53",
+    "varia.": "+0.10",
+    "mini": "3.39",
+    "maxi": "5.32"
+  },
+  {
+    "name": "POIREAU France entier botte 1kg",
+    "Prixmoyen": "2.97",
+    "varia.": "-0.06",
+    "mini": "2.49",
+    "maxi": "3.49"
+  },
+  {
+    "name": "POIREAU France entier vrac",
+    "Prixmoyen": "3.03",
+    "varia.": "=",
+    "mini": "2.75",
+    "maxi": "3.79"
+  },
+  {
+    "name": "POIVRON hors Fr. biologique",
+    "Prixmoyen": "7.07",
+    "varia.": "-0.58",
+    "mini": "5.73",
+    "maxi": "9.98"
+  },
+  {
+    "name": "POIVRON hors Fr. biologique cdt 2 (le cdt 2)",
+    "Prixmoyen": "2.69",
+    "varia.": "-0.12",
+    "mini": "2.00",
+    "maxi": "3.99"
+  },
+  {
+    "name": "POIVRON hors Fr. vrac",
+    "Prixmoyen": "4.88",
+    "varia.": "-0.03",
+    "mini": "3.99",
+    "maxi": "5.99"
+  },
+  {
+    "name": "POMME DE TERRE de conservation France lavée sac 10kg",
+    "Prixmoyen": "0.78",
+    "varia.": "",
+    "mini": "",
+    "maxi": ""
+  },
+  {
+    "name": "POMME DE TERRE de conservation France lavée sac 5kg",
+    "Prixmoyen": "1.01",
+    "varia.": "=",
+    "mini": "0.79",
+    "maxi": "1.28"
+  },
+  {
+    "name": "POMME DE TERRE de conservation France vrac",
+    "Prixmoyen": "1.90",
+    "varia.": "-0.03",
+    "mini": "1.49",
+    "maxi": "2.25"
+  },
+  {
+    "name": "POMME DE TERRE four, frites ou purée de conservation France filet 2,5kg",
+    "Prixmoyen": "1.40",
+    "varia.": "-0.02",
+    "mini": "0.92",
+    "maxi": "1.60"
+  },
+  {
+    "name": "POMME DE TERRE France biologique",
+    "Prixmoyen": "2.03",
+    "varia.": "-0.04",
+    "mini": "1.56",
+    "maxi": "2.53"
+  },
+  {
+    "name": "POMME DE TERRE primeur France vrac",
+    "Prixmoyen": "5.07",
+    "varia.": "-1.44",
+    "mini": "2.99",
+    "maxi": "6.95"
+  },
+  {
+    "name": "POMME DE TERRE vapeur ou rissolée de conservation France filet 2,5kg",
+    "Prixmoyen": "1.43",
+    "varia.": "+0.07",
+    "mini": "1.00",
+    "maxi": "1.60"
+  },
+  {
+    "name": "TOMATE cerise hors Fr. biologique",
+    "Prixmoyen": "8.04",
+    "varia.": "+0.16",
+    "mini": "5.96",
+    "maxi": "9.96"
+  },
+  {
+    "name": "TOMATE cerise ronde rouge France barq.250g",
+    "Prixmoyen": "10.67",
+    "varia.": "-0.64",
+    "mini": "7.56",
+    "maxi": "11.96"
+  },
+  {
+    "name": "TOMATE cerise ronde rouge hors Fr. barq.250g",
+    "Prixmoyen": "4.22",
+    "varia.": "-0.15",
+    "mini": "3.80",
+    "maxi": "5.56"
+  },
+  {
+    "name": "TOMATE cocktail France barq.500g",
+    "Prixmoyen": "6.37",
+    "varia.": "-0.50",
+    "mini": "3.98",
+    "maxi": "7.98"
+  },
+  {
+    "name": "TOMATE côtelée rouge France vrac",
+    "Prixmoyen": "3.98",
+    "varia.": "-0.44",
+    "mini": "2.95",
+    "maxi": "4.99"
+  },
+  {
+    "name": "TOMATE ronde ou ronde grappe hors Fr. biologique",
+    "Prixmoyen": "5.90",
+    "varia.": "+0.26",
+    "mini": "4.58",
+    "maxi": "6.98"
+  },
+  {
+    "name": "TOMATE ronde rouge Espagne filet 1kg",
+    "Prixmoyen": "3.08",
+    "varia.": "-0.29",
+    "mini": "",
+    "maxi": ""
+  },
+  {
+    "name": "TOMATE ronde rouge France 57-67 ou 67-82mm vrac",
+    "Prixmoyen": "3.80",
+    "varia.": "-0.12",
+    "mini": "2.99",
+    "maxi": "4.49"
+  },
+  {
+    "name": "TOMATE ronde rouge France 77-82 ou 82-102mm vrac",
+    "Prixmoyen": "4.08",
+    "varia.": "-0.59",
+    "mini": "3.49",
+    "maxi": "4.99"
+  },
+  {
+    "name": "TOMATE ronde rouge France grappe vrac",
+    "Prixmoyen": "3.14",
+    "varia.": "-0.48",
+    "mini": "1.99",
+    "maxi": "3.99"
+  },
+  {
+    "name": "TOMATE ronde rouge Maroc filet 1kg",
+    "Prixmoyen": "3.12",
+    "varia.": "-0.09",
+    "mini": "1.99",
+    "maxi": "3.49"
+  }
+]

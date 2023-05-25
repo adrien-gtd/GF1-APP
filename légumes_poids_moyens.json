@@ -1,0 +1,93 @@
+[
+    
+    {
+      "name": "ail ",
+      "poid moyen": 7
+    },
+    {
+      "name": "artichaut vert",
+      "poid moyen": 350
+    },
+    {
+      "name": "artichaut violet",
+      "poid moyen": 150
+    },
+    {
+      "name": "asperges",
+      "poid moyen": 50
+    },
+    {
+      "name": "aubergine",
+      "poid moyen": 400
+    },
+    {
+      "name": "carotte",
+      "poid moyen": 125
+    },
+    {
+      "name": "céleri-rave",
+      "poid moyen": 1000
+    },
+    {
+      "name": "chou-fleur",
+      "poid moyen": 1500
+    },
+    {
+      "name": "chou vert",
+      "poid moyen": 2000
+    },
+    {
+      "name": "concombre",
+      "poid moyen": 200
+    },
+   
+    {
+      "name": "courgette",
+      "poid moyen": 200
+    },
+   
+    {
+      "name": "cresson (botte)",
+      "poid moyen": 200
+    },
+    {
+      "name": "échalote",
+      "poid moyen": 40
+    },
+    {
+      "name": "laitue",
+      "poid moyen": 250
+    },
+    {
+      "name": "navet long",
+      "poid moyen": 300
+    },
+    {
+      "name": "navet rond",
+      "poid moyen": 200
+    },
+    
+    {
+      "name": "oignon",
+      "poid moyen": 100
+    },
+    {
+      "name": "poireau",
+      "poid moyen": 150
+    },
+    {
+      "name": "poivron",
+      "poid moyen": 150
+    },
+   
+    {
+      "name": "pomme de terre",
+      "poid moyen": 120
+    },
+    
+    {
+      "name": "tomate",
+      "poid moyen": 130
+    },
+    
+  ]
