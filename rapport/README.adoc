@@ -141,8 +141,6 @@ include::architecture/schema.adoc[Schéma d’architecture]
 
 include::architecture/interfaces.adoc[Description des interfaces]
 
-include::architecture/sequence.adoc[Diagramme de séquence]
-
 include::architecture/ihm.adoc[Interface utilisateur graphique]
 
 <<<
@@ -168,6 +166,14 @@ include::annexes/modifications.adoc[Modifications (PAN2+)]
 
 include::annexes/avancement.adoc[Avancement des modules]
 
-include::annexes/moduleX.adoc[Avancement module X]
+include::annexes/module_Communication_Client_Serveur.adoc[Avancement module Communication Client Serveur]
 
-include::annexes/moduleY.adoc[Avancement module Y]
+include::annexes/module_React_Native.adoc[Avancement module React Native]
+
+include::annexes/module_Tests_et_Intégration.adoc[Avancement module Tests et Intégration]
+
+include::annexes/module_Analyse_Des_Usages.adoc[Avancement module Analyse Des Usages]
+
+include::annexes/module_SVG.adoc[Avancement module SVG]
+
+include::annexes/module_Web_Service.adoc[Avancement module Web Service]

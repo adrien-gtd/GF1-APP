@@ -1,33 +1,33 @@
 === Planning Prévisionnel PACT
 
-==== Rappel des dates
-Les dates importantes de PACT sont:
+//==== Rappel des dates
+//Les dates importantes de PACT sont:
 
-* PAN1: 22/11/2022
-* PAN2: fin janvier 2023
-* PAN3: 04/04/2023
-* PAN4: 30/05/2023
+//* PAN1: 22/11/2022
+//* PAN2: fin janvier 2023
+//* PAN3: 04/04/2023
+//* PAN4: 30/05/2023
 
-Les deux tableaux ci-dessous doivent vous aider à évaluer votre avancement/retard dans le développement de votre projet.
-Vous pouvez aussi vous aider de ces tableaux pour:
+//Les deux tableaux ci-dessous doivent vous aider à évaluer votre avancement/retard dans le développement de votre projet.
+//Vous pouvez aussi vous aider de ces tableaux pour:
 
-* identifier les périodes de fortes charge de travail
-* analyser les dépendances entre modules
-* les retards bloquant pour l'avancée de l'ensemble du projet (ce n'est pas forcément le cas pour tous les modules)
+//* identifier les périodes de fortes charge de travail
+//* analyser les dépendances entre modules
+//* les retards bloquant pour l'avancée de l'ensemble du projet (ce n'est pas forcément le cas pour tous les modules)
 
 ==== Planning Groupe
 
-Pour PAN1, remplissez dans ce tableau les dates prévues. Vous mettrez à jour les dates finales en cours d'année.
+// Pour PAN1, remplissez dans ce tableau les dates prévues. Vous mettrez à jour les dates finales en cours d'année.
 
 [cols=",^,,",options="header",]
 |====
 |Tâche | Responsable(s) | Quand Prévisionnel | Quand effectif
-|Intégration Initiale | MICOUD Lucas, MARCHETTI Pierre |20/03/23| 22/03/2023
-|Intégration PAN3 finalisée | MICOUD Lucas, MARCHETTI Pierre |24/03/23| 03/04/2023
-|Préparation / répétition PAN3 | Tous les membres du groupe |28/03/23| 03/04/2023
-|Démo PAN4 finalisée | GUITTARD Adrien |16/04/23| 12/04/2023
-|Préparation Poster PAN4 | KHODAKOV Ivan |17/04/23| ...
-|Présentation "Pitch" PAN4 | FAUVE Antoine |24/04/23| ...
+|Intégration Initiale | MICOUD Lucas, MARCHETTI Pierre |20/03/23|15/02/23
+|Intégration PAN3 finalisée | MICOUD Lucas, MARCHETTI Pierre |24/03/23|03/04/23
+|Préparation / répétition PAN3 | LE BLANC Raphaël |28/03/23|03/04/23
+|Démo PAN4 finalisée | GUITTARD Adrien |16/04/23|17/05/23
+|Préparation Poster PAN4 | KHODAKOV Ivan |17/04/23|23/05/23
+|Présentation "Pitch" PAN4 | FAUVE Antoine |24/04/23|23/05/23
 |Vidéo PAN4 | GELEBART Mael |25/05/23| ...
 |Création présentation | Fauve Antoine |25/05/23| ...
 |Préparation / répétition PAN4 | Tous les membres du groupe |29/04/23| ...
