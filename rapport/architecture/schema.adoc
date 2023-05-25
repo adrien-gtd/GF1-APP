@@ -22,7 +22,7 @@ Dans ce bloc, on décrit toutes les démarches faites de la part de l'utilisateu
 On distingue différents sous-blocs:
 
  
-====== Interaction recette:
+====== Interaction recette (partie supprimée):
 L'objectif est de pouvoir permettre au client de rentrer les détails de provenance et d'emballage des différents ingrédients utilisés dans la recette.
 
 ====== Gestion Historique:
@@ -31,23 +31,34 @@ Le but est de pouvoir permettre à l'utilisateur de valider les recettes qu'il.e
 ==== Appli/Site 
 L'application ou le site doit permettre de transmettre les requêtes faites par l'utilisateur au serveur.
 Afficher les résultats, nottament les recettes. 
-Gérer une liste de course. (Soit, faite par l'utilisateur qui peut faire la liste des ingrédients manuellement, soit, de façon automatique lorsque l'utilisateur sélectionne une recette qu'il désire faire plus tard.)
+Gérer une liste de course en local. L'utilisateurs peut supprimer des éléments de sa liste de course. 
 
 ==== Serveur
 
 Dans ce bloc, on a décrit les fonctionnalités qui devront faire appel aux bases de données:
-La recherche de recettes
-Le calcul de l'équivalent carbonne de l'alimentation de l'utilisateur
+
+ * La recherche de recettes
+ * Affichage d'une fiche recette
+ * Calcul de l'estimation du prix d'une recette
+ * calcul de l'estimation du bilan CO2 d'une recette
 
 Et transmettre le tout à l'application.
 
 ==== Bases de données
-Description des différentes bases de données envisagées pour le projet:
 
--Base de recettes pour pouvoir suggérer à l'utilisateurs de plats (fonction priemière de l'application)
+La base de données est construite autour de trois tables:
+ 
+ * La table  "équipements", pour chaque équipement, il y a un nom, un id et une image
+ * La table "recettes", pour chaque recette, il y a un nom, un id, les étapes et une image
+ * La table "ingrédients", qui contient le nom, un id, le CO2 par gramme ainsi que le prix par gramme
 
--Base de prix des aliments: pour pouvoir estimer le budget dépensé par l'utilisateur en fonction du nombre de repas préparés.
+Autour de ces tables, on retrouve 2 autres tables qui servent à les lier:
+ 
+ * La table "liste des ingrédients", qui lie les recettes avec leurs ingrédients
+ * La table "liste des équipements", qui lie les équipements avec des recettes
 
--Base Impact carbone: base dans laquelle se trouveraient les infos nécessaires à l'estimation de l'équivalent carbone des repas préparés par l'utilisateur.
+
+image::../images/database_GF1.png[Schéma BDD GF1]
+
 
 
