@@ -28,7 +28,7 @@
 |Démo PAN4 finalisée | GUITTARD Adrien |16/04/23|17/05/23
 |Préparation Poster PAN4 | KHODAKOV Ivan |17/04/23|23/05/23
 |Présentation "Pitch" PAN4 | FAUVE Antoine |24/04/23|23/05/23
-|Création présentation | Fauve Antoine |25/05/23|25/05/23
+|Création présentation | FAUVE Antoine |25/05/23|25/05/23
 |Préparation / répétition PAN4 | Tous les membres du groupe |29/04/23|25/05/23
 |====
 
@@ -56,13 +56,12 @@
 [cols=",^,^,,,",options="header",]
 |====
 |Module | Responsables | Travail Initial | Version initiale | Version intégrable | Version intégrée
-|Communication Client Serveur | FAUVE Antoine, KHODAKOV Ivan | prévu: 31/12/22 fait: 4/01/23 | prévu: 15/01/23 fait:23/01/23 | prévu: 05/03/23 fait:19/03/23 | prévu: 24/03/23 fait:29/03/23
-|React Native | GELEBART Mael, GUITTARD Adrien, LE BLANC Raphaël | prévu: 31/12/22 fait:... | prévu: 15/01/23 fait:... | prévu: 05/03/23 fait:... | prévu: 24/03/23 fait:...
-|Tests et Intégration | MARCHETTI Pierre, MICOUD Lucas | prévu: 31/12/22 fait:... | prévu: 15/01/23 fait:... | prévu: 05/03/23 fait:... | prévu: 24/03/23 fait:...
-|Interface Utilisateur Graphique | GELEBART Mael, LE BLANC Raphaël | prévu: 31/12/22 fait:... | prévu: 15/01/23 fait:... | prévu: 05/03/23 fait:... | prévu: 24/03/23 fait:...
-|Analyse des usages | FAUVE Antoine, MARCHETTI Pierre | prévu: 31/12/22 fait: 6/12/23 | prévu: 15/01/23 fait: 13/12/22 | prévu: 05/03/23 fait: 13/01/23 | 
-|Scrapping | GUITTARD Adrien, KHODAKOV Ivan | prévu: 31/12/22 fait:... | prévu: 15/01/23 fait:... | prévu: 05/03/23 fait:... | prévu: 24/03/23 fait:...
-|Interface Web | GUITTARD Adrien, KHODAKOV Ivan, MICOUD Lucas | prévu: 31/12/22 fait:... | prévu: 15/01/23 fait:... | prévu: 05/03/23 fait:... | prévu: 24/03/23 fait:...
+|Communication Client Serveur | FAUVE Antoine, KHODAKOV Ivan | prévu: 31/12/22 fait: 04/01/23 | prévu: 15/01/23 fait: 23/01/23 | prévu: 05/03/23 fait: 19/03/23 | prévu: 24/03/23 fait: 29/03/23
+|React Native | GELEBART Mael, GUITTARD Adrien, LE BLANC Raphaël, MICOUD Lucas | prévu: 31/12/22 fait: 09/01/23 | prévu: 15/01/23 fait: 23/01/23 | prévu: 05/03/23 fait: 15/03/23 | prévu: 24/03/23 fait: 28/03/23
+|Tests et Intégration | MARCHETTI Pierre, MICOUD Lucas | prévu: 31/12/22 fait: 06/01/23 |  |  | prévu: 24/03/23 fait: 31/03/23
+|SVG | GELEBART Mael, LE BLANC Raphaël | prévu: 31/12/22 fait: 09/01/23 | prévu: 15/01/23 fait: 24/01/23 | prévu: 05/03/23 fait: 15/03/23 | prévu: 24/03/23 fait: 29/03/23
+|Analyse des usages | FAUVE Antoine, MARCHETTI Pierre | prévu: 31/12/22 fait: 06/12/23 | prévu: 15/01/23 fait: 13/12/22 | prévu: 05/03/23 fait: 13/01/23 | 
+|Web Service | GUITTARD Adrien, KHODAKOV Ivan | prévu: 31/12/22 fait: 13/01/23 | prévu: 15/01/23 fait: 20/01/23 | prévu: 05/03/23 fait: 22/03/23 | prévu: 24/03/23 fait: 28/03/23
 
 |====
 
