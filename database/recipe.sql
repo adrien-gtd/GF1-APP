@@ -12,8 +12,8 @@ ALTER TABLE recipes ADD FULLTEXT(recipe_name, recipe_description); --permet d'au
 CREATE TABLE IF NOT EXISTS ingredients (
     ingredient_id INT NOT NULL AUTO_INCREMENT,
     ingredient_name VARCHAR(50) NOT NULL  ,
-    co2_per_unit FLOAT(5,2),
-    price_per_unit FLOAT(5,2),
+    co2_per_unit FLOAT,
+    price_per_unit FLOAT,
     unit VARCHAR(2) NOT NULL,
     UNIQUE (ingredient_name),
     PRIMARY KEY (ingredient_id)
