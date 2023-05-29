@@ -64,7 +64,7 @@ const RecipeButtons = ({ recipe, servings, setDescriptionVisibility, recipe_id }
       createAlert("Validation", "Recette ajouté à l'historique !");
 
     } catch (e) {
-      console.log('Error saving data:', e);
+      console.log('Erreur en enregistrant les données:', e);
     }
   }
 

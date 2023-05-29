@@ -38,10 +38,10 @@ const SearchBar = ({onOutput}) => {
         }
     } catch (error) {
         if (error.name === 'AbortError') {
-            creatAlert("Connection erreur", "Timeout: impossible de joindre le serveur en un temps convenable")
+            creatAlert("Erreur de Connection", "Timeout: impossible de joindre le serveur en un temps convenable")
             throw new Error('Request timed out');
         } else {
-            creatAlert("Connection erreur", "Aucune connection au serveur")
+            creatAlert("Erreur de Connection", "Aucune connection au serveur")
             console.error(error);
         }
     }
@@ -84,7 +84,7 @@ const SearchBar = ({onOutput}) => {
               onChangeText={handleSearchText}
               onFocus={() => setShowSuggestions(true)}
               style={styles.homePage.searchBar}
-              placeholder={'\uD83D\uDD0E Search for your favorite recipe !'}
+              placeholder={'\uD83D\uDD0E Cherchez votre recette favorite !'}
               placeholderText={{fontWeight: 'bold'}}
           />
           {showSuggestions && (

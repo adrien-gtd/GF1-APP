@@ -42,7 +42,7 @@ const ShoppingList = ({ navigation }) => {
       const data = jsonValue != null ? JSON.parse(jsonValue) : [];
       setdata(data);
     } catch (e) {
-      console.log('Error loading data:', e);
+      console.log('Erreur au chargement des données:', e);
     }
   };
 

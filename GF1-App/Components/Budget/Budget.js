@@ -31,7 +31,7 @@ const Budget = ({ navigation }) => {
 
   return (
     <ScrollView contentcontainerstyle={styles.Budget.container}>
-      <Text style={styles.Budget.graph_title}> {"Financial budget graph, cap: " + maxBudget + "$"}</Text>
+      <Text style={styles.Budget.graph_title}> {"Graphe budget financier, cap: " + maxBudget + "$"}</Text>
       <View style={styles.Budget.graphContainer}>
         <LineChart 
           data={{
@@ -82,7 +82,7 @@ const Budget = ({ navigation }) => {
         />
       </View>
       
-      <Text style={styles.Budget.graph_title}>{"Carbon footprint graph, cap: " + maxCarbon + " CO2e/kg"}</Text>
+      <Text style={styles.Budget.graph_title}>{"Graphe empreinte carbone, cap: " + maxCarbon + " CO2e/kg"}</Text>
       <View style={styles.Budget.graphContainer} >
         <LineChart
           data={{
@@ -134,7 +134,7 @@ const Budget = ({ navigation }) => {
       </View>
       <View style={styles.Budget.button}>
         <Button
-          title="History"
+          title="Historique"
           color='green'
           onPress={() => navigation.navigate("History")} 
         />

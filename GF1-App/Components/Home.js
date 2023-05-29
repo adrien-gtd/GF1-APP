@@ -23,7 +23,7 @@ const Home = () => {
           />
         },}} />
       <Tab.Screen 
-        name="HomePage" 
+        name="Accueil" 
         component={HomePage} 
         options={{
           tabBarIcon: ({ focused, color, size }) => {
@@ -36,7 +36,7 @@ const Home = () => {
           headerShown:false,
           }} />
       <Tab.Screen 
-        name="Shopping List" 
+        name="Liste de courses" 
         component={ShoppingList} 
         options={{tabBarIcon: ({ focused, color, size }) => {
           return <Image 
