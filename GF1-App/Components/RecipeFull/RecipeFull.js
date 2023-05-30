@@ -85,7 +85,7 @@ const RecipeFull = ({ route }) => {
                   {item.ingredient_name}
                 </Text>
               </View>
-              <Text style={styles.recipeFull.ingredientsList.quantity}>{item.quantity * servings}</Text>
+              <Text style={styles.recipeFull.ingredientsList.quantity}>{item.quantity * servings} {item.unit}</Text>
               </View>
             )}
           />

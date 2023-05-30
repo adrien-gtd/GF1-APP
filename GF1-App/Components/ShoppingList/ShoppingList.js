@@ -49,6 +49,8 @@ const ShoppingList = ({ navigation }) => {
   return (
     <View style={styles.shoppingList.page}>
         <ShoppingListContent
+        saveData = {saveData}
+        setdata = {setdata}
         data = {data}
         isRender = {isRender}
         setisModalVisibleNewItem = {setisModalVisibleNewItem}

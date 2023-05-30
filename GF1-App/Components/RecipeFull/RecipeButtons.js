@@ -40,9 +40,9 @@ const RecipeButtons = ({ recipe, servings, setDescriptionVisibility, recipe_id }
           {
             id: fetchedIngredient[0].ingredient_id,
             name: fetchedIngredient[0].ingredient_name,
-            quantity: quantity,
+            quantity: quantity * servings,
             quantityType: fetchedIngredient[0].unit,
-            price: (fetchedIngredient[0].price_per_unit * quantity).toFixed(2),
+            price: (fetchedIngredient[0].price_per_unit * quantity * servings).toFixed(2),
           },
         ];
       }
@@ -58,7 +58,6 @@ const RecipeButtons = ({ recipe, servings, setDescriptionVisibility, recipe_id }
       let date = new Date().getFullYear() + '-' + new Date().getMonth() + '-' + new Date().getDate();
       newHistoryItem = {history_id: history != null ? history.length : 0, recipe_id: data, date : date};
       history != null ? history.push(newHistoryItem) : history = [newHistoryItem];
-      console.log();
       await AsyncStorage.setItem(historyKey, JSON.stringify(history));
       // Show confirmation message
       createAlert("Validation", "Recette ajouté à l'historique !");

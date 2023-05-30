@@ -3,6 +3,8 @@ import {View, Text, TouchableOpacity, FlatList} from 'react-native';
 import { COLORS } from '../../colors';
 
 const ShoppingListContent = ({
+  setdata,
+  saveData,
   data,
   isRender,
   setisModalVisibleNewItem,
@@ -10,6 +12,11 @@ const ShoppingListContent = ({
   setinputText,
   seteditItem
 }) => {
+
+  const deleteShoppingList = () => {
+    setdata ([]);
+    saveData ([]);
+  }
 
   const getTotal = (array) => {
     let sum = 0;
@@ -61,7 +68,15 @@ const ShoppingListContent = ({
         onPress = {() => setisModalVisibleNewItem(true)} 
         style = {styles.shoppingList.button}
         >
-        <Text style = {styles.shoppingList.buttonText}>Ajouter un ingrédient</Text>
+        <Text style = {styles.shoppingList.buttonText}>Add Item</Text>
+
+        </TouchableOpacity>
+
+        <TouchableOpacity
+        onPress = {() => deleteShoppingList()} 
+        style = {styles.shoppingList.button}
+        >
+        <Text style = {styles.shoppingList.buttonText}>Tout supprimer</Text>
 
         </TouchableOpacity>
       </View>

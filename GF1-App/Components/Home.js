@@ -11,7 +11,7 @@ import { COLORS } from '../colors';
 const Home = () => {
   const Tab = createBottomTabNavigator();
   return (
-    <Tab.Navigator initialRouteName="HomePage">
+    <Tab.Navigator initialRouteName="Accueil">
       <Tab.Screen 
         name="Budget"
         component={Budget}
