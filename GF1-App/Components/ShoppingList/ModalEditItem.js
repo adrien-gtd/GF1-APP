@@ -52,7 +52,7 @@ const ModalEditItem = ({
         >
             <TouchableWithoutFeedback onPress={dismissKeyboard}>
             <View style = {styles.shoppingList.modalView}>
-                <Text style = {styles.shoppingList.text}>Change quantity: </Text>
+                <Text style = {styles.shoppingList.text}>Changer la quantité : </Text>
                 <TextInput
                 style={styles.shoppingList.searchBar}
                 defaultValue = {inputText}
@@ -67,14 +67,14 @@ const ModalEditItem = ({
                     onPress = {() => onPressSaveEdit()} 
                     style = {styles.shoppingList.button}
                 >
-                    <Text style = {styles.shoppingList.buttonText}>Save</Text>
+                    <Text style = {styles.shoppingList.buttonText}>Enregistrer</Text>
 
                 </TouchableOpacity>
                 <TouchableOpacity
                     onPress = {() => deleteItem()} 
                     style = {styles.shoppingList.button}
                 >
-                    <Text  style = {styles.shoppingList.buttonText}>Delete</Text>
+                    <Text  style = {styles.shoppingList.buttonText}>Supprimer</Text>
 
                 </TouchableOpacity>
                 </View>

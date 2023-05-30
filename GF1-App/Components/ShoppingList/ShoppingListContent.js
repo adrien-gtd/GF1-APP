@@ -61,7 +61,7 @@ const ShoppingListContent = ({
         onPress = {() => setisModalVisibleNewItem(true)} 
         style = {styles.shoppingList.button}
         >
-        <Text style = {styles.shoppingList.buttonText}>Add Item</Text>
+        <Text style = {styles.shoppingList.buttonText}>Ajouter un ingrédient</Text>
 
         </TouchableOpacity>
       </View>

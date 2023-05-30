@@ -86,13 +86,13 @@ const ModalNewItem = ({
         >
             <TouchableWithoutFeedback onPress={dismissKeyboard}>
             <View style = {styles.shoppingList.modalView}>
-                <Text style = {styles.shoppingList.text}>Add item</Text>
-                <Text style = {styles.shoppingList.text}>Item Name: </Text>
+                <Text style = {styles.shoppingList.text}>Ajouter un ingrédient</Text>
+                <Text style = {styles.shoppingList.text}>Nom de l'ingrédient: </Text>
                 <SearchBar 
                   onOutput = {handleOutPut}
                   createAlert = {createAlert}
                 />
-                <Text style = {styles.shoppingList.text}>Quantity: </Text>
+                <Text style = {styles.shoppingList.text}>Quantité: </Text>
                 <TextInput
                 style={styles.shoppingList.searchBar}
                 defaultValue = {newQuantity}
@@ -107,13 +107,13 @@ const ModalNewItem = ({
                     onPress = {() => addItem()} 
                     style = {styles.shoppingList.button}
                 >
-                    <Text style = {styles.shoppingList.buttonText}>Add Item</Text>
+                    <Text style = {styles.shoppingList.buttonText}>Ajouter un ingrédient</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
                     onPress = {() => {setisModalVisibleNewItem(false); setNewQuantity();setNewItem() }} 
                     style = {styles.shoppingList.button}
                 >
-                    <Text style = {styles.shoppingList.buttonText}>Quit</Text>
+                    <Text style = {styles.shoppingList.buttonText}>Quitter</Text>
 
                 </TouchableOpacity>
                 </View>
