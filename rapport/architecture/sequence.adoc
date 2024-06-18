@@ -1,23 +1,56 @@
-=== Diagramme de séquence (optionnel)
+=== Diagramme de séquence 
 
-Insérer ici un ou plusieurs diagrammes de séquence ou d’activité du
-projet. Voir le cours d’introduction au Génie Logiciel.
-Il peut y avoir plusieurs diagrammes, un par scénario. S’il y
-a dans le projet un dialogue client-serveur, il peut être utile de faire un
-diagramme de séquence spécifique pour ce dialogue.
+// Insérer ici un ou plusieurs diagrammes de séquence ou d’activité du
+// projet. Voir le cours d’introduction au Génie Logiciel.
+// Il peut y avoir plusieurs diagrammes, un par scénario. S’il y
+// a dans le projet un dialogue client-serveur, il peut être utile de faire un
+// diagramme de séquence spécifique pour ce dialogue.
+
+Voici un diagramme de séquence des échanges clients-serveur-Base de données.
 
 
-*Exemple utilisant plantuml*
-**(Vous pouvez, bien sûr, utiliser votre outil de dessin préféré).**
+// *Exemple utilisant plantuml*
+// **(Vous pouvez, bien sûr, utiliser votre outil de dessin préféré).**
+
+// [plantuml, sequence-x]
+// ....
+//   browser  -> webserver :GET /index.html
+//   browser <-- webserver
+//   browser  -> webserver :POST /blog/comment
+//               webserver  -> database:INSERT comment
+//               webserver <-- database
+//   browser <-- webserver
+// ....
 
 [plantuml, sequence-x]
 ....
-  browser  -> webserver :GET /index.html
-  browser <-- webserver
-  browser  -> webserver :POST /blog/comment
-              webserver  -> database:INSERT comment
-              webserver <-- database
-  browser <-- webserver
+participant Application as "Client Application"
+participant Server as "Server Application"
+participant Database as "Database"
+
+Application ->  Server: Send request
+                Server ->  Database: Query for recipe information
+                Server <-- Database: Return recipe information
+Application <-- Server: Return recipe information
+
+
+Application ->  Server: Send request for recipe search
+                Server ->  Database: Query for recipe with text
+                Server <-- Database: Return matching recipes
+Application <-- Server: Return matching recipes
+
+
+Application ->  Server: Send request for all recipe information
+                Server ->  Database: Query for all recipe information
+                Server <-- Database: Return all recipe information
+Application <-- Server: Return all recipe information
+
+
+Application ->  Server: Send request for recipe price/CO2
+                Server ->  Database: Query for recipe price/CO2
+                Server <-- Database: Return recipe price/CO2
+Application <-- Server: Return recipe price/CO2
 ....
 
-Voir la liste des outils supportés par http://asciidoctor.org/docs/asciidoctor-diagram/[asciidoctor-diagram].
+
+// Voir la liste des outils supportés par http://asciidoctor.org/docs/asciidoctor-diagram/[asciidoctor-diagram].

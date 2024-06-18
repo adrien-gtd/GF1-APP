@@ -2,31 +2,65 @@
 === Description de la proposition
 
 ==== Motivation pour le projet
-Notre projet PACT est de développer une application pour aider les étudiants avec leur alimentation. Ce qui nous a motivé est le fait que la plupart des étudiants mangent mal et se font rarement à manger. Beaucoup citent le fait que la gestion de budget est plus compliqué lorsque l'on se fait à manger soi-même. La plupart des étudiants ont aussi du mal à faire leurs courses par manque d'organisation et d'habitude. De plus ils sont soit peu sensibilisés à l'impact carbone de leur alimentation ou ne connaissent pas de moyens d'y avoir accès. Les 3 entretiens que nous avons fait nous ont n'ont fait que confirmer ce que l'ont pensait déjà. L'application GF1 répond à un besoin réel et concret. Nous avons également relevé le besoin d'avoir une application ergonomique, peu intrusive et facile à utiliser.
+
+
+Notre projet est parti du constat que l’alimentation est quelque chose de très compliqué pour les étudiants : **56% des étudiants avouent ne pas manger à leur faim !** 
+
+Se nourrir coûte cher, en particulier en période d’inflation. De plus, les étudiants n’ont, pour la majorité, pas beaucoup de compétences culinaires et se contentent de pâtes avec de la sauce tous les jours. 
+
+Mais nous voulons changer cette vision de l’alimentation étudiante. Il n’y a pas de raison qu’un étudiant ne puisse pas avoir une alimentation variée et qui rentre dans son budget. De plus, nous voulons avoir un impact positif sur le climat en sensibilisant les étudiants au coût carbone de leur alimentation. 
+
+C'est pour ces raisons que nous souhaitions créer GF1, une application intuitive qui accompagne l’étudiant dans son alimentation pour lui permettre de manger mieux, pour moins cher et en polluant moins. 
+
+
+// Notre projet PACT est de développer une application pour aider les étudiants avec leur alimentation. Ce qui nous a motivé est le fait que la plupart des étudiants mangent mal et se font rarement à manger. Beaucoup citent le fait que la gestion de budget est plus compliqué lorsque l'on se fait à manger soi-même. La plupart des étudiants ont aussi du mal à faire leurs courses par manque d'organisation et d'habitude. De plus ils sont soit peu sensibilisés à l'impact carbone de leur alimentation ou ne connaissent pas de moyens d'y avoir accès. Les 3 entretiens que nous avons fait nous ont n'ont fait que confirmer ce que l'ont pensait déjà. L'application GF1 répond à un besoin réel et concret. Nous avons également relevé le besoin d'avoir une application ergonomique, peu intrusive et facile à utiliser.
 
 
 ==== Aspects principaux
-En prenant en compte tout ce qui est détaillé ci-dessus, nous avons décidé que notre projet aurait 3 fonctionnalités principales que nous considérons le coeur de notre projet:
+Notre application se concentre donc sur 3 aspects:
 
-* suggestion des plats/création de listes de courses appropriées
+- Offrir un livre de recette simples, diversifées et complet aux étudiants. 
+- Permettre à l'utilisateur de suivre une estimation de ses dépenses au cours du temps.
+- Sensibiliser les utilisateurs sur l'impact carbone de leur alimentation. 
 
-* suivi du budget
+// En prenant en compte tout ce qui est détaillé ci-dessus, nous avons décidé que notre projet aurait 3 fonctionnalités principales que nous considérons le coeur de notre projet:
 
-* estimation d'empreinte carbone 
+// * suggestion des plats/création de listes de courses appropriées
+
+// * suivi du budget
+
+// * estimation d'empreinte carbone 
 
 
-===== Suggestion des plats/création de listes de courses appropriées 
-Pour la suggestion des plats, notre application proposera des recettes à notre utilisateur qui pourra faire des recherches de recettes et trier selon différents critères. GF1 enregistrera les recettes effectuées/appréciées pour faire des propositions adaptées à l'utilisateur. En outre, lorsqu'une recette est selectionnée, GF1 génèrera une liste de courses à faire pour réaliser cette recette. À l'aide d'un simple système de cochage, GF1 peut être utilisé lors de l'achat des courses pour être sûr de ne rien oublier.
+// ===== Suggestion des plats/création de listes de courses appropriées 
+// Pour la suggestion des plats, notre application proposera des recettes à notre utilisateur qui pourra faire des recherches de recettes et trier selon différents critères. GF1 enregistrera les recettes effectuées/appréciées pour faire des propositions adaptées à l'utilisateur. En outre, lorsqu'une recette est selectionnée, GF1 génèrera une liste de courses à faire pour réaliser cette recette. À l'aide d'un simple système de cochage, GF1 peut être utilisé lors de l'achat des courses pour être sûr de ne rien oublier.
 
+===== Livre de recette 
+Notre application se présente comme un livre de recette. L'utilisateur à ainsi accès à un catalogue complet de recettes simples et diversifiées. 
+
+L'utilisateur peut se laisser conseiller par les recettes qui lui sont suggérées ou réaliser une recherche sur les ingrédients présents dans une recette ou sur le nom des recettes. Il peut aussi définir des filtres en fonction de son matériel et de son régime alimentaire. 
 
 ===== Suivi du budget 
-Notre application proposera de faire un suivi de budget en prenant en compte le budget de l'utilisateur et le prix des courses effectuées. L'utilisateur pourra aussi ajouter les achats qu'il a fait en dehors du cadre des recettes de l'application afin d'avoir un suivi précis même pour un utilisateur occasionnel.
+Notre application propose pour chaque recette, une estimation du prix de celle-ci. Elle est basée sur les ingrédients de la recette ainsi que leur quantité. Un score de budget inspiré du nutri-score sera aussi présent pour chaque recette. L'objectif est de permettre à l'utilisateur de se faire une idée rapide du prix de la recette proposée. 
+
+Ensuite, une page Bilan permettra à l'étudiant de visualiser une estimation de ses dépenses au cours du temps. Il pourra aussi définir des objectif à atteindre sur une période donnée. 
+
+// Notre application proposera de faire un suivi de budget en prenant en compte le budget de l'utilisateur et le prix des courses effectuées. L'utilisateur pourra aussi ajouter les achats qu'il a fait en dehors du cadre des recettes de l'application afin d'avoir un suivi précis même pour un utilisateur occasionnel.
 
 ===== Estimation d'empreinte carbone
-GF1 connaitra l'empreinte carbone des aliments que l'utilisateur consomme. GF1 sera capable de faire un bilan sur un mois ou par repas de l'impact carbone des habitudes alimentaires de l'utilisateur.
+GF1 est en mesure d'estimer l'impact carbone d'une recette en fonction des ingrédients présents dans cette recette.Il y aura aussi un eco-score permettant à l'utilisateur de se faire rapidement une idée de l'impact carbone de la recette. 
+
+L'utilisateur aura aussi accès à une page bilan très similaire à celle du budget. Il pourra suivre l'évolution de ses dépenses carbone sur une période donnée et pourra définir des objetifs à atteindre. 
+
+// GF1 connaitra l'empreinte carbone des aliments que l'utilisateur consomme. GF1 sera capable de faire un bilan sur un mois ou par repas de l'impact carbone des habitudes alimentaires de l'utilisateur.
 
 ==== Facilité d'utilisation
-Enfin, un aspect transversal dans notre projet sera le fait de créer une application simple, ergonomique, facile à utiliser et le moins intrusif possible. Ce sont des caractéristiques très importantes pour n'importe quel application mais en particulier pour nous. En effet, le publique que nous visons (les étudiants) sont très regardant sur la facilité d'utilisation d'une application. Notre diagramme de flot simple et clair illustre ce principe:
+Un aspect transversal de notre application mais pour le moins important est la facilité d'utilisation. Il faut qu'elle soit intuitive, ergonomique et la moins intrusive possible. 
+
+C'est important pour toutes les application mais en particulier la notre. Nous visons des étudiants, qui pour la plupart sont très regardant sur la facilité d'utilisation de leurs applications. Et peu d'étudiants utilisent déjà des applications similaires à la notre. Il ne faut donc pas que l'ergonomie soit un frein à l'utilisation. 
+
+
+// Enfin, un aspect transversal dans notre projet sera le fait de créer une application simple, ergonomique, facile à utiliser et le moins intrusif possible. Ce sont des caractéristiques très importantes pour n'importe quel application mais en particulier pour nous. En effet, le publique que nous visons (les étudiants) sont très regardant sur la facilité d'utilisation d'une application. Notre diagramme de flot simple et clair illustre ce principe:
 
 
 image::../images/GF1_flot.png[logo pact, 500, 500,align="center"]

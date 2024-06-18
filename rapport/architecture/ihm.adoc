@@ -24,6 +24,7 @@ image::../images/UI/UI pc - ecran recherche recettes.png[UI PC : écran d'accuei
 ====== Page d'accueil sur mobile
 
 image::../images/UI/UI mobile - ecran accueil (recherche recettes).png[UI mobile : écran d'accueil,200]
+image::../images/UI/ecran accueil.png[UI mobile : écran d'accueil final,200]
 
 ====== Description
 
@@ -40,12 +41,14 @@ Sur la page d'accueil, l'utilisateur retrouve :
 image::../images/UI/UI pc - page recette (1 sur 2).png[UI PC: page recette 1/2,400] 
 image::../images/UI/UI pc - page recette (2 sur 2).png[UI PC: page recette 2/2,400]
 
+
 On passe d'un écran à l'autre par défilement.
 
-===== Page d'accueil sur mobile
+===== Page recette sur mobile
 
 image::../images/UI/UI mobile - page recette (1.2 sur 2).png[UI mobile: page recette 1/2,200] 
 image::../images/UI/UI mobile - page recette (2 sur 2).png[UI mobile: page recette 1/2,200]
+image::../images/UI/page recette.png[UI PC: page recette finale,400]
 
 On passe d'un écran à l'autre par défilement.
 
@@ -68,6 +71,8 @@ Sur la page de recettes, l'utilisateur peut voir toutes les infos qui sont liée
 
 image::../images/UI/UI mobile - ecran courses.png[UI mobile : écran courses,200]
 
+image::../images/UI/ecran courses.png[UI mobile : écran courses final,200]
+
 Sur cette page, l'utilisateur peut consulter sa liste de courses, il y trouve :
 
 * Les ingrédients qui y figurent
@@ -84,9 +89,15 @@ NB : À terme, cette page devrait aussi exister sur PC, mais le design n'est pas
 
 image::../images/UI/UI pc - ecran Bilan.png[UI PC : écran BILAN,400] 
 
-===== Page de recette sur mobile
+===== Page de bilan sur mobile
 
 image::../images/UI/UI mobile - ecran bilan carbone.png[UI mobile : écran BILAN,200]
+image::../images/UI/bilan.png[UI mobile : écran BILAN final,200]
+
+===== Paramètres sur mobile
+
+image::../images/UI/parametres1.png[UI mobile : écran paramètres 1/2,200]
+image::../images/UI/parametres2.png[UI mobile : écran paramètres 2/2,200]
 
 ===== Description
 

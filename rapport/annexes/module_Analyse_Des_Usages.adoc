@@ -1,0 +1,59 @@
+=== Module Analyse Des Usages
+
+==== Descriptions
+
+- Recherches ciblées sur des services existants ou proches
+   Fonctionnement d’applications ou de services similaires,
+   Réseaux sociaux, revue de presse, etc,
+   Retours d’utilisateurs à partir de l’expression spontanée.
+- Etat des lieux d’activités connexes
+   Rapports de tendances ou d’habitudes de consommation (CREDOC, IPSOS..),
+   Etudes sociologiques, rapports parlementaires identifiant des enjeux,
+   Partenaires potentiels : associations, acteurs politiques, entreprises.
+- Identification des verrous juridiques, sociaux, économiques
+   Type de données recueillies, protection des données personnelles (RGPD),
+   Réticences ou freins liés aux pratiques sociales, à l’opinion,
+   Enjeux de sécurité,
+   Évaluation des ressources nécessaires (matérielles et humaines).
+- Découpage analytique des différentes phases dans
+l’utilisation du produit/service et des « moments » dans le
+parcours de l’utilisateur
+- Création d'un guide d'entretien permettant de mener à bien les entretiens semi-dirigés et pour s'assurer
+que les informations recueillies soient riches et fiables.
+- Passage d'un total de 4 entretiens dans le but de recueillir des données sur de potentiels utilisateurs pour améliorer notre application.
+- Transcription et synthèse de ces entretiens pour mieux comprendre les habitudes en terme de : cuisine, gestion de budget, écologie, planification de l'alimentation.
+- Création d'une One Sheet permettant de rassembler nos découvertes et de les synthétiser pour le donner aux autres membres du groupe.
+
+==== Avancement
+
+=== Module Communication Client Serveur
+
+
+==== Descriptions
+
+==== Avancement
+
+=== Module Scraping
+
+==== Descriptions
+
+- Prise en main des outils de programmation : Utilisation de la bibliothèque Python Beautiful Soup 
+et du site web https://www.marmiton.org/ pour scraper les recettes
+- Nous avons cherché dans le code source de la page les balises permettant d'accéder aux détails 
+des recettes
+-Il a fallu ensuite chercher une page de marmiton sur laquelle il était possible d'obtenir un maximum de recettes
+dans le but de réitérer le processus pour chaque page.
+- Nous avons ainsi récupéré le titre des recettes, les ingrédients, l'image du plat et 
+les instructions à la préparation de la recette choisie dans un dictionnaire.
+-Il nous fallait aussi accéder aux prix des ingrédients par une unité choisie et à leur cout en carbone.
+Ce travail fut complexe en raison des différentes unités utilisées dans chaque recette ( 200g de poulet ou un filet de poulet 
+par exemple).
+- Il a donc fallu trouver une base de donnée qui correspondait à nos besoins, il fallait qu'elle soit exhaustive
+mais pas immense inutilement, et comprenne les prix et les couts carbones.
+- De plus, nous avons aussi utilisé une base de donnée qui n'avait de lien avec celles des 
+ingrédients de marmiton,il a donc fallu faire un travail de raccord "à la main". 
+
+==== Avancement
+
+-Il est encore nécessaire de finaliser le travail décrit plus haut pour obtenir des prix/couts carbones cohérents
+, étant donné qu'il s'agit de l'objectif même de notre application.

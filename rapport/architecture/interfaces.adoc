@@ -4,13 +4,16 @@
 
 
 
-==== Interface Utilisateur-Appli/Site
+==== Interface Utilisateur-Appli
 Interface ReactNativ pour permettre à l'utilisateur d'utiliser l'appli/le site.
 
 
-==== Interface Appli/Site-Serveur
+==== Interface Appli-Serveur
 
-Interface créée grâce au module "Communication client serveur"
+L'application ne gère pas de comptes, ainsi, les données envoyées sont toujours du serveur vers l'application. 
+
+Les requêtes sont gérées en HTTP.
 
 ==== Interface Serveur/Base de données
-Interface pour les échanges de données des bases de données vers le serveur pour qu'il les transmette ensuite à l'appli.
+
+La base de données contient toutes les données que doit envoyer le serveur au client. Ainsi, le serveur a pour tâche de réaliser des requêtes à la base de données et de renvoyer les réponses avec la bonne mise en forme. 

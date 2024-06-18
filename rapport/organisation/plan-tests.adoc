@@ -1,23 +1,56 @@
 === Plans de test (PAN2+)
 
-Vous allez travailler sur chaque bloc de votre projet, et qu’il soit
-informatique, électronique ou matériel, vous allez devoir faire du
-test :
+// Vous allez travailler sur chaque bloc de votre projet, et qu’il soit
+// informatique, électronique ou matériel, vous allez devoir faire du
+// test :
 
-* tester que le bloc que vous venez de finir fait ce qu’il faut ;
-* tester que le bloc fonctionne avec les blocs en amont ou en aval dans
-l’architecture ;
-* tester que les performances sont acceptables…
-* et plus globalement, tester que le projet « marche ».
+// * tester que le bloc que vous venez de finir fait ce qu’il faut ;
+// * tester que le bloc fonctionne avec les blocs en amont ou en aval dans
+// l’architecture ;
+// * tester que les performances sont acceptables…
+// * et plus globalement, tester que le projet « marche ».
 
-Vous allez devoir faire ce travail sur le prototype allégé, puis sur le
-prototype final. C’est un travail dans le module « intégration et
-tests ».
+// Vous allez devoir faire ce travail sur le prototype allégé, puis sur le
+// prototype final. C’est un travail dans le module « intégration et
+// tests ».
 
-Cette section rassemble les plans de test du proto allégé et du proto
-final. C’est une liste des tests à effectuer, sous la forme, pour chaque
-test :
+// Cette section rassemble les plans de test du proto allégé et du proto
+// final. C’est une liste des tests à effectuer, sous la forme, pour chaque
+// test :
 
-* situation/contexte
-* action ou entrée à appliquer
-* réaction ou sortie attendue.
+// * situation/contexte
+// * action ou entrée à appliquer
+// * réaction ou sortie attendue.
+
+Plan de test :
+
+
+1.	Test des fonctionnalités de l'application :
+•	Contexte : Chaque fonctionnalités ont été développées séparément.
+•	Action ou entrée à appliquer : Utiliser chaque fonctionnalité de l'application, y compris les entrées utilisateur, les interactions et les scénarios prévus.
+•	Réaction ou sortie attendue : L'application doit répondre de manière appropriée à chaque action de l'utilisateur, en fournissant les résultats attendus et en respectant les scénarios définis.
+
+2.	Test de l'interface utilisateur :
+•	Contexte : L'interface utilisateur de l'application doit être fonctionnelle pour le bon fonctionnement de l’application.
+•	Action ou entrée à appliquer : Naviguer à travers les différentes sections de l'application, tester les interactions avec les boutons, les menus, les formulaires, etc.
+•	Réaction ou sortie attendue : L'interface utilisateur doit être intuitive, réactive et sans anomalies visuelles. Les éléments d'interface (boutons, menus, etc.) doivent fonctionner correctement.
+
+3.	Test de compatibilité (Android) :
+•	Contexte : L'application est destinée à être utilisée sur des appareils Android.
+•	Action ou entrée à appliquer : Tester l'application sur différents appareils Android, en prenant en compte différentes versions d'Android et résolutions d'écran.
+•	Réaction ou sortie attendue : L'application doit s'afficher correctement sur chaque appareil Android testé et fonctionner de manière cohérente, sans erreurs spécifiques aux différentes configurations matérielles.
+
+4.	Test de compatibilité (iOS) :
+•	Contexte : L'application est destinée à être utilisée sur des appareils iOS (iPhone, iPad).
+•	Action ou entrée à appliquer : Tester l'application sur différents appareils iOS, en prenant en compte différentes versions d'iOS et tailles d'écran.
+•	Réaction ou sortie attendue : L'application doit s'afficher correctement sur chaque appareil iOS testé et fonctionner de manière cohérente, sans erreurs spécifiques aux différentes configurations matérielles.
+
+5.	Test de performances :
+•	Contexte : L'application est destinée à être utilisée de manière fluide sur la plupart des appareils.
+•	Action ou entrée à appliquer : Exécuter l'application avec une charge de travail représentative, mesurer les temps de réponse, la consommation de mémoire, etc.
+•	Réaction ou sortie attendue : L'application doit être réactive, sans ralentissements significatifs et sans consommation excessive de ressources. Les performances doivent être acceptables pour assurer une expérience utilisateur fluide.
+
+6.	Test global de l'application :
+•	Contexte : L’application doit être utilisée dans une situation classique par un utilisateur quelconque.
+•	Action ou entrée à appliquer : Réaliser une série complète de tests qui couvrent tous les aspects de l'application, en simulant différents scénarios d'utilisation.
+•	Réaction ou sortie attendue : L'application dans son ensemble doit fonctionner de manière satisfaisante sur les plateformes Android et iOS, fournissant les résultats attendus et offrant une expérience utilisateur cohérente.
