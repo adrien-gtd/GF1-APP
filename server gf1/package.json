@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.2.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "type": "module",
+  "name": "temp",
+  "version": "1.0.0",
+  "main": "Server_temp.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
