@@ -1,0 +1,95 @@
+[
+  {
+    "name": "MIN de Rungis : volaille                     marché du 12/05/23 (cours Grossistes) unité : € HT le kg*"
+  },
+  {
+    "name": "POULET (cuisse déjointée) France label",
+    "prixmoyen": "6.50",
+    "varia": "=",
+    "mini": "5.80",
+    "maxi": "6.90"
+  },
+  {
+    "name": "POULET (cuisse et portion dos) France standard",
+    "prixmoyen": "2.70",
+    "varia": "=",
+    "mini": "2.20",
+    "maxi": "3.00"
+  },
+  {
+    "name": "POULET (cuisse et portion dos) U.E. standard",
+    "prixmoyen": "2.30",
+    "varia": "=",
+    "mini": "2.10",
+    "maxi": "2.40"
+  },
+  {
+    "name": "POULET (entier) effilé France biologique",
+    "prixmoyen": "7.00",
+    "varia": "=",
+    "mini": "6.50",
+    "maxi": "8.00"
+  },
+  {
+    "name": "POULET (entier) prêt à cuire France label",
+    "prixmoyen": "5.10",
+    "varia": "=",
+    "mini": "4.60",
+    "maxi": "5.60"
+  },
+  {
+    "name": "POULET (entier) prêt à cuire France standard",
+    "prixmoyen": "3.00",
+    "varia": "=",
+    "mini": "2.80",
+    "maxi": "3.30"
+  },
+  {
+    "name": "POULET (filet) France label sous-vide",
+    "prixmoyen": "11.50",
+    "varia": "=",
+    "mini": "9.80",
+    "maxi": "13.00"
+  },
+  {
+    "name": "POULET (filet) France standard sous-vide",
+    "prixmoyen": "6.80",
+    "varia": "=",
+    "mini": "6.50",
+    "maxi": "7.40"
+  },
+  {
+    "name": "POULET (filet) U.E. standard",
+    "prixmoyen": "5.80",
+    "varia": "=",
+    "mini": "5.50",
+    "maxi": "6.20"
+  },
+  {
+    "name": "Viande France DETAIL GMS                     marché du 04/05/23 (cours Détail) unité : € TTC le kg*"
+  },
+  {
+    "name": "POULET prêt à cuire France biologique",
+    "prixmoyen": "12.46",
+    "varia": "+0.11",
+    "mini": "9.89",
+    "maxi": "14.36"
+  },
+  {
+    "name": "POULET prêt à cuire France label rouge cdt 1",
+    "prixmoyen": "7.85",
+    "varia": "-0.28",
+    "mini": "6.59",
+    "maxi": "9.30"
+  },
+  {
+    "name": "Viande France DETAIL MAG. SPECIALISES BIO                     marché du 04/05/23 (cours Détail) unité : € TTC *"
+  },
+  {
+    "name": "POULET prêt à cuire France biologique (le kg)",
+    "prixmoyen": "15.38",
+    "varia": "+0.19",
+    "mini": "13.50",
+    "maxi": "16.49"
+  }
+]

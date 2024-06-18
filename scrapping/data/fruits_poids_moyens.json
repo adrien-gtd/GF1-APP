@@ -1,0 +1,62 @@
+[
+    {
+      "name": "abricot",
+      "poid moyen": 55
+    },
+    {
+      "name": "ananas",
+      "poid moyen": 1750
+    },
+    {
+      "name": "banane",
+      "poid moyen": 150
+    },
+    {
+      "name": "citron",
+      "poid moyen": 100
+    },
+    {
+      "name": "clémentine",
+      "poid moyen": 70
+    },
+    {
+      "name": "datte",
+      "poid moyen": 35
+    },
+    {
+      "name": "figue noire",
+      "poid moyen": 50
+    },
+    {
+      "name": "melon (grande taille)",
+      "poid moyen": 800
+    },
+    {
+      "name": "melon (petite taille)",
+      "poid moyen": 500
+    },
+    {
+      "name": "orange",
+      "poid moyen": 200
+    },
+    {
+      "name": "pamplemousse",
+      "poid moyen": 350
+    },
+    {
+      "name": "pêche (moyenne taille)",
+      "poid moyen": 150
+    },
+    {
+      "name": "poire",
+      "poid moyen": 120
+    },
+    {
+      "name": "pomme (grande taille)",
+      "poid moyen": 200
+    },
+    {
+      "name": "pomme (moyenne taille)",
+      "poid moyen": 150
+    }
+  ]

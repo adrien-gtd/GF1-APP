@@ -78,3 +78,5 @@ GF1-App/web-build/
 GF1-App/dist/
 
 .vscode
+*.temp
+.DS_Store
