@@ -29,7 +29,7 @@ Si node affiche en dessous du qr code "› Metro waiting on http://localhost:808
 
 npx epxo start
 
-Normalement il y aura une ip a la place localhost.
+Normalement il y aura une ip a la place de localhost.
 
 ### En details
 

@@ -72,6 +72,7 @@ GF1-App/*.jsbundle
 GF1-App/ios/Pods/
 
 ## Expo
+../.expo/
 GF1-App/.expo/
 GF1-App/web-build/
 GF1-App/dist/
